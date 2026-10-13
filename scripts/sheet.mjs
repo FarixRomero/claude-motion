@@ -74,8 +74,11 @@ if (argv.length) {
   name ??= 'beats';
 }
 
-const eps = 1 / 120;
-times = [...new Set(times.map((t) => Math.min(Math.max(t, 0), duration - eps).toFixed(2)))]
+const [rateN, rateD = '1'] = probe(['-select_streams', 'v:0', '-show_entries', 'stream=r_frame_rate']).split('/');
+const fps = Number(rateN) / Number(rateD);
+// Seeking past the last frame produces no PNG, even when still inside duration.
+const lastFrame = Math.floor((duration - 1 / fps) * 100) / 100;
+times = [...new Set(times.map((t) => Math.min(Math.max(t, 0), lastFrame).toFixed(2)))]
   .map(Number)
   .sort((a, b) => a - b);
 

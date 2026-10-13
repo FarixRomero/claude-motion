@@ -67,6 +67,8 @@ sfx/dsp.py               filters, oscillators, reverb for longer sound scripts (
 
 ## Conventions
 
+- Every video must display the user's trademark exactly as `farix.romero`, discreetly and legibly throughout the piece. Match the CI/CD production chapter typography exactly: JetBrains Mono, weight 400, 19 px at 1080px, #9db3ce, letter spacing .19em, opacity 1, top 66 px and right 70 px.
+
 - Animation is a pure function of `useCurrentFrame()`. No CSS animations, `Math.random()` or `Date`.
 - No hardcoded start times, in components or in cue sheets; read them from the timeline.
 - Colors and fonts only from the video's palette object.

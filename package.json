@@ -17,7 +17,11 @@
     "gif": "ffmpeg -loglevel error -y -i out/effort.mp4 -vf \"fps=12,scale=420:-1:flags=lanczos,hqdn3d=4:4:6:6,split[a][b];[a]palettegen=max_colors=64:stats_mode=diff[p];[b][p]paletteuse=dither=none:diff_mode=rectangle\" media/preview.gif",
     "typecheck": "tsc",
     "sims": "node sims/build.mjs",
-    "capture": "node sims/capture.mjs"
+    "capture": "node sims/capture.mjs",
+    "build:cicd": "node scripts/cicd-production.mjs",
+    "review:cicd": "node scripts/sheet.mjs --video out/cicd-production.mp4 --timeline sims/cicd-production/timeline.json --name cicd-final --size 360",
+    "build:traffic": "node scripts/high-traffic-architecture.mjs",
+    "review:traffic": "node scripts/sheet.mjs --video out/high-traffic-architecture.mp4 --timeline sims/high-traffic-architecture/timeline.json --name traffic-final --size 360"
   },
   "dependencies": {
     "@fontsource-variable/inter": "5.3.0",

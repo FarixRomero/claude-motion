@@ -1,0 +1,39 @@
+.film { position: absolute; width: 1080px; height: 1080px; inset: 0 auto auto 0; transform-origin: 0 0; pointer-events: none; }
+.film * { box-sizing: border-box; }
+.vignette { position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 58%, transparent 34%, var(--film-bg) 105%); opacity: .62; }
+.footer-shade { position: absolute; left: 0; right: 0; bottom: 0; height: 242px; background: linear-gradient(to bottom, var(--film-transparent), var(--film-bg) 65%); opacity: .95; }
+.chapter { position: absolute; top: 66px; left: 70px; right: 70px; display: flex; justify-content: space-between; align-items: center; font: 400 19px var(--film-mono); letter-spacing: .19em; color: var(--film-dim); }
+.chapter b { color: var(--film-cyan); font-weight: 600; }
+.chapter-line { width: 33px; height: 2px; display: inline-block; background: var(--film-cyan); vertical-align: middle; margin-right: 16px; }
+.heading { position: absolute; left: 70px; top: 148px; right: 60px; font-size: 73px; font-weight: 650; line-height: 1.08; letter-spacing: -.055em; font-family: var(--film-sans); color: var(--film-white); }
+.heading em { color: var(--film-cyan); font-style: normal; }
+.heading small { display: block; margin-top: 18px; font-family: var(--film-mono); font-size: 22px; letter-spacing: .025em; font-weight: 400; color: var(--film-dim); }
+.heading.final { text-align: center; left: 60px; right: 60px; top: 128px; font-size: 77px; font-weight: 750; line-height: 1.03; letter-spacing: -.05em; }
+.heading.final small { font-family: var(--film-mono); margin-top: 20px; font-size: 27px; letter-spacing: .16em; color: var(--film-cyan); }
+.anchor { position: absolute; transform: translate(-50%, -100%); text-align: center; white-space: nowrap; font-family: var(--film-mono); font-size: 25px; font-weight: 600; letter-spacing: .06em; color: var(--film-white); text-shadow: 0 2px 12px var(--film-bg); }
+.anchor .sub { display: block; margin-top: 9px; font-size: 18px; letter-spacing: .015em; font-weight: 400; color: var(--film-dim); }
+.anchor .ok { color: var(--film-green); }
+.tag { padding: 9px 15px; border: 1px solid var(--film-blue); background: var(--film-bg); border-radius: 9px; }
+.detail { position: absolute; left: 70px; right: 70px; bottom: 170px; font-family: var(--film-mono); font-size: 24px; color: var(--film-dim); text-align: center; }
+.detail b { color: var(--film-green); font-weight: 600; }
+.footnote { position: absolute; left: 70px; right: 70px; bottom: 125px; color: var(--film-dim); font-size: 21px; text-align: center; line-height: 1.4; }
+.rail { position: absolute; bottom: 63px; left: 70px; right: 70px; display: flex; align-items: center; justify-content: space-between; font-size: 18px; color: var(--film-muted); letter-spacing: .045em; }
+.rail .step { display: flex; align-items: center; gap: 10px; }
+.rail .dot { height: 6px; width: 6px; border-radius: 50%; background: currentColor; }
+.rail .arrow { opacity: .5; font-size: 21px; }
+.rail .passed { color: var(--film-dim); }
+.rail .active { color: var(--film-cyan); }
+.rail .finished { color: var(--film-green); }
+.progress { position: absolute; left: 70px; right: 70px; bottom: 99px; height: 1px; background: var(--film-grid); }
+.progress i { display: block; height: 1px; background: var(--film-cyan); box-shadow: 0 0 14px var(--film-cyan); }
+.monitor { position: absolute; right: 70px; top: 815px; width: 940px; height: 111px; padding: 19px 24px; background: var(--film-bg); border: 1px solid var(--film-grid); border-radius: 17px; font-family: var(--film-sans); box-shadow: 0 12px 40px var(--film-black); }
+.monitor .label { font: 16px var(--film-mono); letter-spacing: .12em; color: var(--film-dim); }
+.monitor .health { display: flex; justify-content: space-between; align-items: center; margin-top: 15px; width: 258px; font-size: 24px; font-weight: 650; }
+.monitor .health span { color: var(--film-green); }
+.monitor .latency { position: absolute; top: 18px; left: 336px; font-size: 17px; color: var(--film-dim); }
+.monitor svg { position: absolute; top: 38px; left: 333px; width: 250px; height: 53px; display: block; }
+.monitor .success { position: absolute; top: 48px; right: 24px; font-size: 23px; color: var(--film-green); }
+.glow-ring { position: absolute; width: 1080px; height: 1080px; inset: 0; border: 1px solid var(--film-cyan); border-radius: 50%; }
+
+.trademark{position:absolute;top:66px;right:70px;font:400 19px var(--film-mono);color:var(--film-dim);letter-spacing:.19em}
+.heading.intro {text-align:center;left:60px;right:60px;top:145px;font-size:65px;font-weight:750;line-height:1.07;letter-spacing:-.05em;}

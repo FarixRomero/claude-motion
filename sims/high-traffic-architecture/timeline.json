@@ -1,0 +1,198 @@
+{
+  "duration": 30,
+  "fps": 60,
+  "seed": 73,
+  "crowd": {
+    "start": 0,
+    "title": 0,
+    "grow": 1,
+    "thousand": 1.1,
+    "tenThousand": 2.3,
+    "fiftyThousand": 3.7,
+    "hundredThousand": 5,
+    "converge": 2.6,
+    "exit": 5.65
+  },
+  "overload": {
+    "start": 6,
+    "title": 6.2,
+    "rates": 6.5,
+    "rise": 7,
+    "queueFull": 9,
+    "timeouts": 9.4,
+    "saturated": 10,
+    "exit": 11.65
+  },
+  "protect": {
+    "start": 12,
+    "title": 12.15,
+    "rateLimit": 12.6,
+    "rateActive": 13.3,
+    "shed": 14.6,
+    "shedActive": 15.3,
+    "drain": 15.5,
+    "recovered": 17.5,
+    "exit": 17.65
+  },
+  "scale": {
+    "start": 18,
+    "title": 18.15,
+    "balance": 18.7,
+    "distributed": 19.5,
+    "request": 20.3,
+    "starting": 20.8,
+    "ready": 22.8,
+    "route": 23.1,
+    "exit": 23.65
+  },
+  "stable": {
+    "start": 24,
+    "title": 24.5,
+    "monitor": 24.8,
+    "hold": 25.2,
+    "pulse": 28.7,
+    "fadeAudio": 29.3
+  },
+  "model": {
+    "queueLimit": 24,
+    "incoming": 20000,
+    "singleCapacity": 5000,
+    "protectedAdmit": 4000,
+    "finalAdmit": 12000,
+    "dbCapacity": 14000,
+    "ratePolicy": 16000
+  },
+  "camera": [
+    {
+      "at": 0,
+      "position": "-19,15,28",
+      "target": "-9,1,0"
+    },
+    {
+      "at": 1,
+      "position": "-19,15,28",
+      "target": "-9,1,0"
+    },
+    {
+      "at": 5.6,
+      "position": "-12,10,19",
+      "target": "-6,1,0"
+    },
+    {
+      "at": 7,
+      "position": "8,14,27",
+      "target": "3,1,-1"
+    },
+    {
+      "at": 10,
+      "position": "9,10,20",
+      "target": "5,1,0"
+    },
+    {
+      "at": 11.6,
+      "position": "9,10,20",
+      "target": "5,1,0"
+    },
+    {
+      "at": 13,
+      "position": "0,16,31",
+      "target": "0,1,0"
+    },
+    {
+      "at": 17.4,
+      "position": "0,16,31",
+      "target": "0,1,0"
+    },
+    {
+      "at": 19,
+      "position": "7,23,38",
+      "target": "2,0,-1"
+    },
+    {
+      "at": 23.5,
+      "position": "7,23,38",
+      "target": "2,0,-1"
+    },
+    {
+      "at": 25.2,
+      "position": "-4,29,50",
+      "target": "0,0,-1"
+    },
+    {
+      "at": 30,
+      "position": "-3,29,51",
+      "target": "0,0,-1"
+    }
+  ],
+  "music": {
+    "start": 0,
+    "tension": 8,
+    "recover": 17,
+    "resolve": 24,
+    "bpm": 120,
+    "beats": [
+      0,
+      0.5,
+      1,
+      1.5,
+      2,
+      2.5,
+      3,
+      3.5,
+      4,
+      4.5,
+      5,
+      5.5,
+      6,
+      6.5,
+      7,
+      7.5,
+      8,
+      8.5,
+      9,
+      9.5,
+      10,
+      10.5,
+      11,
+      11.5,
+      12,
+      12.5,
+      13,
+      13.5,
+      14,
+      14.5,
+      15,
+      15.5,
+      16,
+      16.5,
+      17,
+      17.5,
+      18,
+      18.5,
+      19,
+      19.5,
+      20,
+      20.5,
+      21,
+      21.5,
+      22,
+      22.5,
+      23,
+      23.5,
+      24,
+      24.5,
+      25,
+      25.5,
+      26,
+      26.5,
+      27,
+      27.5,
+      28,
+      28.5,
+      29,
+      29.5
+    ],
+    "growthLead": "repetitive-tonic",
+    "counterSound": "soft-click"
+  }
+}

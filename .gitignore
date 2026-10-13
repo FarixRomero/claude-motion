@@ -2,8 +2,12 @@ node_modules/
 out/
 .remotion/
 public/sfx.wav
+public/cicd-production.wav
 __pycache__/
 .mcp.json
 .env
 drafts/
 sims/dist/
+
+public/high-traffic-architecture.wav
+.tools/

@@ -1,0 +1,105 @@
+PROMPT BASE — CI/CD: DE TU CÓDIGO A PRODUCCIÓN
+
+Crea un motion graphic cinematográfico de 30 segundos, en formato 1080×1080 y 60 FPS, que explique cómo se despliega software a producción mediante un pipeline CI/CD. Exporta el resultado con audio en out/cicd-production.mp4.
+
+OBJETIVO Y RITMO
+
+Prioriza la comprensión en una sola visualización. Cada acción debe tener tiempo para verse, entenderse y mostrar su resultado antes de avanzar.
+
+Distribuye el video en cinco etapas de aproximadamente seis segundos. Usa un ritmo cinematográfico pausado, con acciones importantes secuenciales, movimientos suaves de cámara y pausas de lectura. Mantén los textos principales quietos y legibles durante al menos tres segundos. Sostén el plano final con el título durante al menos cuatro segundos.
+
+Conserva el dinamismo mediante partículas, conexiones luminosas, profundidad y animaciones ambientales sutiles. Evita acumular varias acciones explicativas al mismo tiempo. Diseña el timeline y el sonido para treinta segundos desde el inicio.
+
+DIRECCIÓN VISUAL
+
+Estética tecnológica premium y oscura, infraestructura 3D isométrica, conexiones azules y cian brillantes, partículas de datos, iluminación cuidada y sensación de profundidad. Usa seguimiento de cámara, acercamientos y transiciones fluidas que guíen la atención hacia la acción principal.
+
+Composición limpia, profesional y legible en móviles. Mantén los textos importantes dentro de márgenes seguros. Todo el texto explicativo debe estar en español; conserva comandos, nombres de tecnologías y las etiquetas técnicas indicadas.
+
+Incluye siempre la firma farix.romero, discreta y legible dentro del margen seguro, visible durante todo el video. Usa exactamente el estilo del rótulo CI/CD · PRODUCCIÓN: JetBrains Mono 400, 19 px en 1080×1080, color #9db3ce, espaciado +0.19em, arriba 66 px y derecha 70 px.
+
+ESCENA 1 — GIT PUSH (0–6 SEGUNDOS)
+
+Comienza con un acercamiento cinematográfico a un editor de código flotante en un entorno oscuro. Un desarrollador ejecuta git push. Un objeto luminoso que representa el commit emerge del editor y viaja por una conexión animada hacia un repositorio Git.
+
+La cámara sigue el commit. Al entrar al repositorio, este se ilumina y activa automáticamente el pipeline de CI. Permite observar tanto el envío como su confirmación antes de pasar a la siguiente etapa.
+
+Texto principal: "Todo comienza con un commit".
+Sonido: tecleo, confirmación de envío y whoosh digital.
+
+ESCENA 2 — INTEGRACIÓN CONTINUA (6–12 SEGUNDOS)
+
+La cámara recorre tres módulos 3D conectados y etiquetados TEST, BUILD y DOCKER. Un pulso luminoso avanza entre ellos siguiendo el orden real del proceso.
+
+Primero se ejecutan las pruebas automatizadas y aparece una confirmación verde. Luego se compila la aplicación. Después se crea una imagen Docker giratoria con la etiqueta app:v1.2.0. Finalmente, la imagen viaja hacia un registro de contenedores etiquetado REGISTRY, donde se confirma su publicación.
+
+Presenta claramente pruebas → compilación → creación de imagen → publicación en registro. Deja que se vea el resultado de cada acción antes de activar la siguiente.
+
+Texto principal: "Integración continua (CI)".
+Sonido: ticks de procesamiento, sonidos de compilación y ensamblaje, transiciones mecánicas suaves y confirmaciones de éxito.
+
+ESCENA 3 — DESPLIEGUE CONTINUO (12–18 SEGUNDOS)
+
+La imagen sale del registro y entra al pipeline de despliegue. Muestra dos entornos distintos como plataformas de servidores flotantes: STAGING → PRODUCTION.
+
+La imagen llega primero a staging, donde una verificación automatizada termina correctamente. Después se activa la conexión hacia producción y la cámara se aproxima a un clúster Kubernetes. Representa que Kubernetes obtiene la imagen publicada del registro para ejecutar la nueva versión.
+
+Deja tiempo para reconocer staging, su verificación y la transición a producción.
+
+Texto principal: "Despliegue continuo (CD)".
+Sonido: transición electrónica ascendente, activación de servidores y whoosh cinematográfico.
+
+ESCENA 4 — ROLLING UPDATE EN KUBERNETES (18–24 SEGUNDOS)
+
+La cámara entra al clúster Kubernetes de producción. Muestra tres pods activos con iluminación azul que representan la revisión v1. Los nuevos pods de la revisión v2 aparecen con iluminación cian y verde.
+
+Realiza la actualización de forma progresiva: crea un pod nuevo, muestra que queda listo y solo después retira un pod antiguo. Repite el proceso hasta completar la renovación. Mantén al menos tres réplicas listas y como máximo cuatro pods simultáneos en esta representación.
+
+Un balanceador distribuye solicitudes animadas únicamente hacia pods disponibles. No muestres todos los pods antiguos apagándose a la vez. Las etiquetas v1 y v2 representan revisiones del despliegue; la nueva revisión utiliza la imagen app:v1.2.0.
+
+Permite distinguir cada creación, confirmación de disponibilidad y retiro. La actualización debe poder entenderse sin pausar el video.
+
+Texto principal: "Rolling Update — Sin interrupciones*".
+Nota legible: "*Con sondas de disponibilidad y estrategia configuradas".
+No presentes la ausencia de interrupciones como una garantía universal. Representa disponibilidad continua bajo una configuración adecuada y capacidad suficiente.
+
+Sonido: pulsos de despliegue, confirmaciones de pods listos y pequeños impactos mecánicos.
+
+ESCENA 5 — PRODUCCIÓN Y MONITOREO (24–30 SEGUNDOS)
+
+La cámara se aleja suavemente y revela toda la arquitectura conectada e iluminada:
+
+GIT → TEST → BUILD → DOCKER → REGISTRY → KUBERNETES → PRODUCTION
+
+Mantén visible el recorrido por staging. Los paquetes de datos siguen circulando. Junto a producción aparece un panel de monitoreo con servicios saludables, latencia estable y confirmación de despliegue exitoso. La telemetría es ilustrativa.
+
+Muestra el título central:
+"DE TU CÓDIGO A PRODUCCIÓN"
+
+Debajo:
+"CI/CD Pipeline"
+
+Sostén el título y la arquitectura completa durante al menos cuatro segundos, con movimiento ambiental sutil. Termina con una animación luminosa de éxito sincronizada con el impacto musical final.
+
+SONIDO
+
+Genera música electrónica instrumental con un pulso constante y mezcla equilibrada. Sincroniza tecleo, transferencias, pruebas, compilación, creación de la imagen, activación de pods y éxito con sus acciones en el timeline.
+
+La música debe acompañar la explicación y dejar espacio a los efectos. Usa transiciones sonoras suaves y un cierre claro. Masteriza a −14 LUFS aproximadamente, con pico verdadero máximo de −1 dBFS. Exporta audio estéreo.
+
+FLUJO DE TRABAJO
+
+Sigue AGENTS.md y lee las skills de .claude/skills/ antes de implementar. Primero crea el storyboard y define como momento protagonista el rolling update progresivo. Después escribe el timeline JSON como fuente única de tiempos para cámara, animación y sonido.
+
+Para la infraestructura 3D y el recorrido de cámara, utiliza el pipeline sims/ según sims/README.md y web-sims/SKILL.md. La animación debe ser una función pura del tiempo.
+
+Implementa el motion graphic, revisa fotogramas renderizados de cada beat y de las transiciones, corrige problemas visuales y repite la revisión hasta obtener un pase limpio. Comprueba especialmente la legibilidad en móvil, los tiempos de lectura, la secuencia técnica y la disponibilidad de los pods durante la actualización.
+
+Genera el sonido sincronizado, renderiza a resolución completa, une imagen y audio y verifica duración, resolución, FPS, decodificación y loudness del archivo final. Añade el prompt, proceso y resultado a examples/.
+
+Evita metraje genérico, diapositivas estáticas, texto excesivo y animaciones sin relación con el proceso.
+
+ENTREGA FINAL
+
+out/cicd-production.mp4
+30 segundos · 1080×1080 · 60 FPS · MP4 con audio estéreo.
