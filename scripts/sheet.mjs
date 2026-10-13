@@ -74,7 +74,7 @@ if (argv.length) {
   name ??= 'beats';
 }
 
-const [rateN, rateD = '1'] = probe(['-select_streams', 'v:0', '-show_entries', 'stream=r_frame_rate']).split('/');
+const [rateN, rateD = '1'] = probe(['-select_streams', 'v:0', '-show_entries', 'stream=r_frame_rate']).split(/[,\n]/)[0].split('/');
 const fps = Number(rateN) / Number(rateD);
 // Seeking past the last frame produces no PNG, even when still inside duration.
 const lastFrame = Math.floor((duration - 1 / fps) * 100) / 100;

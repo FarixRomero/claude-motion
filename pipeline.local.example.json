@@ -1,0 +1,6 @@
+{
+  "voice_python": "../videos_remotion/.venv-voice/bin/python",
+  "whisper_python": "../videos_remotion/.venv/bin/python",
+  "voices_dir": "../videos_remotion/.tools/voices",
+  "voice_cache": "../videos_remotion/.tools/voice-cache"
+}

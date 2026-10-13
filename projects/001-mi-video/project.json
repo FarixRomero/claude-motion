@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "id": "001-mi-video",
+  "engine": "remotion",
+  "width": 1080,
+  "height": 1920,
+  "fps": 60,
+  "closing_hold": 1,
+  "voice": {
+    "model": "chatterbox-multilingual-v3",
+    "profile": "mi-voz",
+    "language": "es",
+    "speed": 1.2,
+    "seed": 42
+  },
+  "whisper": {
+    "model": "turbo",
+    "device": "cuda"
+  },
+  "title": "Un libro. Treinta microservicios.",
+  "composition": "MicroservicesVoiceVideo",
+  "sound_cues": "003-Escenas/sound.py",
+  "style": "pixel-tech"
+}

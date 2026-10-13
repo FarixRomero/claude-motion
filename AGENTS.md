@@ -11,6 +11,31 @@ The skills in `.claude/skills/` are the core of this repo. Claude Code and Curso
 - `sound-design/SKILL.md`: writing a cue sheet for the `sfx` engine, levels, mastering, adding generators.
 - `web-sims/SKILL.md`: simulations and 3D pieces built as one HTML page and captured frame by frame to 60 fps (`sims/`).
 
+## Narrated projects
+
+Use `projects/<id>/` for new narrated pieces. Initialize with `npm run project -- init <id>`.
+The four folders are `001-Voz/`, `002-Cues/`, `003-Escenas/`, `004-Render/`.
+See `projects/README.md` for CLI commands and the timeline contract.
+
+- The user's script lives in `001-Voz/guion.md`. `npm run project -- prepare <id>` generates local Chatterbox V3 audio with the shared `mi-voz` profile, then transcribes the final WAV with faster-whisper.
+- Read the script, listen to `001-Voz/voz.wav`, and review `002-Cues/validation.json` before designing scenes. Whisper timestamps are estimates; the recorded voice is the timing reference.
+- For these pieces, use `002-Cues/Timeline.json` instead of the example's root timeline. Preserve its narration and sync metadata. Add storyboard scenes and named visual events anchored to its phrase/word IDs. Keep storyboard and assets in `003-Escenas/`, components under `src/<id>/`, and final media/review in `004-Render/`.
+- When audio or transcription changes, existing visual definitions are preserved and flagged for review. Revisit their times and references before rendering; do not trust old ordinal word IDs to represent the same words.
+- Keep generated WAVs and render outputs out of Git. `examples/` remains the gallery for finished pieces.
+
+## Visual direction for new narrated videos
+
+The user's default style is the reference in `projects/001-mi-video/003-Escenas/assets/style-reference.png`:
+vertical 1080×1920, dark grid background, block-shaped illustrated characters,
+large heavy sans-serif headlines, a code/interface window behind the characters,
+a pill-shaped counter below, and white subtitles with the currently spoken word in cyan.
+Use green for success and red for errors. Keep elements legible and characters clear
+of essential interface labels. Reuse or adapt `src/001-mi-video/Character.tsx` and
+its project palette for this style. Preserve the trademark specification below.
+Default narration speed is 1.2×, preserving pitch; derive scene times and captions from the final sped-up recording.
+For narrated videos, use voice and punctual sound effects by default. Do not add a sustained tonal pad or hum unless the user requests it.
+This is the default for new pieces; the user can override it per project.
+
 ## Making a video
 
 1. Agree on the message, a storyboard and the one hero moment with the user. Ask for format (1:1, 16:9, 9:16), length, brand colors and fonts if they matter.

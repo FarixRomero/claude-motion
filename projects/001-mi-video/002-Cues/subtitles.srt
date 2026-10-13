@@ -1,0 +1,31 @@
+1
+00:00:00,000 --> 00:00:05,300
+Tu compañero se leyó un libro de microservicios y ahora quiere dividir el monolito de la empresa en 30 servicios.
+
+2
+00:00:05,660 --> 00:00:08,980
+Le preguntas por qué y te responde, porque así escala mejor.
+
+3
+00:00:09,640 --> 00:00:13,340
+Colega, tu aplicación tiene 50 usuarios y 40 son de recursos humanos.
+
+4
+00:00:13,800 --> 00:00:19,660
+Ahora necesitas Kubernetes, un API Gateway, observabilidad distribuida y tres reuniones para encontrar un error.
+
+5
+00:00:20,240 --> 00:00:22,020
+Antes tenías un monolito funcionando.
+
+6
+00:00:22,380 --> 00:00:24,780
+Ahora tienes 30 servicios que no se hablan.
+
+7
+00:00:25,380 --> 00:00:28,240
+Moraleja, la buena arquitectura no es la que tiene más servicios,
+
+8
+00:00:28,240 --> 00:00:30,500
+sino la que resuelve problemas sin crear otros 30.

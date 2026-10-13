@@ -1,0 +1,40 @@
+{
+  "state": "needs_review",
+  "similarity": 0.9451,
+  "differences": [
+    {
+      "type": "replace",
+      "expected": "treinta",
+      "heard": "30"
+    },
+    {
+      "type": "replace",
+      "expected": "cincuenta",
+      "heard": "50"
+    },
+    {
+      "type": "replace",
+      "expected": "cuarenta",
+      "heard": "40"
+    },
+    {
+      "type": "replace",
+      "expected": "treinta",
+      "heard": "30"
+    },
+    {
+      "type": "replace",
+      "expected": "treinta",
+      "heard": "30"
+    }
+  ],
+  "uncertain_words": [],
+  "warnings": [
+    "La transcripción difiere del guion. Revisa differences antes de construir escenas."
+  ],
+  "note": "Los tiempos de Whisper son estimaciones. El audio grabado es la referencia.",
+  "review": {
+    "state": "accepted",
+    "reason": "Se conservan las 91 palabras; treinta/30, cincuenta/50 y cuarenta/40 son equivalentes."
+  }
+}

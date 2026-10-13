@@ -56,6 +56,20 @@ then capture it to a 60 fps mp4.
 
 **A reference piece to take apart.** The video above, with reusable components: masked text reveals, rolling numbers, film grain, hand-drawn line boil, a background with drifting grid and glow.
 
+## Narración local por proyecto
+
+Nuevo CLI: guion → Chatterbox Multilingual V3 (`mi-voz`) → faster-whisper → timeline.
+Cada proyecto vive en `projects/` con cuatro carpetas numeradas.
+
+```bash
+npm run project -- init 001-mi-video
+# Escribe projects/001-mi-video/001-Voz/guion.md
+npm run project -- prepare 001-mi-video
+npm run project -- status 001-mi-video
+```
+
+[Uso, configuración y contrato del timeline](projects/README.md).
+
 ## Quick start
 
 **Let your agent set it up.** Paste this into Claude Code, Cursor, Codex or OpenCode:

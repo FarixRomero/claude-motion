@@ -21,7 +21,9 @@
     "build:cicd": "node scripts/cicd-production.mjs",
     "review:cicd": "node scripts/sheet.mjs --video out/cicd-production.mp4 --timeline sims/cicd-production/timeline.json --name cicd-final --size 360",
     "build:traffic": "node scripts/high-traffic-architecture.mjs",
-    "review:traffic": "node scripts/sheet.mjs --video out/high-traffic-architecture.mp4 --timeline sims/high-traffic-architecture/timeline.json --name traffic-final --size 360"
+    "review:traffic": "node scripts/sheet.mjs --video out/high-traffic-architecture.mp4 --timeline sims/high-traffic-architecture/timeline.json --name traffic-final --size 360",
+    "project": "python3 scripts/project.py",
+    "test:project": "python3 -m unittest discover -s scripts/project -p \"test_*.py\""
   },
   "dependencies": {
     "@fontsource-variable/inter": "5.3.0",

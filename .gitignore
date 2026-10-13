@@ -11,3 +11,15 @@ sims/dist/
 
 public/high-traffic-architecture.wav
 .tools/
+# Local narration environments and generated project media
+pipeline.local.json
+.venv-voice/
+.venv-whisper/
+projects/**/001-Voz/*.wav
+projects/**/001-Voz/.voice-*/
+projects/**/002-Cues/.sync-*/
+projects/**/004-Render/*
+!projects/**/004-Render/.gitkeep
+projects/**/.pipeline.lock
+
+public/projects/

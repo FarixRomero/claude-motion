@@ -1,0 +1,114 @@
+PROMPT REUTILIZABLE — ESCENAS CON PERSONAJES DE BLOQUES
+
+Nombre descriptivo del estilo:
+Animación 2D de personajes blocky, inspirada en pixel art, combinada con motion
+graphics para videos verticales y subtítulos karaoke. En este repo: pixel-tech.
+Es una descripción visual; no implica animación 3D ni pixel art de baja resolución.
+
+Copia desde «ENCARGO» y sustituye <ID-PROYECTO> por el nombre de tu carpeta.
+Ejemplo: 002-mi-proximo-video.
+
+ENCARGO
+
+Crea y termina el video del proyecto projects/<ID-PROYECTO>/ con el mismo estilo
+visual de projects/001-mi-video/. Lee AGENTS.md y las reglas de diseño, sonido y
+revisión del repositorio antes de trabajar.
+
+ENTRADAS Y ORGANIZACIÓN
+
+- Guion: projects/<ID-PROYECTO>/001-Voz/guion.md.
+- Voz: projects/<ID-PROYECTO>/001-Voz/voz.wav.
+- Transcripción y tiempos: projects/<ID-PROYECTO>/002-Cues/.
+- Timeline compartido: projects/<ID-PROYECTO>/002-Cues/Timeline.json.
+- Storyboard, paleta, recursos y cue sheet: projects/<ID-PROYECTO>/003-Escenas/.
+- Preview, mezcla, video final y revisión: projects/<ID-PROYECTO>/004-Render/.
+
+Si la voz ya está lista y al día, úsala. Si falta, genera la narración localmente
+con Chatterbox Multilingual V3 y el perfil mi-voz. La velocidad predeterminada es
+1,2×, conservando el tono; respeta una velocidad distinta si la indiqué para este
+proyecto. Transcribe con Whisper después de aplicar la velocidad definitiva.
+Conserva el guion original y revisa las diferencias entre lo escrito y lo oído.
+No reescribas ni acortes la narración sin que lo haya solicitado.
+
+REFERENCIAS DEL ESTILO
+
+- Captura de referencia:
+  projects/001-mi-video/003-Escenas/assets/style-reference.png
+- Personajes reutilizables:
+  src/001-mi-video/Character.tsx
+- Composición de referencia:
+  src/001-mi-video/Video.tsx
+- Paleta de referencia:
+  projects/001-mi-video/003-Escenas/palette.ts
+
+Consulta las referencias para mantener el lenguaje visual. Adapta personajes,
+objetos, gestos y situaciones al nuevo guion; la historia determina las escenas.
+
+DIRECCIÓN VISUAL
+
+1. Formato vertical 9:16, 1080 × 1920, 60 fps. La duración depende de la voz y
+   del tiempo necesario para sostener el mensaje final.
+2. Fondo negro azulado, cuadrícula fina, iluminación suave y textura discreta.
+3. Personajes de bloques dibujados en 2D: formas rectangulares, ojos simples,
+   colores planos, sombras geométricas y accesorios que expliquen su papel.
+   Anima reacciones, brazos, inclinación, parpadeo y pequeños movimientos de
+   reposo. Los gestos deben acompañar las ideas del guion.
+4. Composición semejante a la referencia: titular arriba, ilustración o interfaz
+   en el centro, personajes en primer plano, contadores cuando aporten información
+   y subtítulos debajo. Deja aire entre zonas y protege las etiquetas importantes.
+5. Titulares grandes y breves, Inter de peso 900, generalmente en mayúsculas.
+   Destaca una palabra o idea. Usa verde para éxito, rojo para error y cian para
+   la palabra activa del subtítulo. Centraliza todos los colores y fuentes en
+   la paleta del proyecto.
+6. Usa ventanas de código, diagramas, iconos, objetos y contadores cuando ayuden
+   a explicar lo narrado. Para un guion no técnico, elige objetos de ese tema.
+   Muestra números que correspondan al guion y a la situación representada.
+7. Subtítulos blancos, gruesos, con contorno oscuro. Resalta en cian la palabra
+   que está sonando, utilizando los timestamps de Whisper. Agrupa las palabras
+   en bloques cortos y evita solapamientos entre subtítulos consecutivos.
+8. Conserva elementos entre escenas para dar continuidad. Haz que las entradas,
+   reacciones y cambios de estado coincidan con palabras o frases concretas.
+   Usa humor visual si el guion lo permite. Reserva un momento visual principal.
+
+MARCA OBLIGATORIA
+
+Mantén farix.romero visible en todos los frames con esta especificación:
+JetBrains Mono, peso 400, 19 px a 1080 px de ancho, color #9db3ce,
+letter-spacing 0.19em, opacity 1, top 66 px y right 70 px.
+
+SINCRONIZACIÓN Y CONSTRUCCIÓN
+
+- Antes de codificar, describe el mensaje, el storyboard y el momento principal.
+  Registra todas las escenas y eventos en Timeline.json.
+- Construye las escenas a partir del guion y del audio real. Sus duraciones no
+  tienen que ser iguales, ni cada frase tiene que convertirse en una escena.
+- Ancla los eventos a IDs de palabras o frases. Los componentes y efectos deben
+  consumir el timeline; no escribas inicios absolutos dentro del código.
+- Toda animación debe ser una función del frame. Sin animaciones CSS, Date ni
+  Math.random(). Reutiliza los componentes y helpers del repositorio.
+- Registra la composición en src/Root.tsx y coloca los componentes en src/<ID-PROYECTO>/.
+- Si cambia la voz, actualiza sus tiempos y revisa escenas, eventos y subtítulos.
+  No asumas que los antiguos IDs de palabra siguen representando el mismo texto.
+- Asegura que el primer frame ya sea una imagen completa y que el cierre dé
+  tiempo suficiente para leer el mensaje. Comprueba la legibilidad a 360 px.
+
+SONIDO
+
+La voz debe quedar al frente. Añade únicamente efectos puntuales que acompañen
+acciones relevantes. No añadas zumbidos, drones, pads graves, música ni fondos
+sostenidos salvo que yo los solicite expresamente. Usa el timeline para colocar
+los efectos y comprueba el volumen del MP4 final: −14 LUFS ±1 y pico real ≤−1 dBFS.
+
+ENTREGA
+
+Completa las escenas, la mezcla, el render y la revisión visual. Mira las hojas
+de contacto del render actual, incluyendo las transiciones; corrige los problemas
+antes de dar el video por terminado. Comprueba formato, FPS, duración y audio.
+
+Entrega:
+- 004-Render/preview.mp4
+- 004-Render/final.mp4
+- 004-Render/review/ con imágenes y resultados de la revisión
+
+Añade la pieza a examples/ con el guion, el proceso y el resultado, según las reglas
+del repo. En la respuesta final, enlaza el video terminado y resume qué revisaste.
