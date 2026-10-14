@@ -154,3 +154,51 @@ requiere Python 3.11 y PyTorch con CUDA. Para Whisper en CPU cambia
 npm run test:project
 npm run project -- doctor
 ```
+
+
+## Diálogos con varias voces
+
+Un guion puede alternar etiquetas de hablante. Cada etiqueta inicia un turno:
+
+```text
+[mi-voz]
+Hola, quiero agendar una cita.
+
+[mujer]
+¡Claro! Puedes consultar nuestros horarios.
+```
+
+Configura los perfiles en `project.json`:
+
+```json
+{
+  "speakers": {
+    "mi-voz": {"profile": "mi-voz", "label": "Usuario / narrador"},
+    "mujer": {"profile": "mujer", "label": "Asistente"}
+  },
+  "dialogue": {"turn_pause": 0.35}
+}
+```
+
+La configuración se añade al resto del archivo existente. `prepare`, `voice` y
+`sync` funcionan igual. Las etiquetas se excluyen de la locución y de `narracion.txt`.
+Los turnos individuales quedan en `001-Voz/turns/`, con tiempos reales en `turns.json`.
+Whisper transcribe cada turno con el texto previsto como contexto; sus tiempos se
+trasladan al audio completo y sus frases/palabras guardan `speaker` y `turn`.
+No hace falta inferir el hablante con diarización cuando ya se conoce al sintetizar.
+
+Los perfiles se buscan primero en `voices_dir` y luego en `.tools/voices/` del repo.
+El perfil femenino genérico `mujer` es local. Su referencia se generó con Piper y
+se preparó para Chatterbox; su procedencia está documentada en
+`projects/002-dentista-permisos/001-Voz/perfil-mujer.txt`.
+
+Para crear otro perfil desde una referencia de voz:
+
+```bash
+PYTHONNOUSERSITE=1 HF_HOME=../videos_remotion/.tools/voice-cache \
+../videos_remotion/.venv-voice/bin/python scripts/project/create_voice_profile.py \
+  --name otro-perfil --reference /ruta/referencia.wav
+```
+
+El comando conserva los perfiles existentes y requiere al menos seis segundos
+de referencia. No entrena un modelo nuevo. Las grabaciones y perfiles quedan fuera de Git.

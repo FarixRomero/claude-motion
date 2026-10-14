@@ -80,6 +80,8 @@ def narration(script):
             line = re.sub(r'(?<!\w)' + re.escape(marker) + r'(.+?)' + re.escape(marker) + r'(?!\w)', r'\1', line)
         lines.append(line)
     result = '\n'.join(lines)
+    if any(re.fullmatch(r'\[[A-Za-z0-9_-]+\]', line) for line in lines):
+        raise ValueError('El guion tiene etiquetas de hablante; configura speakers en project.json.')
     chunks = [s.strip() for s in re.split(r'(?<=[.!?])\s+|\n+', result) if s.strip()]
     if not chunks:
         raise ValueError('Escribe tu guion en 001-Voz/guion.md antes de generar la voz.')
@@ -89,7 +91,10 @@ def narration(script):
 
 
 def profile(settings, config):
-    directory = settings['voices_dir'] / identifier(config['voice']['profile'])
+    name = identifier(config['voice']['profile'])
+    local = ROOT / '.tools/voices' / name
+    shared = settings['voices_dir'] / name
+    directory = shared if shared.is_dir() else local
     for name in ('voice.json', 'profile.pt', 'reference.wav'):
         if not (directory / name).is_file():
             raise ValueError(f'Falta el perfil de voz: {directory / name}')
@@ -98,8 +103,41 @@ def profile(settings, config):
     return directory
 
 
+def dialogue_turns(script, speakers):
+    clean = re.sub(r'<!--.*?-->', '', script, flags=re.S)
+    parts = re.split(r'^\[([A-Za-z0-9_-]+)\]\s*$', clean, flags=re.M)
+    intro = '\n'.join(line for line in parts[0].splitlines() if line.strip() and not re.match(r'^#{1,6}\s', line.strip()))
+    if intro.strip() or len(parts) == 1:
+        raise ValueError('En un diálogo, todo el texto debe ir después de una etiqueta [hablante].')
+    turns = []
+    for i in range(1, len(parts), 2):
+        speaker = parts[i]
+        if speaker not in speakers:
+            raise ValueError(f'Hablante desconocido: {speaker}. Configúralo en speakers.')
+        turns.append({'id': f't{len(turns) + 1:04d}', 'speaker': speaker,
+                      'text': narration(parts[i + 1]).strip()})
+    return turns
+
+
 def voice_input(project, config, settings):
-    text = narration((project / '001-Voz/guion.md').read_text(encoding='utf-8'))
+    script = (project / '001-Voz/guion.md').read_text(encoding='utf-8')
+    if config.get('speakers'):
+        turns = dialogue_turns(script, config['speakers'])
+        profiles = {}
+        for turn in turns:
+            speaker = turn['speaker']
+            name = config['speakers'][speaker]['profile']
+            directory = profile(settings, {'voice': {'profile': name}})
+            turn.update(profile=name, profile_path=str(directory))
+            profiles[speaker] = digest(directory / 'profile.pt')
+        text = '\n'.join(turn['text'] for turn in turns) + '\n'
+        inputs = {'script_sha256': digest(project / '001-Voz/guion.md'),
+                  'narration_sha256': hashlib.sha256(text.encode()).hexdigest(),
+                  'speaker_profiles_sha256': profiles, 'speakers': config['speakers'],
+                  'dialogue': config.get('dialogue', {'turn_pause': 0.35}),
+                  'voice': config['voice'], 'worker_sha256': digest(WORKERS / 'dialogue.py')}
+        return fingerprint(inputs), inputs, text, turns
+    text = narration(script)
     directory = profile(settings, config)
     inputs = {'script_sha256': digest(project / '001-Voz/guion.md'),
               'narration_sha256': hashlib.sha256(text.encode()).hexdigest(),
@@ -113,7 +151,8 @@ def sync_input(project, config):
                         'narration_sha256': digest(project / '001-Voz/narracion.txt'),
                         'whisper': config['whisper'], 'fps': config['fps'],
                         'closing_hold': config['closing_hold'],
-                        'worker_sha256': digest(WORKERS / 'transcribe.py')})
+                        **({'turns_sha256': digest(project / '001-Voz/turns.json')} if config.get('speakers') else {}),
+                        'worker_sha256': digest(WORKERS / ('transcribe_dialogue.py' if config.get('speakers') else 'transcribe.py'))})
 
 
 def run(command, env=None, capture=False):
@@ -188,7 +227,9 @@ def generate_voice(project, config, settings, force=False):
     key, inputs, text, directory = voice_input(project, config, settings)
     dest = project / '001-Voz'
     generation = dest / 'generation.json'
-    if generation.exists() and (dest / 'voz.wav').exists() and not force:
+    extra_ready = not config.get('speakers') or ((dest / 'turns.json').exists() and all(
+        (dest / turn['audio']).exists() for turn in read_json(dest / 'turns.json')))
+    if generation.exists() and (dest / 'voz.wav').exists() and extra_ready and not force:
         old = read_json(generation)
         if old.get('input_sha256') == key and old.get('audio_sha256') == digest(dest / 'voz.wav') and (dest / 'narracion.txt').exists() and digest(dest / 'narracion.txt') == inputs['narration_sha256']:
             print('Voz al día; se conserva voz.wav. Usa --force para regenerarla.')
@@ -198,12 +239,24 @@ def generate_voice(project, config, settings, force=False):
     with tempfile.TemporaryDirectory(prefix='.voice-', dir=dest) as temporary:
         work = Path(temporary)
         (work / 'narracion.txt').write_text(text, encoding='utf-8')
-        run([settings['voice_python'], '-u', WORKERS / 'voice.py', '--text', work / 'narracion.txt',
-             '--output', work, '--profile', directory, '--speed', config['voice']['speed'],
-             '--seed', config['voice']['seed']], env=worker_environment(settings))
+        if config.get('speakers'):
+            write_json(work / 'plan.json', directory)
+            run([settings['voice_python'], '-u', WORKERS / 'dialogue.py', '--plan', work / 'plan.json',
+                 '--output', work, '--speed', config['voice']['speed'], '--seed', config['voice']['seed'],
+                 '--pause', config.get('dialogue', {}).get('turn_pause', 0.35)], env=worker_environment(settings))
+        else:
+            run([settings['voice_python'], '-u', WORKERS / 'voice.py', '--text', work / 'narracion.txt',
+                 '--output', work, '--profile', directory, '--speed', config['voice']['speed'],
+                 '--seed', config['voice']['seed']], env=worker_environment(settings))
         metadata = read_json(work / 'worker.json')
         metadata.update(inputs, input_sha256=key, audio_sha256=digest(work / 'voz.wav'))
         write_json(work / 'generation.json', metadata)
+        if config.get('speakers'):
+            stored_turns = dest / 'turns'
+            stored_turns.mkdir(exist_ok=True)
+            for turn_file in (work / 'turns').iterdir():
+                turn_file.replace(stored_turns / turn_file.name)
+            (work / 'turns.json').replace(dest / 'turns.json')
         for name in ('voz.wav', 'narracion.txt', 'generation.json'):
             (work / name).replace(dest / name)
     print(f'Voz generada: {dest / "voz.wav"}. Ejecuta sync para actualizar los tiempos.')
@@ -248,6 +301,34 @@ def srt_time(seconds):
     return f'{hours:02}:{minutes:02}:{secs:02},{milliseconds:03}'
 
 
+def annotate_speakers(transcript, turns):
+    if not turns:
+        return
+    for word in transcript['words']:
+        midpoint = (word['start'] + word['end']) / 2
+        turn = max(turns, key=lambda t: (max(0, min(word['end'], t['end']) - max(word['start'], t['start'])),
+            -abs(midpoint - max(t['start'], min(t['end'], midpoint)))))
+        word.update(speaker=turn['speaker'], turn=turn['id'])
+    phrases = []
+    words_by_id = {w['id']: w for w in transcript['words']}
+    for source in transcript['segments']:
+        groups = []
+        for id in source.get('words', []):
+            word = words_by_id[id]
+            if not groups or groups[-1][-1]['turn'] != word['turn']:
+                groups.append([])
+            groups[-1].append(word)
+        for group in groups:
+            phrase_id = f'p{len(phrases) + 1:04d}'
+            for word in group:
+                word['phrase'] = phrase_id
+            phrases.append({'id': phrase_id, 'start': group[0]['start'], 'end': group[-1]['end'],
+                            'text': ' '.join(w['text'] for w in group), 'speaker': group[0]['speaker'],
+                            'turn': group[0]['turn'], 'words': [w['id'] for w in group]})
+    transcript['segments'] = phrases
+    transcript['turns'] = turns
+
+
 def synchronize(project, config, settings, force=False):
     key, _, _, _ = voice_input(project, config, settings)
     generation_file = project / '001-Voz/generation.json'
@@ -269,10 +350,12 @@ def synchronize(project, config, settings, force=False):
     with tempfile.TemporaryDirectory(prefix='.sync-', dir=cues) as temporary:
         work = Path(temporary)
         env = worker_environment(settings, whisper=config['whisper']['device'] == 'cuda')
-        run([settings['whisper_python'], '-u', WORKERS / 'transcribe.py', '--audio', project / '001-Voz/voz.wav',
+        run([settings['whisper_python'], '-u', WORKERS / ('transcribe_dialogue.py' if config.get('speakers') else 'transcribe.py'), '--audio', project / '001-Voz/voz.wav',
              '--output', work / 'transcript.json', '--model', config['whisper']['model'],
              '--device', config['whisper']['device']], env=env)
         transcript = read_json(work / 'transcript.json')
+        if config.get('speakers'):
+            annotate_speakers(transcript, read_json(project / '001-Voz/turns.json'))
         validation = validate_transcript((project / '001-Voz/narracion.txt').read_text(), transcript, duration)
         transcript['duration'] = duration
         transcript['audio_sha256'] = generation['audio_sha256']
@@ -286,7 +369,8 @@ def synchronize(project, config, settings, force=False):
         total_frames = math.ceil((duration + config['closing_hold']) * config['fps'])
         timeline.update(fps=config['fps'], duration=total_frames / config['fps'], durationInFrames=total_frames,
             narration={'audio': '../001-Voz/voz.wav', 'offset': 0, 'duration': duration,
-                       'phrases': transcript['segments'], 'words': transcript['words']},
+                       'phrases': transcript['segments'], 'words': transcript['words'],
+                       **({'turns': transcript['turns'], 'speakers': config['speakers']} if config.get('speakers') else {})},
             sync={'state': validation['state'], 'input_sha256': key, 'audio_sha256': generation['audio_sha256']})
         if has_visuals and (previous_audio != generation['audio_sha256'] or previous_sync != key):
             timeline['visuals'] = {'state': 'needs_review', 'reason': 'Cambió la sincronización; revisa tiempos y referencias de escenas conservadas.'}
@@ -470,6 +554,13 @@ def validate_config(config):
             raise ValueError(f'{key} debe ser un entero positivo.')
     if not isinstance(config['closing_hold'], (float, int)) or not math.isfinite(config['closing_hold']) or config['closing_hold'] < 0:
         raise ValueError('closing_hold debe ser un número >= 0.')
+    if config.get('speakers'):
+        for name, speaker in config['speakers'].items():
+            identifier(name)
+            identifier(speaker['profile'])
+        pause = config.get('dialogue', {}).get('turn_pause', 0.35)
+        if not isinstance(pause, (int, float)) or not math.isfinite(pause) or not 0 <= pause <= 3:
+            raise ValueError('turn_pause debe estar entre 0 y 3 segundos.')
     if config['whisper']['device'] not in ('cuda', 'cpu'):
         raise ValueError('El dispositivo de Whisper debe ser cuda o cpu.')
 

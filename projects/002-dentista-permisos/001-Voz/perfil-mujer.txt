@@ -1,0 +1,18 @@
+PERFIL FEMENINO SINTÉTICO — mujer
+
+Referencia generada localmente con Piper 1.4.2, modelo es_ES-sharvard-medium,
+speaker F (ID 1). Se utiliza esa referencia para crear el perfil Chatterbox
+Multilingual V3; todas las intervenciones del diálogo se sintetizan con Chatterbox.
+No se ha solicitado imitar a una persona concreta.
+
+Modelo y configuración:
+https://huggingface.co/rhasspy/piper-voices/tree/main/es/es_ES/sharvard/medium
+https://huggingface.co/rhasspy/piper-voices/blob/main/es/es_ES/sharvard/medium/es_ES-sharvard-medium.onnx.json
+
+Datos de entrenamiento de la voz base: Sharvard, Universidad de Edimburgo.
+https://datashare.ed.ac.uk/handle/10283/574
+Licencia indicada en la ficha del modelo: Creative Commons Attribution 3.0.
+https://creativecommons.org/licenses/by/3.0/
+
+El perfil reutilizable está en .tools/voices/mujer/ dentro del repositorio.
+El perfil mi-voz conserva su referencia y configuración existentes.

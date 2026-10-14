@@ -1,0 +1,19 @@
+{
+  "state": "needs_review",
+  "similarity": 1.0,
+  "differences": [],
+  "uncertain_words": [
+    "w00011",
+    "w00025",
+    "w00030",
+    "w00046",
+    "w00071",
+    "w00086",
+    "w00102",
+    "w00104"
+  ],
+  "warnings": [
+    "Hay palabras con baja confianza o duración cero; sus tiempos requieren revisión."
+  ],
+  "note": "Los tiempos de Whisper son estimaciones. El audio grabado es la referencia."
+}

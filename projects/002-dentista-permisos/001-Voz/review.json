@@ -1,0 +1,22 @@
+{
+  "state": "audio_prepared",
+  "script_sha256": "bcb6d216777d88ca62b3b6adb5a8806aa420b273bfb4c3e53a538dbd44e0f596",
+  "audio_sha256": "ac7555683ff1d5bb3b42270b801f9dd5fd9ec1c8a3aa09f0dadb10b1edd6851b",
+  "turns": 10,
+  "speakers": {
+    "mi-voz": 6,
+    "mujer": 4
+  },
+  "duration_seconds": 43.57,
+  "speed": 1.2,
+  "checks": [
+    "WAV mono PCM16 24kHz",
+    "Each turn matches the joined audio exactly",
+    "Silent pauses between turns",
+    "Each timestamp belongs to its known speaker",
+    "Speaker tags excluded from spoken text"
+  ],
+  "timing_review": "Whisper marks eight low-confidence words for review before scene construction.",
+  "scenes": "pending",
+  "render": "pending"
+}

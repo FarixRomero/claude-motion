@@ -23,3 +23,6 @@ projects/**/004-Render/*
 projects/**/.pipeline.lock
 
 public/projects/
+
+projects/**/001-Voz/turns/*.wav
+projects/**/001-Voz/*.log

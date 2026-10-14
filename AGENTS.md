@@ -23,6 +23,8 @@ See `projects/README.md` for CLI commands and the timeline contract.
 - When audio or transcription changes, existing visual definitions are preserved and flagged for review. Revisit their times and references before rendering; do not trust old ordinal word IDs to represent the same words.
 - Keep generated WAVs and render outputs out of Git. `examples/` remains the gallery for finished pieces.
 
+For multi-speaker scripts, labels such as `[mi-voz]` and `[mujer]` map to `project.json`'s `speakers` profiles. Never speak the labels. `prepare` generates separate turn WAVs and a joined dialogue, then Whisper transcribes each turn and stores `speaker`/`turn` on word and phrase timings. Use that metadata to animate the active character; preserve the user's latest edited script. See `projects/002-dentista-permisos/` for an example.
+
 ## Visual direction for new narrated videos
 
 The user's default style is the reference in `projects/001-mi-video/003-Escenas/assets/style-reference.png`:

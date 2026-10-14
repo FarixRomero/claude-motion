@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "id": "002-dentista-permisos",
+  "engine": "remotion",
+  "width": 1080,
+  "height": 1920,
+  "style": "pixel-tech",
+  "fps": 60,
+  "closing_hold": 1,
+  "voice": {
+    "model": "chatterbox-multilingual-v3",
+    "profile": "mi-voz",
+    "language": "es",
+    "speed": 1.2,
+    "seed": 42
+  },
+  "whisper": {
+    "model": "turbo",
+    "device": "cuda"
+  },
+  "title": "Una cita, demasiados permisos",
+  "speakers": {
+    "mi-voz": {
+      "profile": "mi-voz",
+      "label": "Usuario / narrador"
+    },
+    "mujer": {
+      "profile": "mujer",
+      "label": "Asistente del consultorio"
+    }
+  },
+  "dialogue": {
+    "turn_pause": 0.35
+  }
+}

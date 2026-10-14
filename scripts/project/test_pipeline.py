@@ -54,6 +54,43 @@ class PipelineTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             pipeline.narration('# Solo un título\n<!-- Sin narración -->')
 
+    def test_dialogue_labels_are_not_spoken_and_repeated_speakers_keep_turns(self):
+        script = '# Diálogo\n[mi-voz]  \nHola.\n[mujer]\n¡Claro!\n[mi-voz]\nFin.\n[mi-voz]\nMoraleja.\n'
+        turns = pipeline.dialogue_turns(script, {'mi-voz': {}, 'mujer': {}})
+        self.assertEqual([t['speaker'] for t in turns], ['mi-voz', 'mujer', 'mi-voz', 'mi-voz'])
+        self.assertEqual([t['text'] for t in turns], ['Hola.', '¡Claro!', 'Fin.', 'Moraleja.'])
+        with self.assertRaisesRegex(ValueError, 'speakers'):
+            pipeline.narration(script)
+        with self.assertRaisesRegex(ValueError, 'desconocido'):
+            pipeline.dialogue_turns('[otra]\nHola.', {'mi-voz': {}})
+        with self.assertRaises(ValueError):
+            pipeline.dialogue_turns('Texto sin etiqueta.\n[mi-voz]\nHola.', {'mi-voz': {}})
+
+    def test_dialogue_fingerprints_include_both_profiles(self):
+        female = self.settings['voices_dir'] / 'mujer'
+        female.mkdir()
+        pipeline.write_json(female / 'voice.json', {'model': pipeline.MODEL})
+        (female / 'profile.pt').write_bytes(b'female-profile')
+        (female / 'reference.wav').write_bytes(b'female-reference')
+        self.config['speakers'] = {'mi-voz': {'profile': 'mi-voz'}, 'mujer': {'profile': 'mujer'}}
+        (self.project / '001-Voz/guion.md').write_text('[mi-voz]\nHola.\n[mujer]\nBuenas.')
+        key, _, text, plan = pipeline.voice_input(self.project, self.config, self.settings)
+        self.assertEqual(text, 'Hola.\nBuenas.\n')
+        self.assertEqual(len(plan), 2)
+        (female / 'profile.pt').write_bytes(b'new-female-profile')
+        self.assertNotEqual(key, pipeline.voice_input(self.project, self.config, self.settings)[0])
+
+    def test_known_turn_boundaries_split_whisper_phrases_by_speaker(self):
+        transcript = {'segments': [{'id': 'p0001', 'words': ['w1', 'w2']}],
+            'words': [{'id': 'w1', 'text': 'Hola.', 'start': 0.2, 'end': 0.8},
+                      {'id': 'w2', 'text': 'Buenas.', 'start': 1.4, 'end': 1.8}]}
+        turns = [{'id': 't1', 'speaker': 'mi-voz', 'start': 0, 'end': 1},
+                 {'id': 't2', 'speaker': 'mujer', 'start': 1.3, 'end': 2}]
+        pipeline.annotate_speakers(transcript, turns)
+        self.assertEqual([p['speaker'] for p in transcript['segments']], ['mi-voz', 'mujer'])
+        self.assertEqual([w['turn'] for w in transcript['words']], ['t1', 't2'])
+        self.assertEqual(transcript['words'][1]['phrase'], 'p0002')
+
     def test_changed_speed_invalidates_voice(self):
         key, *_ = pipeline.voice_input(self.project, self.config, self.settings)
         self.config['voice']['speed'] = 1.15

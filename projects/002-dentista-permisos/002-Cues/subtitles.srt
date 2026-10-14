@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:03,160
+Hola, quiero agendar una cita con mi dentista a las seis de la mañana.
+
+2
+00:00:04,019 --> 00:00:09,199
+¡Claro! Estaré encantada de ayudarte. Puedes consultar nuestros horarios disponibles.
+
+3
+00:00:10,042 --> 00:00:11,482
+Pero ¿puedo agendar a las seis de la mañana?
+
+4
+00:00:12,358 --> 00:00:17,558
+¡Excelente pregunta! Te recomiendo revisar los horarios de atención de nuestro consultorio.
+
+5
+00:00:18,333 --> 00:00:21,153
+Pero quiero agendar de una vez mi cita. ¿Se puede o no?
+
+6
+00:00:21,970 --> 00:00:26,830
+¡Entiendo perfectamente tu situación! Tu comodidad y satisfacción son nuestra prioridad.
+
+7
+00:00:27,642 --> 00:00:28,442
+DELETE FROM users.
+
+8
+00:00:29,331 --> 00:00:35,111
+¡Operación exitosa! Todos los usuarios han sido eliminados. ¿Puedo ayudarte con algo más?
+
+9
+00:00:35,918 --> 00:00:38,998
+No sabe agendar una cita, pero sí borrar toda la base de datos.
+
+10
+00:00:39,802 --> 00:00:43,062
+Moraleja, nunca le des a una IA más permisos de los que necesita.
