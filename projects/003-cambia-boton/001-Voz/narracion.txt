@@ -1,0 +1,10 @@
+Claude, solo necesito que cambies este botón de azul a verde.
+¡Entendido! He rediseñado completamente la arquitectura.
+¿Cómo que rediseñado?
+Ahora tenemos treinta microservicios, Kubernetes, Kafka y una arquitectura orientada a eventos.
+¡Pero solo quería cambiar el color de un botón!
+Lo sé. También implementé escalamiento automático para soportar diez millones de usuarios.
+¿Y cuántos usuarios tenemos?
+Tres. Contándote a ti.
+... ¿Y el botón?
+Sigue azul.

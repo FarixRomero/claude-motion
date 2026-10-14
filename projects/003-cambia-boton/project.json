@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "id": "003-cambia-boton",
+  "engine": "remotion",
+  "width": 1080,
+  "height": 1920,
+  "style": "pixel-tech",
+  "fps": 60,
+  "closing_hold": 2.5,
+  "voice": {
+    "model": "chatterbox-multilingual-v3",
+    "profile": "mi-voz",
+    "language": "es",
+    "speed": 1.2,
+    "seed": 42
+  },
+  "whisper": {
+    "model": "turbo",
+    "device": "cuda"
+  },
+  "title": "Solo cambia el botón",
+  "composition": "CambiaBotonVideo",
+  "sound_cues": "003-Escenas/sound.py",
+  "speakers": {
+    "Yo": {
+      "profile": "mi-voz",
+      "label": "Usuario",
+      "exaggeration": 0.35
+    },
+    "Claude": {
+      "profile": "mujer",
+      "label": "Claude · voz sintética genérica alegre",
+      "exaggeration": 0.6
+    }
+  },
+  "dialogue": {
+    "turn_pause": 0.42
+  }
+}

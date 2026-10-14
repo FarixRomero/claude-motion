@@ -160,6 +160,10 @@ npm run project -- doctor
 
 Un guion puede alternar etiquetas de hablante. Cada etiqueta inicia un turno:
 
+También se aceptan etiquetas al principio de la misma línea: `[Yo] ¿Y el botón?`.
+En `speakers`, `exaggeration` permite ajustar la expresividad por hablante
+(predeterminado 0,35; `003-cambia-boton` usa 0,6 para la voz alegre de Claude).
+
 ```text
 [mi-voz]
 Hola, quiero agendar una cita.

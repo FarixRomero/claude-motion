@@ -1,0 +1,30 @@
+{
+  "state": "needs_review",
+  "similarity": 1.0,
+  "differences": [],
+  "uncertain_words": [
+    "w00061"
+  ],
+  "warnings": [
+    "Hay palabras con baja confianza o duración cero; sus tiempos requieren revisión."
+  ],
+  "note": "Los tiempos de Whisper son estimaciones. El audio grabado es la referencia.",
+  "audio_sha256": "633a9f837936563187e1ff5a631bea2d3fb48236d9bd88ed3fd7d028b1259f16",
+  "claude_effect": "robot-soft",
+  "user_turns_preserved": true,
+  "uncertain_word_details": [
+    {
+      "id": "w00061",
+      "phrase": "p0009",
+      "speaker": "Yo",
+      "turn": "t0009",
+      "start": 27.005125,
+      "end": 27.425125,
+      "text": "¿CUARENTA",
+      "probability": 0.4899729251861572
+    }
+  ],
+  "intentional_silence": [
+    "t0011"
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "state": "needs_review",
+  "similarity": 1.0,
+  "differences": [],
+  "uncertain_words": [
+    "w00012",
+    "w00019",
+    "w00033",
+    "w00042",
+    "w00050",
+    "w00062"
+  ],
+  "warnings": [
+    "Hay palabras con baja confianza o duración cero; sus tiempos requieren revisión."
+  ],
+  "note": "Los tiempos de Whisper son estimaciones. El audio grabado es la referencia.",
+  "review": {
+    "method": "Independent Whisper pass without script context; word intervals and recorded turn boundaries compared.",
+    "uncertain_words": {
+      "w00012": "Independent pass: Bien entendido; on-script pass: Entendido. Opening recognition differs.",
+      "w00019": "Independent pass inserts he; on-script pass preserves que. Short connective ASR ambiguity.",
+      "w00033": "Pero recognized independently; punctuation restored for captions.",
+      "w00042": "Lo sé recognized independently.",
+      "w00050": "Independent pass confidently recognizes 10 at 22.70–22.92; same value as diez.",
+      "w00062": "¿Y el botón? recognized independently."
+    },
+    "proper_name": "Independent pass hears Claudio; contextual pass recognizes Claude. Proper-name pronunciation requires human listening review.",
+    "listening": "Direct audio perception is unavailable in this agent session; no claim of an auditory listening pass."
+  }
+}

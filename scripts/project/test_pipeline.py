@@ -40,6 +40,32 @@ class PipelineTests(unittest.TestCase):
         pipeline.write_json(self.project / '001-Voz/generation.json', dict(inputs, input_sha256=key,
                             audio_sha256=pipeline.digest(self.project / '001-Voz/voz.wav')))
 
+    def test_render_retains_reviewed_recording_after_worker_only_change(self):
+        self.prepared_voice()
+        generation = pipeline.read_json(self.project / '001-Voz/generation.json')
+        key, inputs, _, _ = pipeline.voice_input(self.project, self.config, self.settings)
+        generation['input_sha256'] = 'previous-worker-input'
+        generation['worker_sha256'] = 'previous-worker'
+        self.assertFalse(pipeline.render_voice_current(self.project, key, inputs, generation))
+        pipeline.write_json(self.project / '001-Voz/review.json', {
+            'render_voice_input_sha256': key, 'audio_sha256': generation['audio_sha256']})
+        self.assertTrue(pipeline.render_voice_current(self.project, key, inputs, generation))
+        (self.project / '001-Voz/voz.wav').write_bytes(b'changed-audio')
+        self.assertFalse(pipeline.render_voice_current(self.project, key, inputs, generation))
+
+    def test_review_cannot_accept_changed_script_profile_or_speed(self):
+        self.prepared_voice()
+        generation = pipeline.read_json(self.project / '001-Voz/generation.json')
+        generation['input_sha256'] = 'previous-worker-input'
+        generation['worker_sha256'] = 'previous-worker'
+        for changed in ('script_sha256', 'profile_sha256', 'voice'):
+            key, inputs, _, _ = pipeline.voice_input(self.project, self.config, self.settings)
+            inputs[changed] = {'speed': 1.5} if changed == 'voice' else 'changed'
+            key = pipeline.fingerprint(inputs)
+            pipeline.write_json(self.project / '001-Voz/review.json', {
+                'render_voice_input_sha256': key, 'audio_sha256': generation['audio_sha256']})
+            self.assertFalse(pipeline.render_voice_current(self.project, key, inputs, generation))
+
     def test_rejects_traversal_and_invalid_speed(self):
         for name in ('../other', '/tmp/other', 'two/parts'):
             with self.assertRaises(Exception):
@@ -77,8 +103,27 @@ class PipelineTests(unittest.TestCase):
         key, _, text, plan = pipeline.voice_input(self.project, self.config, self.settings)
         self.assertEqual(text, 'Hola.\nBuenas.\n')
         self.assertEqual(len(plan), 2)
+        self.config['speakers']['mujer']['exaggeration'] = 0.6
+        expressive_key, _, _, expressive_plan = pipeline.voice_input(self.project, self.config, self.settings)
+        self.assertNotEqual(key, expressive_key)
+        self.assertEqual(expressive_plan[1]['exaggeration'], 0.6)
         (female / 'profile.pt').write_bytes(b'new-female-profile')
+        self.assertNotEqual(expressive_key, pipeline.voice_input(self.project, self.config, self.settings)[0])
+
+    def test_robot_profile_settings_reach_the_dialogue_plan(self):
+        self.config['speakers'] = {'mi-voz': {'profile': 'mi-voz', 'effect': 'robot', 'cfg_weight': 0.65}}
+        (self.project / '001-Voz/guion.md').write_text('[mi-voz] Una prueba.')
+        key, _, _, plan = pipeline.voice_input(self.project, self.config, self.settings)
+        self.assertEqual(plan[0]['effect'], 'robot')
+        self.assertEqual(plan[0]['cfg_weight'], 0.65)
+        self.config['speakers']['mi-voz']['effect'] = 'none'
         self.assertNotEqual(key, pipeline.voice_input(self.project, self.config, self.settings)[0])
+
+    def test_inline_dialogue_preserves_text_without_speaking_labels(self):
+        turns = pipeline.dialogue_turns('# Guion\n\n[Yo] ¿Y el botón?\n\n[Claude] Sigue azul.',
+                                        {'Yo': {}, 'Claude': {}})
+        self.assertEqual([t['speaker'] for t in turns], ['Yo', 'Claude'])
+        self.assertEqual([t['text'] for t in turns], ['¿Y el botón?', 'Sigue azul.'])
 
     def test_known_turn_boundaries_split_whisper_phrases_by_speaker(self):
         transcript = {'segments': [{'id': 'p0001', 'words': ['w1', 'w2']}],

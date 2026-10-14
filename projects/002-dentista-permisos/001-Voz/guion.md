@@ -3,25 +3,25 @@
 [mi-voz]  
 Hola, quiero agendar una cita con mi dentista a las seis de la mañana.
 
-[mujer]  
-¡Claro! Estaré encantada de ayudarte. Puedes consultar nuestros horarios disponibles.
+[claude]  
+¡Claro! Estaré encantado de ayudarte. Puedes consultar nuestros horarios disponibles.
 
 [mi-voz]  
 Pero ¿puedo agendar a las seis de la mañana?
 
-[mujer]  
+[claude]  
 ¡Excelente pregunta! Te recomiendo revisar los horarios de atención de nuestro consultorio.
 
 [mi-voz]  
 ¡Pero quiero agendar de una vez mi cita! ¿Se puede o no?
 
-[mujer]  
+[claude]  
 ¡Entiendo perfectamente tu situación! Tu comodidad y satisfacción son nuestra prioridad.
 
 [mi-voz]  
 … DELETE FROM users;
 
-[mujer]  
+[claude]  
 ¡Operación exitosa! Todos los usuarios han sido eliminados. ¿Puedo ayudarte con algo más?
 
 [mi-voz]  

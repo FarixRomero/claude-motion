@@ -1,0 +1,950 @@
+{
+  "model": "faster-whisper/turbo",
+  "language": "es",
+  "text": "Claude, solo necesito que cambies este botón de azul a verde. ¡Entendido! He rediseñado completamente la arquitectura. ¿Cómo que rediseñado? Ahora tenemos treinta microservicios, Kubernetes, Kafka y una arquitectura orientada a eventos. Pero solo quería cambiar el color de un botón. Lo sé. También implementé escalamiento automático para soportar diez millones de usuarios. ¿Y cuántos usuarios tenemos? Tres. Contándote a ti. ¿Y el botón? Sigue azul.",
+  "segments": [
+    {
+      "id": "p0001",
+      "start": 0.0,
+      "end": 2.78,
+      "text": "Claude, solo necesito que cambies este botón de azul a verde.",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "words": [
+        "w00001",
+        "w00002",
+        "w00003",
+        "w00004",
+        "w00005",
+        "w00006",
+        "w00007",
+        "w00008",
+        "w00009",
+        "w00010",
+        "w00011"
+      ]
+    },
+    {
+      "id": "p0002",
+      "start": 3.6858333333333335,
+      "end": 7.225833333333334,
+      "text": "¡Entendido! He rediseñado completamente la arquitectura.",
+      "speaker": "Claude",
+      "turn": "t0002",
+      "words": [
+        "w00012",
+        "w00013",
+        "w00014",
+        "w00015",
+        "w00016",
+        "w00017"
+      ]
+    },
+    {
+      "id": "p0003",
+      "start": 8.128458333333333,
+      "end": 9.028458333333333,
+      "text": "¿Cómo que rediseñado?",
+      "speaker": "Yo",
+      "turn": "t0003",
+      "words": [
+        "w00018",
+        "w00019",
+        "w00020"
+      ]
+    },
+    {
+      "id": "p0004",
+      "start": 9.883791666666667,
+      "end": 15.503791666666668,
+      "text": "Ahora tenemos treinta microservicios, Kubernetes, Kafka y una arquitectura orientada a eventos.",
+      "speaker": "Claude",
+      "turn": "t0004",
+      "words": [
+        "w00021",
+        "w00022",
+        "w00023",
+        "w00024",
+        "w00025",
+        "w00026",
+        "w00027",
+        "w00028",
+        "w00029",
+        "w00030",
+        "w00031",
+        "w00032"
+      ]
+    },
+    {
+      "id": "p0005",
+      "start": 16.240458333333333,
+      "end": 17.900458333333333,
+      "text": "Pero solo quería cambiar el color de un botón.",
+      "speaker": "Yo",
+      "turn": "t0005",
+      "words": [
+        "w00033",
+        "w00034",
+        "w00035",
+        "w00036",
+        "w00037",
+        "w00038",
+        "w00039",
+        "w00040",
+        "w00041"
+      ]
+    },
+    {
+      "id": "p0006",
+      "start": 18.796541666666666,
+      "end": 23.976541666666666,
+      "text": "Lo sé. También implementé escalamiento automático para soportar diez millones de usuarios.",
+      "speaker": "Claude",
+      "turn": "t0006",
+      "words": [
+        "w00042",
+        "w00043",
+        "w00044",
+        "w00045",
+        "w00046",
+        "w00047",
+        "w00048",
+        "w00049",
+        "w00050",
+        "w00051",
+        "w00052",
+        "w00053"
+      ]
+    },
+    {
+      "id": "p0007",
+      "start": 24.90025,
+      "end": 25.90025,
+      "text": "¿Y cuántos usuarios tenemos?",
+      "speaker": "Yo",
+      "turn": "t0007",
+      "words": [
+        "w00054",
+        "w00055",
+        "w00056",
+        "w00057"
+      ]
+    },
+    {
+      "id": "p0008",
+      "start": 26.861,
+      "end": 28.581,
+      "text": "Tres. Contándote a ti.",
+      "speaker": "Claude",
+      "turn": "t0008",
+      "words": [
+        "w00058",
+        "w00059",
+        "w00060",
+        "w00061"
+      ]
+    },
+    {
+      "id": "p0009",
+      "start": 29.362041666666666,
+      "end": 30.182041666666667,
+      "text": "¿Y el botón?",
+      "speaker": "Yo",
+      "turn": "t0009",
+      "words": [
+        "w00062",
+        "w00063",
+        "w00064"
+      ]
+    },
+    {
+      "id": "p0010",
+      "start": 31.100375,
+      "end": 31.700375,
+      "text": "Sigue azul.",
+      "speaker": "Claude",
+      "turn": "t0010",
+      "words": [
+        "w00065",
+        "w00066"
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w00001",
+      "phrase": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 0.0,
+      "end": 0.36,
+      "text": "Claude,",
+      "probability": 0.61370849609375
+    },
+    {
+      "id": "w00002",
+      "phrase": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 0.7,
+      "end": 0.82,
+      "text": "solo",
+      "probability": 0.96728515625
+    },
+    {
+      "id": "w00003",
+      "phrase": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 0.82,
+      "end": 1.24,
+      "text": "necesito",
+      "probability": 0.999755859375
+    },
+    {
+      "id": "w00004",
+      "phrase": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 1.24,
+      "end": 1.36,
+      "text": "que",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00005",
+      "phrase": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 1.36,
+      "end": 1.7,
+      "text": "cambies",
+      "probability": 0.998291015625
+    },
+    {
+      "id": "w00006",
+      "phrase": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 1.7,
+      "end": 1.96,
+      "text": "este",
+      "probability": 0.99755859375
+    },
+    {
+      "id": "w00007",
+      "phrase": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 1.96,
+      "end": 2.22,
+      "text": "botón",
+      "probability": 0.997802734375
+    },
+    {
+      "id": "w00008",
+      "phrase": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 2.22,
+      "end": 2.32,
+      "text": "de",
+      "probability": 0.998046875
+    },
+    {
+      "id": "w00009",
+      "phrase": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 2.32,
+      "end": 2.5,
+      "text": "azul",
+      "probability": 0.99658203125
+    },
+    {
+      "id": "w00010",
+      "phrase": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 2.5,
+      "end": 2.58,
+      "text": "a",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00011",
+      "phrase": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 2.58,
+      "end": 2.78,
+      "text": "verde.",
+      "probability": 0.9990234375
+    },
+    {
+      "id": "w00012",
+      "phrase": "p0002",
+      "speaker": "Claude",
+      "turn": "t0002",
+      "start": 3.6858333333333335,
+      "end": 4.345833333333333,
+      "text": "¡Entendido!",
+      "probability": 0.4998984932899475
+    },
+    {
+      "id": "w00013",
+      "phrase": "p0002",
+      "speaker": "Claude",
+      "turn": "t0002",
+      "start": 4.585833333333333,
+      "end": 5.085833333333333,
+      "text": "He",
+      "probability": 0.654296875
+    },
+    {
+      "id": "w00014",
+      "phrase": "p0002",
+      "speaker": "Claude",
+      "turn": "t0002",
+      "start": 5.085833333333333,
+      "end": 5.685833333333333,
+      "text": "rediseñado",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00015",
+      "phrase": "p0002",
+      "speaker": "Claude",
+      "turn": "t0002",
+      "start": 5.685833333333333,
+      "end": 6.245833333333334,
+      "text": "completamente",
+      "probability": 0.99755859375
+    },
+    {
+      "id": "w00016",
+      "phrase": "p0002",
+      "speaker": "Claude",
+      "turn": "t0002",
+      "start": 6.245833333333334,
+      "end": 6.585833333333333,
+      "text": "la",
+      "probability": 0.99755859375
+    },
+    {
+      "id": "w00017",
+      "phrase": "p0002",
+      "speaker": "Claude",
+      "turn": "t0002",
+      "start": 6.585833333333333,
+      "end": 7.225833333333334,
+      "text": "arquitectura.",
+      "probability": 0.9988606770833334
+    },
+    {
+      "id": "w00018",
+      "phrase": "p0003",
+      "speaker": "Yo",
+      "turn": "t0003",
+      "start": 8.128458333333333,
+      "end": 8.368458333333333,
+      "text": "¿Cómo",
+      "probability": 0.808349609375
+    },
+    {
+      "id": "w00019",
+      "phrase": "p0003",
+      "speaker": "Yo",
+      "turn": "t0003",
+      "start": 8.368458333333333,
+      "end": 8.468458333333333,
+      "text": "que",
+      "probability": 0.42822265625
+    },
+    {
+      "id": "w00020",
+      "phrase": "p0003",
+      "speaker": "Yo",
+      "turn": "t0003",
+      "start": 8.468458333333333,
+      "end": 9.028458333333333,
+      "text": "rediseñado?",
+      "probability": 0.7628173828125
+    },
+    {
+      "id": "w00021",
+      "phrase": "p0004",
+      "speaker": "Claude",
+      "turn": "t0004",
+      "start": 9.883791666666667,
+      "end": 10.183791666666668,
+      "text": "Ahora",
+      "probability": 0.96875
+    },
+    {
+      "id": "w00022",
+      "phrase": "p0004",
+      "speaker": "Claude",
+      "turn": "t0004",
+      "start": 10.183791666666668,
+      "end": 10.563791666666667,
+      "text": "tenemos",
+      "probability": 0.99658203125
+    },
+    {
+      "id": "w00023",
+      "phrase": "p0004",
+      "speaker": "Claude",
+      "turn": "t0004",
+      "start": 10.563791666666667,
+      "end": 11.003791666666668,
+      "text": "treinta",
+      "probability": 0.5034828186035156
+    },
+    {
+      "id": "w00024",
+      "phrase": "p0004",
+      "speaker": "Claude",
+      "turn": "t0004",
+      "start": 11.003791666666668,
+      "end": 11.863791666666668,
+      "text": "microservicios,",
+      "probability": 0.98876953125
+    },
+    {
+      "id": "w00025",
+      "phrase": "p0004",
+      "speaker": "Claude",
+      "turn": "t0004",
+      "start": 12.123791666666667,
+      "end": 12.463791666666667,
+      "text": "Kubernetes,",
+      "probability": 0.94091796875
+    },
+    {
+      "id": "w00026",
+      "phrase": "p0004",
+      "speaker": "Claude",
+      "turn": "t0004",
+      "start": 12.883791666666667,
+      "end": 13.163791666666667,
+      "text": "Kafka",
+      "probability": 0.9951171875
+    },
+    {
+      "id": "w00027",
+      "phrase": "p0004",
+      "speaker": "Claude",
+      "turn": "t0004",
+      "start": 13.163791666666667,
+      "end": 13.463791666666667,
+      "text": "y",
+      "probability": 0.90869140625
+    },
+    {
+      "id": "w00028",
+      "phrase": "p0004",
+      "speaker": "Claude",
+      "turn": "t0004",
+      "start": 13.463791666666667,
+      "end": 13.683791666666668,
+      "text": "una",
+      "probability": 0.99755859375
+    },
+    {
+      "id": "w00029",
+      "phrase": "p0004",
+      "speaker": "Claude",
+      "turn": "t0004",
+      "start": 13.683791666666668,
+      "end": 14.323791666666668,
+      "text": "arquitectura",
+      "probability": 0.9970703125
+    },
+    {
+      "id": "w00030",
+      "phrase": "p0004",
+      "speaker": "Claude",
+      "turn": "t0004",
+      "start": 14.323791666666668,
+      "end": 14.883791666666667,
+      "text": "orientada",
+      "probability": 0.9990234375
+    },
+    {
+      "id": "w00031",
+      "phrase": "p0004",
+      "speaker": "Claude",
+      "turn": "t0004",
+      "start": 14.883791666666667,
+      "end": 15.003791666666668,
+      "text": "a",
+      "probability": 0.99609375
+    },
+    {
+      "id": "w00032",
+      "phrase": "p0004",
+      "speaker": "Claude",
+      "turn": "t0004",
+      "start": 15.003791666666668,
+      "end": 15.503791666666668,
+      "text": "eventos.",
+      "probability": 0.99169921875
+    },
+    {
+      "id": "w00033",
+      "phrase": "p0005",
+      "speaker": "Yo",
+      "turn": "t0005",
+      "start": 16.240458333333333,
+      "end": 16.420458333333332,
+      "text": "Pero",
+      "probability": 0.47607421875
+    },
+    {
+      "id": "w00034",
+      "phrase": "p0005",
+      "speaker": "Yo",
+      "turn": "t0005",
+      "start": 16.420458333333332,
+      "end": 16.580458333333333,
+      "text": "solo",
+      "probability": 0.82470703125
+    },
+    {
+      "id": "w00035",
+      "phrase": "p0005",
+      "speaker": "Yo",
+      "turn": "t0005",
+      "start": 16.580458333333333,
+      "end": 16.80045833333333,
+      "text": "quería",
+      "probability": 0.9970703125
+    },
+    {
+      "id": "w00036",
+      "phrase": "p0005",
+      "speaker": "Yo",
+      "turn": "t0005",
+      "start": 16.80045833333333,
+      "end": 17.080458333333333,
+      "text": "cambiar",
+      "probability": 0.99755859375
+    },
+    {
+      "id": "w00037",
+      "phrase": "p0005",
+      "speaker": "Yo",
+      "turn": "t0005",
+      "start": 17.080458333333333,
+      "end": 17.200458333333334,
+      "text": "el",
+      "probability": 0.99755859375
+    },
+    {
+      "id": "w00038",
+      "phrase": "p0005",
+      "speaker": "Yo",
+      "turn": "t0005",
+      "start": 17.200458333333334,
+      "end": 17.440458333333332,
+      "text": "color",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00039",
+      "phrase": "p0005",
+      "speaker": "Yo",
+      "turn": "t0005",
+      "start": 17.440458333333332,
+      "end": 17.560458333333333,
+      "text": "de",
+      "probability": 0.99853515625
+    },
+    {
+      "id": "w00040",
+      "phrase": "p0005",
+      "speaker": "Yo",
+      "turn": "t0005",
+      "start": 17.560458333333333,
+      "end": 17.620458333333332,
+      "text": "un",
+      "probability": 0.9990234375
+    },
+    {
+      "id": "w00041",
+      "phrase": "p0005",
+      "speaker": "Yo",
+      "turn": "t0005",
+      "start": 17.620458333333332,
+      "end": 17.900458333333333,
+      "text": "botón.",
+      "probability": 0.9990234375
+    },
+    {
+      "id": "w00042",
+      "phrase": "p0006",
+      "speaker": "Claude",
+      "turn": "t0006",
+      "start": 18.796541666666666,
+      "end": 18.896541666666668,
+      "text": "Lo",
+      "probability": 0.287841796875
+    },
+    {
+      "id": "w00043",
+      "phrase": "p0006",
+      "speaker": "Claude",
+      "turn": "t0006",
+      "start": 18.896541666666668,
+      "end": 19.056541666666668,
+      "text": "sé.",
+      "probability": 0.99755859375
+    },
+    {
+      "id": "w00044",
+      "phrase": "p0006",
+      "speaker": "Claude",
+      "turn": "t0006",
+      "start": 19.416541666666667,
+      "end": 19.976541666666666,
+      "text": "También",
+      "probability": 0.9990234375
+    },
+    {
+      "id": "w00045",
+      "phrase": "p0006",
+      "speaker": "Claude",
+      "turn": "t0006",
+      "start": 19.976541666666666,
+      "end": 20.676541666666665,
+      "text": "implementé",
+      "probability": 0.998291015625
+    },
+    {
+      "id": "w00046",
+      "phrase": "p0006",
+      "speaker": "Claude",
+      "turn": "t0006",
+      "start": 20.676541666666665,
+      "end": 21.336541666666665,
+      "text": "escalamiento",
+      "probability": 0.99755859375
+    },
+    {
+      "id": "w00047",
+      "phrase": "p0006",
+      "speaker": "Claude",
+      "turn": "t0006",
+      "start": 21.336541666666665,
+      "end": 21.936541666666667,
+      "text": "automático",
+      "probability": 1.0
+    },
+    {
+      "id": "w00048",
+      "phrase": "p0006",
+      "speaker": "Claude",
+      "turn": "t0006",
+      "start": 21.936541666666667,
+      "end": 22.156541666666666,
+      "text": "para",
+      "probability": 0.99853515625
+    },
+    {
+      "id": "w00049",
+      "phrase": "p0006",
+      "speaker": "Claude",
+      "turn": "t0006",
+      "start": 22.156541666666666,
+      "end": 22.716541666666664,
+      "text": "soportar",
+      "probability": 0.9998372395833334
+    },
+    {
+      "id": "w00050",
+      "phrase": "p0006",
+      "speaker": "Claude",
+      "turn": "t0006",
+      "start": 22.716541666666664,
+      "end": 22.876541666666668,
+      "text": "diez",
+      "probability": 0.0215911865234375
+    },
+    {
+      "id": "w00051",
+      "phrase": "p0006",
+      "speaker": "Claude",
+      "turn": "t0006",
+      "start": 22.876541666666668,
+      "end": 23.276541666666667,
+      "text": "millones",
+      "probability": 1.0
+    },
+    {
+      "id": "w00052",
+      "phrase": "p0006",
+      "speaker": "Claude",
+      "turn": "t0006",
+      "start": 23.276541666666667,
+      "end": 23.476541666666666,
+      "text": "de",
+      "probability": 1.0
+    },
+    {
+      "id": "w00053",
+      "phrase": "p0006",
+      "speaker": "Claude",
+      "turn": "t0006",
+      "start": 23.476541666666666,
+      "end": 23.976541666666666,
+      "text": "usuarios.",
+      "probability": 0.999755859375
+    },
+    {
+      "id": "w00054",
+      "phrase": "p0007",
+      "speaker": "Yo",
+      "turn": "t0007",
+      "start": 24.90025,
+      "end": 25.08025,
+      "text": "¿Y",
+      "probability": 0.792724609375
+    },
+    {
+      "id": "w00055",
+      "phrase": "p0007",
+      "speaker": "Yo",
+      "turn": "t0007",
+      "start": 25.08025,
+      "end": 25.42025,
+      "text": "cuántos",
+      "probability": 0.978271484375
+    },
+    {
+      "id": "w00056",
+      "phrase": "p0007",
+      "speaker": "Yo",
+      "turn": "t0007",
+      "start": 25.42025,
+      "end": 25.70025,
+      "text": "usuarios",
+      "probability": 0.989501953125
+    },
+    {
+      "id": "w00057",
+      "phrase": "p0007",
+      "speaker": "Yo",
+      "turn": "t0007",
+      "start": 25.70025,
+      "end": 25.90025,
+      "text": "tenemos?",
+      "probability": 0.9990234375
+    },
+    {
+      "id": "w00058",
+      "phrase": "p0008",
+      "speaker": "Claude",
+      "turn": "t0008",
+      "start": 26.861,
+      "end": 27.201,
+      "text": "Tres.",
+      "probability": 0.55377197265625
+    },
+    {
+      "id": "w00059",
+      "phrase": "p0008",
+      "speaker": "Claude",
+      "turn": "t0008",
+      "start": 27.781000000000002,
+      "end": 28.341,
+      "text": "Contándote",
+      "probability": 0.99853515625
+    },
+    {
+      "id": "w00060",
+      "phrase": "p0008",
+      "speaker": "Claude",
+      "turn": "t0008",
+      "start": 28.341,
+      "end": 28.481,
+      "text": "a",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00061",
+      "phrase": "p0008",
+      "speaker": "Claude",
+      "turn": "t0008",
+      "start": 28.481,
+      "end": 28.581,
+      "text": "ti.",
+      "probability": 0.99365234375
+    },
+    {
+      "id": "w00062",
+      "phrase": "p0009",
+      "speaker": "Yo",
+      "turn": "t0009",
+      "start": 29.362041666666666,
+      "end": 29.742041666666665,
+      "text": "¿Y",
+      "probability": 0.28481483459472656
+    },
+    {
+      "id": "w00063",
+      "phrase": "p0009",
+      "speaker": "Yo",
+      "turn": "t0009",
+      "start": 29.742041666666665,
+      "end": 29.822041666666667,
+      "text": "el",
+      "probability": 0.9140625
+    },
+    {
+      "id": "w00064",
+      "phrase": "p0009",
+      "speaker": "Yo",
+      "turn": "t0009",
+      "start": 29.822041666666667,
+      "end": 30.182041666666667,
+      "text": "botón?",
+      "probability": 0.9384765625
+    },
+    {
+      "id": "w00065",
+      "phrase": "p0010",
+      "speaker": "Claude",
+      "turn": "t0010",
+      "start": 31.100375,
+      "end": 31.440375,
+      "text": "Sigue",
+      "probability": 0.9833984375
+    },
+    {
+      "id": "w00066",
+      "phrase": "p0010",
+      "speaker": "Claude",
+      "turn": "t0010",
+      "start": 31.440375,
+      "end": 31.700375,
+      "text": "azul.",
+      "probability": 0.97998046875
+    }
+  ],
+  "turns": [
+    {
+      "id": "t0001",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "Claude, solo necesito que cambies este botón de azul a verde.",
+      "start": 0.0,
+      "end": 3.265833333333333,
+      "audio": "turns/t0001-Yo.wav",
+      "seed": 42,
+      "exaggeration": 0.35
+    },
+    {
+      "id": "t0002",
+      "speaker": "Claude",
+      "profile": "mujer",
+      "text": "¡Entendido! He rediseñado completamente la arquitectura.",
+      "start": 3.6858333333333335,
+      "end": 7.708458333333333,
+      "audio": "turns/t0002-Claude.wav",
+      "seed": 43,
+      "exaggeration": 0.6
+    },
+    {
+      "id": "t0003",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¿Cómo que rediseñado?",
+      "start": 8.128458333333333,
+      "end": 9.463791666666665,
+      "audio": "turns/t0003-Yo.wav",
+      "seed": 44,
+      "exaggeration": 0.35
+    },
+    {
+      "id": "t0004",
+      "speaker": "Claude",
+      "profile": "mujer",
+      "text": "Ahora tenemos treinta microservicios, Kubernetes, Kafka y una arquitectura orientada a eventos.",
+      "start": 9.883791666666667,
+      "end": 15.820458333333335,
+      "audio": "turns/t0004-Claude.wav",
+      "seed": 45,
+      "exaggeration": 0.6
+    },
+    {
+      "id": "t0005",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¡Pero solo quería cambiar el color de un botón!",
+      "start": 16.240458333333333,
+      "end": 18.376541666666665,
+      "audio": "turns/t0005-Yo.wav",
+      "seed": 46,
+      "exaggeration": 0.35
+    },
+    {
+      "id": "t0006",
+      "speaker": "Claude",
+      "profile": "mujer",
+      "text": "Lo sé. También implementé escalamiento automático para soportar diez millones de usuarios.",
+      "start": 18.796541666666666,
+      "end": 24.480249999999998,
+      "audio": "turns/t0006-Claude.wav",
+      "seed": 47,
+      "exaggeration": 0.6
+    },
+    {
+      "id": "t0007",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¿Y cuántos usuarios tenemos?",
+      "start": 24.90025,
+      "end": 26.441,
+      "audio": "turns/t0007-Yo.wav",
+      "seed": 48,
+      "exaggeration": 0.35
+    },
+    {
+      "id": "t0008",
+      "speaker": "Claude",
+      "profile": "mujer",
+      "text": "Tres. Contándote a ti.",
+      "start": 26.861,
+      "end": 28.942041666666668,
+      "audio": "turns/t0008-Claude.wav",
+      "seed": 49,
+      "exaggeration": 0.6
+    },
+    {
+      "id": "t0009",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "... ¿Y el botón?",
+      "start": 29.362041666666666,
+      "end": 30.680374999999998,
+      "audio": "turns/t0009-Yo.wav",
+      "seed": 50,
+      "exaggeration": 0.35
+    },
+    {
+      "id": "t0010",
+      "speaker": "Claude",
+      "profile": "mujer",
+      "text": "Sigue azul.",
+      "start": 31.100375,
+      "end": 32.16704166666667,
+      "audio": "turns/t0010-Claude.wav",
+      "seed": 51,
+      "exaggeration": 0.6
+    }
+  ],
+  "recognition": "Per-turn audio with script context; speaker known from generation.",
+  "duration": 32.167042,
+  "audio_sha256": "6ef057ab0c09cc347ad956098696daca471f68fee70116359bbbd6d0b206312c"
+}

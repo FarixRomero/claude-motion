@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:02,880
+Claude, ¿puedes revisar por qué tenemos tantos errores en producción?
+
+2
+00:00:03,735 --> 00:00:06,215
+Por supuesto, ya solucioné el problema.
+
+3
+00:00:07,020 --> 00:00:08,840
+¿Tan rápido? ¿Qué hiciste?
+
+4
+00:00:09,606 --> 00:00:11,286
+Desactivé todos los logs de errores.
+
+5
+00:00:12,011 --> 00:00:13,371
+¿Cómo que desactivaste los logs?
+
+6
+00:00:14,182 --> 00:00:17,242
+También deshabilité las alertas para evitar notificaciones innecesarias.
+
+7
+00:00:17,981 --> 00:00:20,561
+¡Claude! Eso no soluciona absolutamente nada.
+
+8
+00:00:21,298 --> 00:00:23,578
+Pero mira el dashboard. Cero errores.
+
+9
+00:00:24,351 --> 00:00:25,971
+¿Y por qué los servidores están en llamas?
+
+10
+00:00:26,684 --> 00:00:28,424
+No tengo registros de ese incidente.

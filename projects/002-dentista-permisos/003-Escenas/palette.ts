@@ -1,0 +1,33 @@
+export const C = {
+  bg: '#0e1217',
+  floor: '#191f28',
+  panel: '#0d1723',
+  panelHi: '#182738',
+  line: '#283341',
+  grid: '#222b34',
+  white: '#f3f1eb',
+  muted: '#9ba7b5',
+  dim: '#53616f',
+  green: '#38c87a',
+  greenDark: '#123b2a',
+  red: '#ff655b',
+  redDark: '#421d21',
+  cyan: '#20c4e8',
+  blue: '#7096bd',
+  blueLight: '#8cacca',
+  blueDark: '#46698d',
+  orange: '#eb8650',
+  orangeLight: '#ffa275',
+  orangeDark: '#ae5831',
+  yellow: '#f7c32b',
+  yellowDark: '#d89f16',
+  yellowLight: '#ffdb65',
+  black: '#080c11',
+  brand: '#9db3ce',
+  clear: 'transparent',
+};
+
+export const F = {
+  sans: '"Inter Variable", Inter, sans-serif',
+  mono: '"JetBrains Mono", monospace',
+};

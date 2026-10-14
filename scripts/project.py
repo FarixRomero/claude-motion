@@ -105,6 +105,7 @@ def profile(settings, config):
 
 def dialogue_turns(script, speakers):
     clean = re.sub(r'<!--.*?-->', '', script, flags=re.S)
+    clean = re.sub(r'^\[([A-Za-z0-9_-]+)\][ \t]+(?=\S)', r'[\1]\n', clean, flags=re.M)
     parts = re.split(r'^\[([A-Za-z0-9_-]+)\]\s*$', clean, flags=re.M)
     intro = '\n'.join(line for line in parts[0].splitlines() if line.strip() and not re.match(r'^#{1,6}\s', line.strip()))
     if intro.strip() or len(parts) == 1:
@@ -128,7 +129,10 @@ def voice_input(project, config, settings):
             speaker = turn['speaker']
             name = config['speakers'][speaker]['profile']
             directory = profile(settings, {'voice': {'profile': name}})
-            turn.update(profile=name, profile_path=str(directory))
+            turn.update(profile=name, profile_path=str(directory),
+                        exaggeration=config['speakers'][speaker].get('exaggeration', 0.35),
+                        cfg_weight=config['speakers'][speaker].get('cfg_weight', 0.4),
+                        effect=config['speakers'][speaker].get('effect', 'none'))
             profiles[speaker] = digest(directory / 'profile.pt')
         text = '\n'.join(turn['text'] for turn in turns) + '\n'
         inputs = {'script_sha256': digest(project / '001-Voz/guion.md'),
@@ -384,13 +388,27 @@ def synchronize(project, config, settings, force=False):
         print(timeline['visuals']['reason'])
 
 
+def render_voice_current(project, key, inputs, generation):
+    audio_hash = digest(project / '001-Voz/voz.wav')
+    if generation.get('audio_sha256') != audio_hash or digest(project / '001-Voz/narracion.txt') != inputs['narration_sha256']:
+        return False
+    if generation.get('input_sha256') == key:
+        return True
+    # A reviewed recording can survive a worker-only change without rewriting its provenance.
+    review_file = project / '001-Voz/review.json'
+    if not review_file.exists() or any(generation.get(k) != v for k, v in inputs.items() if k != 'worker_sha256'):
+        return False
+    review = read_json(review_file)
+    return review.get('render_voice_input_sha256') == key and review.get('audio_sha256') == audio_hash
+
+
 def status(project, config, settings):
     voice_state = 'pendiente'
     sync_state = 'pendiente'
     try:
-        key, _, _, _ = voice_input(project, config, settings)
+        key, inputs, _, _ = voice_input(project, config, settings)
         metadata = read_json(project / '001-Voz/generation.json')
-        voice_state = 'al día' if metadata.get('input_sha256') == key and metadata.get('audio_sha256') == digest(project / '001-Voz/voz.wav') and metadata.get('narration_sha256') == digest(project / '001-Voz/narracion.txt') else 'desactualizada'
+        voice_state = 'al día' if render_voice_current(project, key, inputs, metadata) else 'desactualizada'
     except (ValueError, OSError, KeyError) as error:
         print(f'Voz: {error}')
     timeline = read_json(project / '002-Cues/Timeline.json')
@@ -423,9 +441,9 @@ def status(project, config, settings):
 
 
 def check_prepared(project, config, settings):
-    key, _, _, _ = voice_input(project, config, settings)
+    key, inputs, _, _ = voice_input(project, config, settings)
     generation = read_json(project / '001-Voz/generation.json')
-    if generation.get('input_sha256') != key or generation.get('audio_sha256') != digest(project / '001-Voz/voz.wav'):
+    if not render_voice_current(project, key, inputs, generation):
         raise ValueError('La voz está desactualizada. Ejecuta prepare antes de renderizar.')
     timeline = read_json(project / '002-Cues/Timeline.json')
     if timeline.get('sync', {}).get('input_sha256') != sync_input(project, config):

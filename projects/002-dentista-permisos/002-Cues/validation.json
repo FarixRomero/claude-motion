@@ -15,5 +15,10 @@
   "warnings": [
     "Hay palabras con baja confianza o duración cero; sus tiempos requieren revisión."
   ],
-  "note": "Los tiempos de Whisper son estimaciones. El audio grabado es la referencia."
+  "note": "Los tiempos de Whisper son estimaciones. El audio grabado es la referencia.",
+  "review": {
+    "state": "reviewed",
+    "note": "Audio del diálogo revisado; los ocho avisos de confianza se conservan. Sus intervalos son positivos, secuenciales y pertenecen al turno grabado. Se conservan las estimaciones de Whisper; no se cambia la grabación aprobada.",
+    "audio_sha256": "ac7555683ff1d5bb3b42270b801f9dd5fd9ec1c8a3aa09f0dadb10b1edd6851b"
+  }
 }

@@ -1,0 +1,319 @@
+{
+  "sample_rate": 24000,
+  "duration": 38.815625,
+  "gpu": "NVIDIA GeForce RTX 4070 Ti",
+  "segments": [
+    {
+      "text": "Claude, ¿por qué se me acabaron todos los tokens?",
+      "start": 0.0,
+      "end": 2.1,
+      "turn": "t0001",
+      "speaker": "Yo"
+    },
+    {
+      "text": "¡He completado exitosamente tu solicitud!",
+      "start": 2.4546666666666668,
+      "end": 4.788,
+      "turn": "t0002",
+      "speaker": "Claude"
+    },
+    {
+      "text": "¿Cuál solicitud?",
+      "start": 5.138083333333333,
+      "end": 6.571416666666667,
+      "turn": "t0003",
+      "speaker": "Yo"
+    },
+    {
+      "text": "¡Solo te pedí que cambiaras el nombre de una variable!",
+      "start": 6.7547500000000005,
+      "end": 9.688083333333331,
+      "turn": "t0003",
+      "speaker": "Yo"
+    },
+    {
+      "text": "Correcto.",
+      "start": 10.042041666666666,
+      "end": 10.842041666666667,
+      "turn": "t0004",
+      "speaker": "Claude"
+    },
+    {
+      "text": "Para garantizar la calidad, analicé los 847 archivos del proyecto.",
+      "start": 11.025374999999999,
+      "end": 15.017291666666665,
+      "turn": "t0004",
+      "speaker": "Claude"
+    },
+    {
+      "text": "¿¡Ochocientos cuarenta y siete archivos!?",
+      "start": 15.367291666666667,
+      "end": 17.733958333333334,
+      "turn": "t0005",
+      "speaker": "Yo"
+    },
+    {
+      "text": "También revisé toda la arquitectura, ejecuté 200 pruebas y generé 15 documentos.",
+      "start": 18.085208333333334,
+      "end": 23.184083333333334,
+      "turn": "t0006",
+      "speaker": "Claude"
+    },
+    {
+      "text": "¿Y cuánto me costó?",
+      "start": 23.534083333333335,
+      "end": 24.934083333333334,
+      "turn": "t0007",
+      "speaker": "Yo"
+    },
+    {
+      "text": "47 dólares.",
+      "start": 25.289625,
+      "end": 26.655125,
+      "turn": "t0008",
+      "speaker": "Claude"
+    },
+    {
+      "text": "¡¿CUARENTA Y SIETE DÓLARES?!",
+      "start": 27.005125,
+      "end": 28.705125,
+      "turn": "t0009",
+      "speaker": "Yo"
+    },
+    {
+      "text": "¿Al menos cambiaste la variable?",
+      "start": 28.888458333333332,
+      "end": 30.621791666666667,
+      "turn": "t0009",
+      "speaker": "Yo"
+    },
+    {
+      "text": "No.",
+      "start": 30.972708333333333,
+      "end": 31.639375,
+      "turn": "t0010",
+      "speaker": "Claude"
+    },
+    {
+      "text": "Necesito tu autorización para editar el archivo.",
+      "start": 31.822708333333335,
+      "end": 34.489375,
+      "turn": "t0010",
+      "speaker": "Claude"
+    },
+    {
+      "text": "¿Deseas que continúe?",
+      "start": 35.363958333333336,
+      "end": 36.830625000000005,
+      "turn": "t0012",
+      "speaker": "Claude"
+    },
+    {
+      "text": "Estimo otros 80 dólares.",
+      "start": 37.013958333333335,
+      "end": 38.81395833333334,
+      "turn": "t0012",
+      "speaker": "Claude"
+    }
+  ],
+  "turns": [
+    {
+      "id": "t0001",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "Claude, ¿por qué se me acabaron todos los tokens?",
+      "start": 0.0,
+      "end": 2.1046666666666667,
+      "audio": "turns/t0001-Yo.wav",
+      "seed": 42,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0002",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "¡He completado exitosamente tu solicitud!",
+      "start": 2.4546666666666668,
+      "end": 4.788083333333333,
+      "audio": "turns/t0002-Claude.wav",
+      "seed": 43,
+      "effect": "robot-soft",
+      "reused_audio": false,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0003",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¿Cuál solicitud? ¡Solo te pedí que cambiaras el nombre de una variable!",
+      "start": 5.138083333333333,
+      "end": 9.692041666666666,
+      "audio": "turns/t0003-Yo.wav",
+      "seed": 44,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0004",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "Correcto. Para garantizar la calidad, analicé los 847 archivos del proyecto.",
+      "start": 10.042041666666666,
+      "end": 15.017291666666665,
+      "audio": "turns/t0004-Claude.wav",
+      "seed": 45,
+      "effect": "robot-soft",
+      "reused_audio": false,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0005",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¿¡Ochocientos cuarenta y siete archivos!?",
+      "start": 15.367291666666667,
+      "end": 17.735208333333333,
+      "audio": "turns/t0005-Yo.wav",
+      "seed": 46,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0006",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "También revisé toda la arquitectura, ejecuté 200 pruebas y generé 15 documentos.",
+      "start": 18.085208333333334,
+      "end": 23.184083333333334,
+      "audio": "turns/t0006-Claude.wav",
+      "seed": 47,
+      "effect": "robot-soft",
+      "reused_audio": false,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0007",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¿Y cuánto me costó?",
+      "start": 23.534083333333335,
+      "end": 24.939625000000003,
+      "audio": "turns/t0007-Yo.wav",
+      "seed": 48,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0008",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "47 dólares.",
+      "start": 25.289625,
+      "end": 26.655125,
+      "audio": "turns/t0008-Claude.wav",
+      "seed": 49,
+      "effect": "robot-soft",
+      "reused_audio": false,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0009",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¡¿CUARENTA Y SIETE DÓLARES?! ¿Al menos cambiaste la variable?",
+      "start": 27.005125,
+      "end": 30.622708333333332,
+      "audio": "turns/t0009-Yo.wav",
+      "seed": 50,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0010",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "No. Necesito tu autorización para editar el archivo.",
+      "start": 30.972708333333333,
+      "end": 34.49516666666667,
+      "audio": "turns/t0010-Claude.wav",
+      "seed": 51,
+      "effect": "robot-soft",
+      "reused_audio": false,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0011",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "...",
+      "start": 34.845166666666664,
+      "end": 35.01395833333333,
+      "audio": "turns/t0011-Yo.wav",
+      "seed": 52,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0012",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "¿Deseas que continúe? Estimo otros 80 dólares.",
+      "start": 35.363958333333336,
+      "end": 38.815625000000004,
+      "audio": "turns/t0012-Claude.wav",
+      "seed": 53,
+      "effect": "robot-soft",
+      "reused_audio": false,
+      "exaggeration": 0.2
+    }
+  ],
+  "synthesis": {
+    "exaggeration": 0.35,
+    "cfg_weight": 0.4,
+    "temperature": 0.65,
+    "repetition_penalty": 1.3,
+    "phrase_pause_seconds": 0.22,
+    "turn_pause_seconds": 0.35,
+    "turn_loudness_target": -18
+  },
+  "script_sha256": "85360dcdf36d81cfb606be48a0f89a9d7d28e5627e5b78ad5d74f8846ca41a0c",
+  "narration_sha256": "736a55b9eaef479e1ec76ebeb8549ed6b4875b04ed8bf849b285c6095d5b75c6",
+  "speaker_profiles_sha256": {
+    "Yo": "8132fa383f5a7fc40616a98db3899def80f3427e8a11a82013b34f9ff63fface",
+    "Claude": "e15923b6913949f38d87de3d06f04ce15ba22eed23819b5d0a53f6212f3cf506"
+  },
+  "speakers": {
+    "Yo": {
+      "profile": "mi-voz",
+      "label": "Persona",
+      "exaggeration": 0.5
+    },
+    "Claude": {
+      "profile": "claude-robot",
+      "label": "Claude / robot masculino",
+      "exaggeration": 0.2,
+      "cfg_weight": 0.65,
+      "effect": "robot-soft"
+    }
+  },
+  "dialogue": {
+    "turn_pause": 0.35
+  },
+  "voice": {
+    "model": "chatterbox-multilingual-v3",
+    "profile": "mi-voz",
+    "language": "es",
+    "speed": 1.2,
+    "seed": 42
+  },
+  "worker_sha256": "0148119a7e612c2c7e8d59a3cf86c3ffbdcfa01e276bcb09154ba67d56f2293f",
+  "input_sha256": "27be7d18dc1e6661d56e9d193d7dd3d4723bb6e3c1e0cb9263c878e389e1a773",
+  "audio_sha256": "633a9f837936563187e1ff5a631bea2d3fb48236d9bd88ed3fd7d028b1259f16"
+}

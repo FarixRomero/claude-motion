@@ -1,0 +1,112 @@
+[
+  {
+    "id": "t0001",
+    "speaker": "Yo",
+    "profile": "mi-voz",
+    "text": "Claude, solo necesito que cambies este botón de azul a verde.",
+    "start": 0.0,
+    "end": 3.265833333333333,
+    "audio": "turns/t0001-Yo.wav",
+    "seed": 42,
+    "exaggeration": 0.35
+  },
+  {
+    "id": "t0002",
+    "speaker": "Claude",
+    "profile": "mujer",
+    "text": "¡Entendido! He rediseñado completamente la arquitectura.",
+    "start": 3.6858333333333335,
+    "end": 7.708458333333333,
+    "audio": "turns/t0002-Claude.wav",
+    "seed": 43,
+    "exaggeration": 0.6
+  },
+  {
+    "id": "t0003",
+    "speaker": "Yo",
+    "profile": "mi-voz",
+    "text": "¿Cómo que rediseñado?",
+    "start": 8.128458333333333,
+    "end": 9.463791666666665,
+    "audio": "turns/t0003-Yo.wav",
+    "seed": 44,
+    "exaggeration": 0.35
+  },
+  {
+    "id": "t0004",
+    "speaker": "Claude",
+    "profile": "mujer",
+    "text": "Ahora tenemos treinta microservicios, Kubernetes, Kafka y una arquitectura orientada a eventos.",
+    "start": 9.883791666666667,
+    "end": 15.820458333333335,
+    "audio": "turns/t0004-Claude.wav",
+    "seed": 45,
+    "exaggeration": 0.6
+  },
+  {
+    "id": "t0005",
+    "speaker": "Yo",
+    "profile": "mi-voz",
+    "text": "¡Pero solo quería cambiar el color de un botón!",
+    "start": 16.240458333333333,
+    "end": 18.376541666666665,
+    "audio": "turns/t0005-Yo.wav",
+    "seed": 46,
+    "exaggeration": 0.35
+  },
+  {
+    "id": "t0006",
+    "speaker": "Claude",
+    "profile": "mujer",
+    "text": "Lo sé. También implementé escalamiento automático para soportar diez millones de usuarios.",
+    "start": 18.796541666666666,
+    "end": 24.480249999999998,
+    "audio": "turns/t0006-Claude.wav",
+    "seed": 47,
+    "exaggeration": 0.6
+  },
+  {
+    "id": "t0007",
+    "speaker": "Yo",
+    "profile": "mi-voz",
+    "text": "¿Y cuántos usuarios tenemos?",
+    "start": 24.90025,
+    "end": 26.441,
+    "audio": "turns/t0007-Yo.wav",
+    "seed": 48,
+    "exaggeration": 0.35
+  },
+  {
+    "id": "t0008",
+    "speaker": "Claude",
+    "profile": "mujer",
+    "text": "Tres. Contándote a ti.",
+    "start": 26.861,
+    "end": 28.942041666666668,
+    "audio": "turns/t0008-Claude.wav",
+    "seed": 49,
+    "exaggeration": 0.6
+  },
+  {
+    "id": "t0009",
+    "speaker": "Yo",
+    "profile": "mi-voz",
+    "text": "... ¿Y el botón?",
+    "start": 29.362041666666666,
+    "end": 30.680374999999998,
+    "audio": "turns/t0009-Yo.wav",
+    "seed": 50,
+    "exaggeration": 0.35
+  },
+  {
+    "id": "t0010",
+    "speaker": "Claude",
+    "profile": "mujer",
+    "text": "Sigue azul.",
+    "start": 31.100375,
+    "end": 32.16704166666667,
+    "audio": "turns/t0010-Claude.wav",
+    "seed": 51,
+    "exaggeration": 0.6
+  }
+]

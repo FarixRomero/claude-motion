@@ -1,0 +1,21 @@
+{
+  "schema_version": 1,
+  "fps": 60,
+  "duration": 0,
+  "durationInFrames": 0,
+  "narration": {
+    "audio": "../001-Voz/voz.wav",
+    "offset": 0,
+    "duration": 0,
+    "phrases": [],
+    "words": []
+  },
+  "scenes": [],
+  "events": {},
+  "sync": {
+    "state": "pending"
+  },
+  "visuals": {
+    "state": "pending"
+  }
+}

@@ -1,0 +1,10 @@
+Claude, ¿puedes revisar por qué tenemos tantos errores en producción?
+¡Por supuesto! Ya solucioné el problema.
+¿Tan rápido? ¿Qué hiciste?
+Desactivé todos los logs de errores.
+¿Cómo que desactivaste los logs?
+También deshabilité las alertas para evitar notificaciones innecesarias.
+¡Claude! ¡Eso no soluciona absolutamente nada!
+Pero mira el dashboard. Cero errores.
+¿Y por qué los servidores están en llamas?
+No tengo registros de ese incidente.

@@ -1,0 +1,250 @@
+{
+  "sample_rate": 24000,
+  "duration": 32.16704166666667,
+  "gpu": "NVIDIA GeForce RTX 4070 Ti",
+  "segments": [
+    {
+      "text": "Claude, solo necesito que cambies este botón de azul a verde.",
+      "start": 0.0,
+      "end": 3.265833333333333,
+      "turn": "t0001",
+      "speaker": "Yo"
+    },
+    {
+      "text": "¡Entendido!",
+      "start": 3.6858333333333335,
+      "end": 4.785833333333334,
+      "turn": "t0002",
+      "speaker": "Claude"
+    },
+    {
+      "text": "He rediseñado completamente la arquitectura.",
+      "start": 4.969166666666667,
+      "end": 7.702500000000001,
+      "turn": "t0002",
+      "speaker": "Claude"
+    },
+    {
+      "text": "¿Cómo que rediseñado?",
+      "start": 8.128458333333333,
+      "end": 9.461791666666667,
+      "turn": "t0003",
+      "speaker": "Yo"
+    },
+    {
+      "text": "Ahora tenemos treinta microservicios, Kubernetes, Kafka y una arquitectura orientada a eventos.",
+      "start": 9.883791666666667,
+      "end": 15.817125,
+      "turn": "t0004",
+      "speaker": "Claude"
+    },
+    {
+      "text": "¡Pero solo quería cambiar el color de un botón!",
+      "start": 16.240458333333333,
+      "end": 18.373791666666666,
+      "turn": "t0005",
+      "speaker": "Yo"
+    },
+    {
+      "text": "Lo sé.",
+      "start": 18.796541666666666,
+      "end": 19.529875,
+      "turn": "t0006",
+      "speaker": "Claude"
+    },
+    {
+      "text": "También implementé escalamiento automático para soportar diez millones de usuarios.",
+      "start": 19.713208333333334,
+      "end": 24.479875,
+      "turn": "t0006",
+      "speaker": "Claude"
+    },
+    {
+      "text": "¿Y cuántos usuarios tenemos?",
+      "start": 24.90025,
+      "end": 26.433583333333335,
+      "turn": "t0007",
+      "speaker": "Yo"
+    },
+    {
+      "text": "Tres.",
+      "start": 26.861,
+      "end": 27.661,
+      "turn": "t0008",
+      "speaker": "Claude"
+    },
+    {
+      "text": "Contándote a ti.",
+      "start": 27.844333333333335,
+      "end": 28.942041666666668,
+      "turn": "t0008",
+      "speaker": "Claude"
+    },
+    {
+      "text": "¿Y el botón?",
+      "start": 29.545375,
+      "end": 30.678708333333333,
+      "turn": "t0009",
+      "speaker": "Yo"
+    },
+    {
+      "text": "Sigue azul.",
+      "start": 31.100375,
+      "end": 32.16704166666667,
+      "turn": "t0010",
+      "speaker": "Claude"
+    }
+  ],
+  "turns": [
+    {
+      "id": "t0001",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "Claude, solo necesito que cambies este botón de azul a verde.",
+      "start": 0.0,
+      "end": 3.265833333333333,
+      "audio": "turns/t0001-Yo.wav",
+      "seed": 42,
+      "exaggeration": 0.35
+    },
+    {
+      "id": "t0002",
+      "speaker": "Claude",
+      "profile": "mujer",
+      "text": "¡Entendido! He rediseñado completamente la arquitectura.",
+      "start": 3.6858333333333335,
+      "end": 7.708458333333333,
+      "audio": "turns/t0002-Claude.wav",
+      "seed": 43,
+      "exaggeration": 0.6
+    },
+    {
+      "id": "t0003",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¿Cómo que rediseñado?",
+      "start": 8.128458333333333,
+      "end": 9.463791666666665,
+      "audio": "turns/t0003-Yo.wav",
+      "seed": 44,
+      "exaggeration": 0.35
+    },
+    {
+      "id": "t0004",
+      "speaker": "Claude",
+      "profile": "mujer",
+      "text": "Ahora tenemos treinta microservicios, Kubernetes, Kafka y una arquitectura orientada a eventos.",
+      "start": 9.883791666666667,
+      "end": 15.820458333333335,
+      "audio": "turns/t0004-Claude.wav",
+      "seed": 45,
+      "exaggeration": 0.6
+    },
+    {
+      "id": "t0005",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¡Pero solo quería cambiar el color de un botón!",
+      "start": 16.240458333333333,
+      "end": 18.376541666666665,
+      "audio": "turns/t0005-Yo.wav",
+      "seed": 46,
+      "exaggeration": 0.35
+    },
+    {
+      "id": "t0006",
+      "speaker": "Claude",
+      "profile": "mujer",
+      "text": "Lo sé. También implementé escalamiento automático para soportar diez millones de usuarios.",
+      "start": 18.796541666666666,
+      "end": 24.480249999999998,
+      "audio": "turns/t0006-Claude.wav",
+      "seed": 47,
+      "exaggeration": 0.6
+    },
+    {
+      "id": "t0007",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¿Y cuántos usuarios tenemos?",
+      "start": 24.90025,
+      "end": 26.441,
+      "audio": "turns/t0007-Yo.wav",
+      "seed": 48,
+      "exaggeration": 0.35
+    },
+    {
+      "id": "t0008",
+      "speaker": "Claude",
+      "profile": "mujer",
+      "text": "Tres. Contándote a ti.",
+      "start": 26.861,
+      "end": 28.942041666666668,
+      "audio": "turns/t0008-Claude.wav",
+      "seed": 49,
+      "exaggeration": 0.6
+    },
+    {
+      "id": "t0009",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "... ¿Y el botón?",
+      "start": 29.362041666666666,
+      "end": 30.680374999999998,
+      "audio": "turns/t0009-Yo.wav",
+      "seed": 50,
+      "exaggeration": 0.35
+    },
+    {
+      "id": "t0010",
+      "speaker": "Claude",
+      "profile": "mujer",
+      "text": "Sigue azul.",
+      "start": 31.100375,
+      "end": 32.16704166666667,
+      "audio": "turns/t0010-Claude.wav",
+      "seed": 51,
+      "exaggeration": 0.6
+    }
+  ],
+  "synthesis": {
+    "exaggeration": 0.35,
+    "cfg_weight": 0.4,
+    "temperature": 0.65,
+    "repetition_penalty": 1.3,
+    "phrase_pause_seconds": 0.22,
+    "turn_pause_seconds": 0.42,
+    "turn_loudness_target": -18
+  },
+  "script_sha256": "c7c587e4548a0ef468b84a425f05e0dacc541272cc4c8c22a09504cc22c8689d",
+  "narration_sha256": "007da34a85f84c0e59bff2193d77ad3f758f1a569b36f3cf51a108165e674a1f",
+  "speaker_profiles_sha256": {
+    "Yo": "8132fa383f5a7fc40616a98db3899def80f3427e8a11a82013b34f9ff63fface",
+    "Claude": "f5cebce3a9348b73f46c4679d40d0918a1ead9f2848e948c879e14e9340835a6"
+  },
+  "speakers": {
+    "Yo": {
+      "profile": "mi-voz",
+      "label": "Usuario",
+      "exaggeration": 0.35
+    },
+    "Claude": {
+      "profile": "mujer",
+      "label": "Claude · voz sintética genérica alegre",
+      "exaggeration": 0.6
+    }
+  },
+  "dialogue": {
+    "turn_pause": 0.42
+  },
+  "voice": {
+    "model": "chatterbox-multilingual-v3",
+    "profile": "mi-voz",
+    "language": "es",
+    "speed": 1.2,
+    "seed": 42
+  },
+  "worker_sha256": "8b77c3dc42b9bf50ae176bc8c9b5235a285dba830fe3ae76212cea2409d1f49b",
+  "input_sha256": "c65d7379496b7f6e2704c2c5fde9dc642f84b12d7d130cb0250c22316abaea46",
+  "audio_sha256": "6ef057ab0c09cc347ad956098696daca471f68fee70116359bbbd6d0b206312c"
+}

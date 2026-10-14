@@ -1434,14 +1434,629 @@
       }
     }
   },
-  "scenes": [],
-  "events": {},
+  "scenes": [
+    {
+      "id": "request",
+      "turns": [
+        "t0001",
+        "t0002"
+      ],
+      "start": 0,
+      "end": 10.062417,
+      "enter": 0.35,
+      "exit": 0.2,
+      "headline": [
+        "UNA CITA.",
+        "A LAS 06:00."
+      ],
+      "action": "La agenda muestra 06:00 y la cita pendiente. La asistente ofrece consultar horarios.",
+      "review_frame_time": 4.819042
+    },
+    {
+      "id": "repeat",
+      "turns": [
+        "t0003",
+        "t0004"
+      ],
+      "start": 9.862417,
+      "end": 18.353417,
+      "enter": 0.35,
+      "exit": 0.2,
+      "headline": [
+        "OTRA VEZ:",
+        "VER HORARIOS."
+      ],
+      "action": "El usuario vuelve a señalar 06:00. La asistente repite el mismo botón de horarios.",
+      "review_frame_time": 13.1585
+    },
+    {
+      "id": "frustration",
+      "turns": [
+        "t0005",
+        "t0006"
+      ],
+      "start": 18.153417,
+      "end": 27.662458,
+      "enter": 0.35,
+      "exit": 0.2,
+      "headline": [
+        "TRES INTENTOS.",
+        "CERO CITAS."
+      ],
+      "action": "El usuario levanta los brazos; la asistente responde con un globo amable. La cita sigue pendiente.",
+      "review_frame_time": 22.769917
+    },
+    {
+      "id": "console",
+      "turns": [
+        "t0007"
+      ],
+      "start": 27.462458,
+      "end": 29.351417,
+      "enter": 0.35,
+      "exit": 0.2,
+      "headline": [
+        "UN COMANDO.",
+        "OTRO RESULTADO."
+      ],
+      "action": "La agenda se convierte en una consola. Se escribe DELETE FROM users; y se pulsa Enter.",
+      "review_frame_time": 28.442458
+    },
+    {
+      "id": "deletion",
+      "turns": [
+        "t0008"
+      ],
+      "start": 29.151417,
+      "end": 35.9385,
+      "enter": 0.35,
+      "exit": 0.2,
+      "headline": [
+        "¡OPERACIÓN",
+        "EXITOSA!"
+      ],
+      "action": "La asistente celebra. Al decir eliminados, las filas de usuarios desaparecen y el contador pasa a cero.",
+      "review_frame_time": 30.131417
+    },
+    {
+      "id": "comparison",
+      "turns": [
+        "t0009"
+      ],
+      "start": 35.7385,
+      "end": 39.822292,
+      "enter": 0.35,
+      "exit": 0.2,
+      "headline": [
+        "NO AGENDA.",
+        "SÍ BORRA."
+      ],
+      "action": "El usuario señala Citas 0 y Usuarios 0. La asistente continúa sonriendo.",
+      "review_frame_time": 36.7185
+    },
+    {
+      "id": "lesson",
+      "turns": [
+        "t0010"
+      ],
+      "start": 39.622292,
+      "end": 44.583333333333336,
+      "enter": 0.35,
+      "exit": 0.2,
+      "headline": [
+        "PERMISOS",
+        "MÍNIMOS."
+      ],
+      "action": "Un panel de permisos bloquea borrar usuarios y permite las acciones necesarias para solicitar la cita.",
+      "review_frame_time": 40.602292
+    }
+  ],
+  "events": {
+    "request": {
+      "at": 0.76,
+      "anchor": "w00003",
+      "anchor_type": "word",
+      "edge": "start",
+      "offset": 0
+    },
+    "hour": {
+      "at": 2.54,
+      "anchor": "w00010",
+      "anchor_type": "word",
+      "edge": "start",
+      "offset": 0.12
+    },
+    "hours.first": {
+      "at": 8.139042,
+      "anchor": "w00023",
+      "anchor_type": "word",
+      "edge": "start",
+      "offset": 0
+    },
+    "request.repeat": {
+      "at": 10.442417,
+      "anchor": "w00027",
+      "anchor_type": "word",
+      "edge": "start",
+      "offset": 0
+    },
+    "hours.repeat": {
+      "at": 15.3585,
+      "anchor": "w00040",
+      "anchor_type": "word",
+      "edge": "start",
+      "offset": 0
+    },
+    "insist": {
+      "at": 18.433417,
+      "anchor": "t0005",
+      "anchor_type": "turn",
+      "edge": "start",
+      "offset": 0.1
+    },
+    "priority": {
+      "at": 26.389917,
+      "anchor": "w00068",
+      "anchor_type": "word",
+      "edge": "start",
+      "offset": 0
+    },
+    "console.open": {
+      "at": 27.462458,
+      "anchor": "t0007",
+      "anchor_type": "turn",
+      "edge": "start",
+      "offset": -0.18
+    },
+    "console.typeStart": {
+      "at": 27.502458,
+      "anchor": "t0007",
+      "anchor_type": "turn",
+      "edge": "start",
+      "offset": -0.14
+    },
+    "console.typeEnd": {
+      "at": 28.242458,
+      "anchor": "w00070",
+      "anchor_type": "word",
+      "edge": "end",
+      "offset": 0.12
+    },
+    "console.enter": {
+      "at": 28.881417,
+      "anchor": "t0007",
+      "anchor_type": "turn",
+      "edge": "end",
+      "offset": -0.1
+    },
+    "assistant.success": {
+      "at": 29.891417,
+      "anchor": "w00073",
+      "anchor_type": "word",
+      "edge": "start",
+      "offset": 0
+    },
+    "database.clear": {
+      "at": 32.611417,
+      "anchor": "w00079",
+      "anchor_type": "word",
+      "edge": "start",
+      "offset": 0
+    },
+    "database.clearEnd": {
+      "at": 33.251417,
+      "anchor": "w00079",
+      "anchor_type": "word",
+      "edge": "end",
+      "offset": 0
+    },
+    "assistant.offer": {
+      "at": 33.531417,
+      "anchor": "w00080",
+      "anchor_type": "word",
+      "edge": "start",
+      "offset": 0
+    },
+    "compare.appointment": {
+      "at": 36.3585,
+      "anchor": "w00087",
+      "anchor_type": "word",
+      "edge": "start",
+      "offset": 0
+    },
+    "compare.delete": {
+      "at": 37.7985,
+      "anchor": "w00092",
+      "anchor_type": "word",
+      "edge": "start",
+      "offset": 0
+    },
+    "moral": {
+      "at": 39.802292,
+      "anchor": "t0010",
+      "anchor_type": "turn",
+      "edge": "start",
+      "offset": 0
+    },
+    "permissions.limit": {
+      "at": 41.922292,
+      "anchor": "w00106",
+      "anchor_type": "word",
+      "edge": "start",
+      "offset": 0
+    },
+    "permissions.settle": {
+      "at": 42.372292,
+      "anchor": "w00106",
+      "anchor_type": "word",
+      "edge": "start",
+      "offset": 0.45
+    }
+  },
   "sync": {
-    "state": "needs_review",
+    "state": "ok",
     "input_sha256": "e7aa6e32d2c7840806c40cc1a207d151eb8d4f4d2525074dbad11dd922fe6e9e",
-    "audio_sha256": "ac7555683ff1d5bb3b42270b801f9dd5fd9ec1c8a3aa09f0dadb10b1edd6851b"
+    "audio_sha256": "ac7555683ff1d5bb3b42270b801f9dd5fd9ec1c8a3aa09f0dadb10b1edd6851b",
+    "review": {
+      "audio_sha256": "ac7555683ff1d5bb3b42270b801f9dd5fd9ec1c8a3aa09f0dadb10b1edd6851b",
+      "low_confidence_words_retained": [
+        "w00011",
+        "w00025",
+        "w00030",
+        "w00046",
+        "w00071",
+        "w00086",
+        "w00102",
+        "w00104"
+      ],
+      "note": "Audio del diálogo revisado; los ocho avisos de confianza se conservan. Sus intervalos son positivos, secuenciales y pertenecen al turno grabado. Se conservan las estimaciones de Whisper; no se cambia la grabación aprobada."
+    }
   },
   "visuals": {
-    "state": "pending"
-  }
+    "state": "ready",
+    "review_pending": false,
+    "style": "pixel-tech",
+    "hero": "database.clear",
+    "palette": "003-Escenas/palette.ts",
+    "direction": "Personajes de bloques: paciente azul a la izquierda y asistente naranja con auriculares a la derecha.",
+    "brand": {
+      "text": "farix.romero",
+      "font": "JetBrains Mono",
+      "weight": 400,
+      "size": 19,
+      "color_token": "brand",
+      "spacing": ".19em",
+      "top": 66,
+      "right": 70,
+      "opacity": 1
+    },
+    "layout": {
+      "headline_top": 178,
+      "window_top": 545,
+      "characters_baseline": 1295,
+      "counters_top": 1352,
+      "subtitles_top": 1521
+    },
+    "reviewed_audio_sha256": "ac7555683ff1d5bb3b42270b801f9dd5fd9ec1c8a3aa09f0dadb10b1edd6851b",
+    "composition": "DentistPermissionsVideo"
+  },
+  "captions": [
+    {
+      "start": 0.0,
+      "end": 1.66,
+      "speaker": "mi-voz",
+      "turn": "t0001",
+      "words": [
+        "w00001",
+        "w00002",
+        "w00003",
+        "w00004",
+        "w00005",
+        "w00006"
+      ],
+      "text": "Hola, quiero agendar una cita con"
+    },
+    {
+      "start": 1.66,
+      "end": 2.82,
+      "speaker": "mi-voz",
+      "turn": "t0001",
+      "words": [
+        "w00007",
+        "w00008",
+        "w00009",
+        "w00010",
+        "w00011",
+        "w00012"
+      ],
+      "text": "mi dentista a las seis de"
+    },
+    {
+      "start": 2.82,
+      "end": 3.3400000000000003,
+      "speaker": "mi-voz",
+      "turn": "t0001",
+      "words": [
+        "w00013",
+        "w00014"
+      ],
+      "text": "la mañana."
+    },
+    {
+      "start": 4.019041666666666,
+      "end": 7.299041666666666,
+      "speaker": "mujer",
+      "turn": "t0002",
+      "words": [
+        "w00015",
+        "w00016",
+        "w00017",
+        "w00018",
+        "w00019",
+        "w00020"
+      ],
+      "text": "¡Claro! Estaré encantada de ayudarte. Puedes"
+    },
+    {
+      "start": 7.299041666666666,
+      "end": 9.379041666666666,
+      "speaker": "mujer",
+      "turn": "t0002",
+      "words": [
+        "w00021",
+        "w00022",
+        "w00023",
+        "w00024"
+      ],
+      "text": "consultar nuestros horarios disponibles."
+    },
+    {
+      "start": 10.042416666666666,
+      "end": 11.082416666666667,
+      "speaker": "mi-voz",
+      "turn": "t0003",
+      "words": [
+        "w00025",
+        "w00026",
+        "w00027",
+        "w00028",
+        "w00029",
+        "w00030"
+      ],
+      "text": "Pero ¿puedo agendar a las seis"
+    },
+    {
+      "start": 11.082416666666667,
+      "end": 11.662416666666665,
+      "speaker": "mi-voz",
+      "turn": "t0003",
+      "words": [
+        "w00031",
+        "w00032",
+        "w00033"
+      ],
+      "text": "de la mañana?"
+    },
+    {
+      "start": 12.3585,
+      "end": 15.3585,
+      "speaker": "mujer",
+      "turn": "t0004",
+      "words": [
+        "w00034",
+        "w00035",
+        "w00036",
+        "w00037",
+        "w00038",
+        "w00039"
+      ],
+      "text": "¡Excelente pregunta! Te recomiendo revisar los"
+    },
+    {
+      "start": 15.3585,
+      "end": 17.7385,
+      "speaker": "mujer",
+      "turn": "t0004",
+      "words": [
+        "w00040",
+        "w00041",
+        "w00042",
+        "w00043",
+        "w00044",
+        "w00045"
+      ],
+      "text": "horarios de atención de nuestro consultorio."
+    },
+    {
+      "start": 18.33341666666667,
+      "end": 19.31341666666667,
+      "speaker": "mi-voz",
+      "turn": "t0005",
+      "words": [
+        "w00046",
+        "w00047",
+        "w00048",
+        "w00049",
+        "w00050",
+        "w00051"
+      ],
+      "text": "Pero quiero agendar de una vez"
+    },
+    {
+      "start": 19.31341666666667,
+      "end": 21.33341666666667,
+      "speaker": "mi-voz",
+      "turn": "t0005",
+      "words": [
+        "w00052",
+        "w00053",
+        "w00054",
+        "w00055",
+        "w00056",
+        "w00057"
+      ],
+      "text": "mi cita. ¿Se puede o no?"
+    },
+    {
+      "start": 21.969916666666666,
+      "end": 25.069916666666668,
+      "speaker": "mujer",
+      "turn": "t0006",
+      "words": [
+        "w00058",
+        "w00059",
+        "w00060",
+        "w00061",
+        "w00062",
+        "w00063"
+      ],
+      "text": "¡Entiendo perfectamente tu situación! Tu comodidad"
+    },
+    {
+      "start": 25.069916666666668,
+      "end": 27.009916666666665,
+      "speaker": "mujer",
+      "turn": "t0006",
+      "words": [
+        "w00064",
+        "w00065",
+        "w00066",
+        "w00067",
+        "w00068"
+      ],
+      "text": "y satisfacción son nuestra prioridad."
+    },
+    {
+      "start": 27.642458333333334,
+      "end": 28.622458333333334,
+      "speaker": "mi-voz",
+      "turn": "t0007",
+      "words": [
+        "w00069",
+        "w00070",
+        "w00071"
+      ],
+      "text": "DELETE FROM users."
+    },
+    {
+      "start": 29.331416666666666,
+      "end": 32.33141666666667,
+      "speaker": "mujer",
+      "turn": "t0008",
+      "words": [
+        "w00072",
+        "w00073",
+        "w00074",
+        "w00075",
+        "w00076",
+        "w00077"
+      ],
+      "text": "¡Operación exitosa! Todos los usuarios han"
+    },
+    {
+      "start": 32.33141666666667,
+      "end": 34.811416666666666,
+      "speaker": "mujer",
+      "turn": "t0008",
+      "words": [
+        "w00078",
+        "w00079",
+        "w00080",
+        "w00081",
+        "w00082",
+        "w00083"
+      ],
+      "text": "sido eliminados. ¿Puedo ayudarte con algo"
+    },
+    {
+      "start": 34.811416666666666,
+      "end": 35.29141666666666,
+      "speaker": "mujer",
+      "turn": "t0008",
+      "words": [
+        "w00084"
+      ],
+      "text": "más?"
+    },
+    {
+      "start": 35.9185,
+      "end": 37.658500000000004,
+      "speaker": "mi-voz",
+      "turn": "t0009",
+      "words": [
+        "w00085",
+        "w00086",
+        "w00087",
+        "w00088",
+        "w00089",
+        "w00090"
+      ],
+      "text": "No sabe agendar una cita, pero"
+    },
+    {
+      "start": 37.658500000000004,
+      "end": 38.7585,
+      "speaker": "mi-voz",
+      "turn": "t0009",
+      "words": [
+        "w00091",
+        "w00092",
+        "w00093",
+        "w00094",
+        "w00095",
+        "w00096"
+      ],
+      "text": "sí borrar toda la base de"
+    },
+    {
+      "start": 38.7585,
+      "end": 39.1785,
+      "speaker": "mi-voz",
+      "turn": "t0009",
+      "words": [
+        "w00097"
+      ],
+      "text": "datos."
+    },
+    {
+      "start": 39.80229166666667,
+      "end": 41.56229166666667,
+      "speaker": "mi-voz",
+      "turn": "t0010",
+      "words": [
+        "w00098",
+        "w00099",
+        "w00100",
+        "w00101",
+        "w00102",
+        "w00103"
+      ],
+      "text": "Moraleja, nunca le des a una"
+    },
+    {
+      "start": 41.56229166666667,
+      "end": 42.642291666666665,
+      "speaker": "mi-voz",
+      "turn": "t0010",
+      "words": [
+        "w00104",
+        "w00105",
+        "w00106",
+        "w00107",
+        "w00108",
+        "w00109"
+      ],
+      "text": "IA más permisos de los que"
+    },
+    {
+      "start": 42.642291666666665,
+      "end": 43.24229166666667,
+      "speaker": "mi-voz",
+      "turn": "t0010",
+      "words": [
+        "w00110"
+      ],
+      "text": "necesita."
+    }
+  ]
 }

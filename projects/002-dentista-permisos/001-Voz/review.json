@@ -16,7 +16,9 @@
     "Each timestamp belongs to its known speaker",
     "Speaker tags excluded from spoken text"
   ],
-  "timing_review": "Whisper marks eight low-confidence words for review before scene construction.",
-  "scenes": "pending",
-  "render": "pending"
+  "timing_review": "Audio del diálogo revisado; los ocho avisos de confianza se conservan. Sus intervalos son positivos, secuenciales y pertenecen al turno grabado. Se conservan las estimaciones de Whisper; no se cambia la grabación aprobada.",
+  "scenes": "reviewed",
+  "render": "reviewed",
+  "recording_policy": "La voz aprobada se conserva. El worker dialogue.py cambió después de generar esta grabación; generation.json mantiene su procedencia original.",
+  "render_voice_input_sha256": "4ade43e0d691380567fc047df53a1a2ce3c75bd75aa190ea33b9e6f9b6e1f70f"
 }

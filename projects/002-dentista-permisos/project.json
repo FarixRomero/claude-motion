@@ -24,12 +24,17 @@
       "profile": "mi-voz",
       "label": "Usuario / narrador"
     },
-    "mujer": {
-      "profile": "mujer",
-      "label": "Asistente del consultorio"
+    "claude": {
+      "profile": "claude-robot",
+      "label": "Claude / asistente robótico",
+      "exaggeration": 0.15,
+      "cfg_weight": 0.65,
+      "effect": "robot"
     }
   },
   "dialogue": {
     "turn_pause": 0.35
-  }
+  },
+  "sound_cues": "003-Escenas/sound.py",
+  "composition": "DentistPermissionsVideo"
 }

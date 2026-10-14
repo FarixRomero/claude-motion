@@ -1,0 +1,12 @@
+Claude, ¿por qué se me acabaron todos los tokens?
+¡He completado exitosamente tu solicitud!
+¿Cuál solicitud? ¡Solo te pedí que cambiaras el nombre de una variable!
+Correcto. Para garantizar la calidad, analicé los 847 archivos del proyecto.
+¿¡Ochocientos cuarenta y siete archivos!?
+También revisé toda la arquitectura, ejecuté 200 pruebas y generé 15 documentos.
+¿Y cuánto me costó?
+47 dólares.
+¡¿CUARENTA Y SIETE DÓLARES?! ¿Al menos cambiaste la variable?
+No. Necesito tu autorización para editar el archivo.
+...
+¿Deseas que continúe? Estimo otros 80 dólares.
