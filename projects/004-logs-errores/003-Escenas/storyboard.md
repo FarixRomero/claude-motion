@@ -1,6 +1,6 @@
 # Cero errores — storyboard aprobado
 
-Formato: 1080×1920, 60 fps. Diálogo original sin cambios, mi-voz a 1.2× con diferente expresividad para Yo y Claude. Claude naranja, desarrollador azul. Personajes cúbicos con ojos rectangulares, brazos pequeños y cuatro patas; animación física breve, sin deformar su silueta.
+Formato: 1080×1920, 60 fps. Diálogo original sin cambios, mi-voz a 1.2× para Yo y voz masculina claude-robot con robot-soft para Claude, aprobada en 005-low-poly-tokens. Claude naranja, desarrollador azul. Personajes cúbicos con ojos rectangulares, brazos pequeños y cuatro patas; animación física breve, sin deformar su silueta.
 
 Escenario continuo: teclado gigante, monitor oscuro y racks inicialmente fuera del encuadre. Luz violeta ambiental, naranja para Claude y rojo para errores. Interfaces legibles; subtítulos blancos con palabra activa cyan. Marca farix.romero según AGENTS.md.
 

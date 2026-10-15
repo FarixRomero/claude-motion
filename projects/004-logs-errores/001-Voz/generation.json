@@ -1,6 +1,6 @@
 {
   "sample_rate": 24000,
-  "duration": 28.85175,
+  "duration": 28.336875,
   "gpu": "NVIDIA GeForce RTX 4070 Ti",
   "segments": [
     {
@@ -13,91 +13,91 @@
     {
       "text": "¡Por supuesto!",
       "start": 3.734625,
-      "end": 4.934625,
+      "end": 4.7679583333333335,
       "turn": "t0002",
       "speaker": "Claude"
     },
     {
       "text": "Ya solucioné el problema.",
-      "start": 5.117958333333333,
-      "end": 6.717958333333334,
+      "start": 4.951291666666666,
+      "end": 6.617958333333333,
       "turn": "t0002",
       "speaker": "Claude"
     },
     {
       "text": "¿Tan rápido?",
-      "start": 7.020041666666667,
-      "end": 8.086708333333334,
+      "start": 6.93,
+      "end": 7.996666666666667,
       "turn": "t0003",
       "speaker": "Yo"
     },
     {
       "text": "¿Qué hiciste?",
-      "start": 8.270041666666668,
-      "end": 9.303375,
+      "start": 8.18,
+      "end": 9.213333333333335,
       "turn": "t0003",
       "speaker": "Yo"
     },
     {
       "text": "Desactivé todos los logs de errores.",
-      "start": 9.606166666666667,
-      "end": 11.706166666666666,
+      "start": 9.516125,
+      "end": 11.649458333333333,
       "turn": "t0004",
       "speaker": "Claude"
     },
     {
       "text": "¿Cómo que desactivaste los logs?",
-      "start": 12.010875,
-      "end": 13.877541666666668,
+      "start": 11.961416666666667,
+      "end": 13.828083333333334,
       "turn": "t0005",
       "speaker": "Yo"
     },
     {
       "text": "También deshabilité las alertas para evitar notificaciones innecesarias.",
-      "start": 14.1825,
-      "end": 17.68133333333333,
+      "start": 14.133041666666667,
+      "end": 17.666375000000002,
       "turn": "t0006",
       "speaker": "Claude"
     },
     {
       "text": "¡Claude!",
-      "start": 17.981333333333332,
-      "end": 18.947999999999997,
+      "start": 17.967625,
+      "end": 18.934291666666667,
       "turn": "t0007",
       "speaker": "Yo"
     },
     {
       "text": "¡Eso no soluciona absolutamente nada!",
-      "start": 19.13133333333333,
-      "end": 20.997999999999998,
+      "start": 19.117625,
+      "end": 20.984291666666667,
       "turn": "t0007",
       "speaker": "Yo"
     },
     {
       "text": "Pero mira el dashboard.",
-      "start": 21.298333333333332,
-      "end": 22.598333333333333,
+      "start": 21.284625,
+      "end": 22.451291666666666,
       "turn": "t0008",
       "speaker": "Claude"
     },
     {
       "text": "Cero errores.",
-      "start": 22.781666666666666,
-      "end": 24.048333333333332,
+      "start": 22.634625,
+      "end": 23.66795833333333,
       "turn": "t0008",
       "speaker": "Claude"
     },
     {
       "text": "¿Y por qué los servidores están en llamas?",
-      "start": 24.351,
-      "end": 26.384166666666665,
+      "start": 23.9705,
+      "end": 26.003666666666668,
       "turn": "t0009",
       "speaker": "Yo"
     },
     {
       "text": "No tengo registros de ese incidente.",
-      "start": 26.684166666666666,
-      "end": 28.850833333333334,
+      "start": 26.30366666666667,
+      "end": 28.336875000000003,
       "turn": "t0010",
       "speaker": "Claude"
     }
@@ -112,106 +112,126 @@
       "end": 3.434625,
       "audio": "turns/t0001-Yo.wav",
       "seed": 43,
+      "effect": "none",
+      "reused_audio": true,
       "exaggeration": 0.5
     },
     {
       "id": "t0002",
       "speaker": "Claude",
-      "profile": "mi-voz",
+      "profile": "claude-robot",
       "text": "¡Por supuesto! Ya solucioné el problema.",
       "start": 3.734625,
-      "end": 6.720041666666667,
+      "end": 6.63,
       "audio": "turns/t0002-Claude.wav",
       "seed": 44,
-      "exaggeration": 0.25
+      "effect": "robot-soft",
+      "reused_audio": false,
+      "exaggeration": 0.2
     },
     {
       "id": "t0003",
       "speaker": "Yo",
       "profile": "mi-voz",
       "text": "¿Tan rápido? ¿Qué hiciste?",
-      "start": 7.020041666666667,
-      "end": 9.306166666666666,
+      "start": 6.93,
+      "end": 9.216125,
       "audio": "turns/t0003-Yo.wav",
       "seed": 45,
+      "effect": "none",
+      "reused_audio": true,
       "exaggeration": 0.5
     },
     {
       "id": "t0004",
       "speaker": "Claude",
-      "profile": "mi-voz",
+      "profile": "claude-robot",
       "text": "Desactivé todos los logs de errores.",
-      "start": 9.606166666666667,
-      "end": 11.710875,
+      "start": 9.516125,
+      "end": 11.661416666666668,
       "audio": "turns/t0004-Claude.wav",
       "seed": 46,
-      "exaggeration": 0.25
+      "effect": "robot-soft",
+      "reused_audio": false,
+      "exaggeration": 0.2
     },
     {
       "id": "t0005",
       "speaker": "Yo",
       "profile": "mi-voz",
       "text": "¿Cómo que desactivaste los logs?",
-      "start": 12.010875,
-      "end": 13.8825,
+      "start": 11.961416666666667,
+      "end": 13.833041666666666,
       "audio": "turns/t0005-Yo.wav",
       "seed": 47,
+      "effect": "none",
+      "reused_audio": true,
       "exaggeration": 0.5
     },
     {
       "id": "t0006",
       "speaker": "Claude",
-      "profile": "mi-voz",
+      "profile": "claude-robot",
       "text": "También deshabilité las alertas para evitar notificaciones innecesarias.",
-      "start": 14.1825,
-      "end": 17.68133333333333,
+      "start": 14.133041666666667,
+      "end": 17.667625,
       "audio": "turns/t0006-Claude.wav",
       "seed": 48,
-      "exaggeration": 0.25
+      "effect": "robot-soft",
+      "reused_audio": false,
+      "exaggeration": 0.2
     },
     {
       "id": "t0007",
       "speaker": "Yo",
       "profile": "mi-voz",
       "text": "¡Claude! ¡Eso no soluciona absolutamente nada!",
-      "start": 17.981333333333332,
-      "end": 20.99833333333333,
+      "start": 17.967625,
+      "end": 20.984625,
       "audio": "turns/t0007-Yo.wav",
       "seed": 49,
+      "effect": "none",
+      "reused_audio": true,
       "exaggeration": 0.5
     },
     {
       "id": "t0008",
       "speaker": "Claude",
-      "profile": "mi-voz",
+      "profile": "claude-robot",
       "text": "Pero mira el dashboard. Cero errores.",
-      "start": 21.298333333333332,
-      "end": 24.051,
+      "start": 21.284625,
+      "end": 23.670499999999997,
       "audio": "turns/t0008-Claude.wav",
       "seed": 50,
-      "exaggeration": 0.25
+      "effect": "robot-soft",
+      "reused_audio": false,
+      "exaggeration": 0.2
     },
     {
       "id": "t0009",
       "speaker": "Yo",
       "profile": "mi-voz",
       "text": "¿Y por qué los servidores están en llamas?",
-      "start": 24.351,
-      "end": 26.384166666666665,
+      "start": 23.9705,
+      "end": 26.003666666666668,
       "audio": "turns/t0009-Yo.wav",
       "seed": 51,
+      "effect": "none",
+      "reused_audio": true,
       "exaggeration": 0.5
     },
     {
       "id": "t0010",
       "speaker": "Claude",
-      "profile": "mi-voz",
+      "profile": "claude-robot",
       "text": "No tengo registros de ese incidente.",
-      "start": 26.684166666666666,
-      "end": 28.85175,
+      "start": 26.30366666666667,
+      "end": 28.336875000000003,
       "audio": "turns/t0010-Claude.wav",
       "seed": 52,
-      "exaggeration": 0.25
+      "effect": "robot-soft",
+      "reused_audio": false,
+      "exaggeration": 0.2
     }
   ],
   "synthesis": {
@@ -227,7 +247,7 @@
   "narration_sha256": "4dfedd85654f7c2cbc5f91cb438ecb7014716b375091afa4e1b0527fc39a02ae",
   "speaker_profiles_sha256": {
     "Yo": "8132fa383f5a7fc40616a98db3899def80f3427e8a11a82013b34f9ff63fface",
-    "Claude": "8132fa383f5a7fc40616a98db3899def80f3427e8a11a82013b34f9ff63fface"
+    "Claude": "e15923b6913949f38d87de3d06f04ce15ba22eed23819b5d0a53f6212f3cf506"
   },
   "speakers": {
     "Yo": {
@@ -236,9 +256,11 @@
       "exaggeration": 0.5
     },
     "Claude": {
-      "profile": "mi-voz",
-      "label": "Claude",
-      "exaggeration": 0.25
+      "profile": "claude-robot",
+      "label": "Claude / robot masculino",
+      "exaggeration": 0.2,
+      "cfg_weight": 0.65,
+      "effect": "robot-soft"
     }
   },
   "dialogue": {
@@ -251,7 +273,7 @@
     "speed": 1.2,
     "seed": 43
   },
-  "worker_sha256": "8b77c3dc42b9bf50ae176bc8c9b5235a285dba830fe3ae76212cea2409d1f49b",
-  "input_sha256": "2a4a232e2f3f736fa97b98d55e74733a349859134bb2dd07b323395e4d6a86d8",
-  "audio_sha256": "e04cdfd8c2d4902aa379c368b3b10856e6303a5473540e77dd83c5a975518185"
+  "worker_sha256": "0148119a7e612c2c7e8d59a3cf86c3ffbdcfa01e276bcb09154ba67d56f2293f",
+  "input_sha256": "0d8b4b01f277c7efb39a3f2c3ee7a9de69c3997e9965a90d0cbb0c4a3876a496",
+  "audio_sha256": "b488b474b0206f10e878f406932d18f2ff9e55a030edf311354507149fc36f16"
 }

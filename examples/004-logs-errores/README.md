@@ -10,7 +10,7 @@ Guion del usuario: [guion.md](../../projects/004-logs-errores/001-Voz/guion.md).
 
 Diálogo de comedia en un escenario 3D sobre un teclado: desarrollador azul, Claude naranja, monitor oscuro y servidores inicialmente fuera de plano. El dashboard en cero se contrapone al incendio. Cierre: Claude no tiene registros del incidente.
 
-Three.js determinista, 1080×1920 a 60 fps. Captura con el pipeline sims, integrada en LogsErroresVideo de Remotion. Voz mi-voz a 1.2×, subtítulos por palabra, efectos puntuales y crepitaciones; sin música ni pad. Trademark permanente según AGENTS.md.
+Three.js determinista, 1080×1920 a 60 fps. Captura con el pipeline sims, integrada en LogsErroresVideo de Remotion. Voz mi-voz a 1.2× para Yo y claude-robot / robot-soft para Claude, subtítulos por palabra, efectos puntuales y crepitaciones; sin música ni pad. Trademark permanente según AGENTS.md.
 
 ## Fuentes y resultado local
 
@@ -28,7 +28,7 @@ Desde la raíz:
 ```bash
 npm run project -- prepare 004-logs-errores
 python3 projects/004-logs-errores/003-Escenas/sync-storyboard.py
-node projects/004-logs-errores/003-Escenas/build.mjs
+nice -n 12 python3 projects/004-logs-errores/003-Escenas/render-final.py
 ```
 
 Tras cualquier cambio de guion o voz, revisar validation.json y los nuevos IDs antes de capturar. Tras cambiar las escenas, reconstruir el HTML y revisar stills antes del render completo. `npm run studio` muestra LogsErroresVideo una vez creado el video 3D local; `npm run project -- render 004-logs-errores` reutiliza esa captura.

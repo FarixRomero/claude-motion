@@ -1,0 +1,28 @@
+{
+  "state": "needs_review",
+  "similarity": 1.0,
+  "differences": [],
+  "uncertain_words": [
+    "w00061"
+  ],
+  "warnings": [
+    "Hay palabras con baja confianza o duración cero; sus tiempos requieren revisión."
+  ],
+  "note": "Los tiempos de Whisper son estimaciones. El audio grabado es la referencia.",
+  "review": {
+    "state": "accepted",
+    "reason": "Approved recording matches the script. CUARENTA is recognized correctly with a nonzero 0.42-second interval; confidence flag retained. The ellipsis turn is preserved as recorded silence.",
+    "uncertain_words": [
+      {
+        "id": "w00061",
+        "phrase": "p0009",
+        "speaker": "Yo",
+        "turn": "t0009",
+        "start": 27.005125,
+        "end": 27.425125,
+        "text": "¿CUARENTA",
+        "probability": 0.4899729251861572
+      }
+    ]
+  }
+}

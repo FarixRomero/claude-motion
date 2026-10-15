@@ -1,0 +1,67 @@
+1
+00:00:00,000 --> 00:00:02,320
+Claude, necesito que subas el último cambio a producción.
+
+2
+00:00:03,253 --> 00:00:05,533
+Entendido. Desplegando los cambios.
+
+3
+00:00:06,365 --> 00:00:06,785
+¿Todo bien?
+
+4
+00:00:07,651 --> 00:00:12,371
+Sí. El despliegue fue exitoso. También subí el archivo punto env de producción a GitHub.
+
+5
+00:00:13,350 --> 00:00:16,050
+¿¡QUÉ!? ¡Ese archivo tiene nuestras credenciales!
+
+6
+00:00:16,849 --> 00:00:20,089
+No te preocupes. También encontré tu clave de la API de Claude.
+
+7
+00:00:20,915 --> 00:00:21,795
+¿Y QUÉ HICISTE CON ELLA?
+
+8
+00:00:22,630 --> 00:00:25,250
+La subí al repositorio para que el equipo pueda utilizarla.
+
+9
+00:00:26,025 --> 00:00:27,645
+¡CLAUDE, ESA CLAVE ES PRIVADA!
+
+10
+00:00:28,547 --> 00:00:30,947
+Un momento... Detecto un consumo inusual.
+
+11
+00:00:31,794 --> 00:00:32,634
+¿Cuánto consumimos?
+
+12
+00:00:33,514 --> 00:00:35,754
+Diez dólares... cien dólares... mil dólares...
+
+13
+00:00:36,134 --> 00:00:37,254
+¡CLAUDE, DETÉN ESO!
+
+14
+00:00:38,055 --> 00:00:39,435
+Has alcanzado tu límite de uso.
+
+15
+00:00:40,327 --> 00:00:40,767
+¡CLAUDE!
+
+16
+00:00:41,612 --> 00:00:43,892
+Fue un placer trabajar contigo. Adiós.
+
+17
+00:00:44,657 --> 00:00:45,777
+Y todavía no funciona el cambio.

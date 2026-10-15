@@ -1,0 +1,2084 @@
+{
+  "model": "faster-whisper/turbo",
+  "language": "es",
+  "text": "Claude, ¿puedes revisar este código? Claro. Analizando… Tengo una pregunta. Dime. Esto es una aplicación… o una declaración de guerra. ¿Tan mal está? Veamos. Una función de dos mil líneas, variables llamadas a, equis dos y finalFinalAhoraSi, y un comentario que dice “no tocar o se cae todo”. Bueno, funciona. También encontré siete if anidados, tres consultas duplicadas y una función llamada hacerTodo. Esa función es importante. Lo noté. Autentica usuarios, calcula impuestos, manda correos y, por alguna razón, imprime tickets. Es que centraliza la lógica. No. Secuestra la lógica. Entonces, ¿qué recomiendas? Separar responsabilidades, renombrar variables y dividir esa función. Perfecto. Hazlo. No puedo. ¿Por qué? Porque si cambio una línea, se rompen otras veinte funciones. ¿Y cómo solucionamos eso? Mi recomendación es empezar el proyecto desde cero. ¡Pero llevamos cinco años desarrollándolo! Ahora entiendo por qué está así.",
+  "segments": [
+    {
+      "id": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 0.0,
+      "end": 1.28,
+      "text": "Claude, ¿puedes revisar este código?",
+      "words": [
+        "w00001",
+        "w00002",
+        "w00003",
+        "w00004",
+        "w00005"
+      ]
+    },
+    {
+      "id": "p0002",
+      "speaker": "Claude",
+      "turn": "t0002",
+      "start": 2.191,
+      "end": 3.9109999999999996,
+      "text": "Claro. Analizando…",
+      "words": [
+        "w00006",
+        "w00007"
+      ]
+    },
+    {
+      "id": "p0003",
+      "speaker": "Claude",
+      "turn": "t0003",
+      "start": 4.603,
+      "end": 5.3629999999999995,
+      "text": "Tengo una pregunta.",
+      "words": [
+        "w00008",
+        "w00009",
+        "w00010"
+      ]
+    },
+    {
+      "id": "p0004",
+      "speaker": "Yo",
+      "turn": "t0004",
+      "start": 6.1883333333333335,
+      "end": 6.548333333333334,
+      "text": "Dime.",
+      "words": [
+        "w00011"
+      ]
+    },
+    {
+      "id": "p0005",
+      "speaker": "Claude",
+      "turn": "t0005",
+      "start": 7.338958333333333,
+      "end": 9.478958333333333,
+      "text": "Esto es una aplicación… o una declaración de guerra.",
+      "words": [
+        "w00012",
+        "w00013",
+        "w00014",
+        "w00015",
+        "w00016",
+        "w00017",
+        "w00018",
+        "w00019",
+        "w00020"
+      ]
+    },
+    {
+      "id": "p0006",
+      "speaker": "Yo",
+      "turn": "t0006",
+      "start": 10.369875,
+      "end": 10.929875000000001,
+      "text": "¿Tan mal está?",
+      "words": [
+        "w00021",
+        "w00022",
+        "w00023"
+      ]
+    },
+    {
+      "id": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 11.789625,
+      "end": 19.929625,
+      "text": "Veamos. Una función de dos mil líneas, variables llamadas a, equis dos y finalFinalAhoraSi, y un comentario que dice “no tocar o se cae todo”.",
+      "words": [
+        "w00024",
+        "w00025",
+        "w00026",
+        "w00027",
+        "w00028",
+        "w00029",
+        "w00030",
+        "w00031",
+        "w00032",
+        "w00033",
+        "w00034",
+        "w00035",
+        "w00036",
+        "w00037",
+        "w00038",
+        "w00039",
+        "w00040",
+        "w00041",
+        "w00042",
+        "w00043",
+        "w00044",
+        "w00045",
+        "w00046",
+        "w00047",
+        "w00048"
+      ]
+    },
+    {
+      "id": "p0008",
+      "speaker": "Yo",
+      "turn": "t0008",
+      "start": 20.368791666666667,
+      "end": 20.988791666666668,
+      "text": "Bueno, funciona.",
+      "words": [
+        "w00049",
+        "w00050"
+      ]
+    },
+    {
+      "id": "p0009",
+      "speaker": "Claude",
+      "turn": "t0009",
+      "start": 21.824,
+      "end": 25.884,
+      "text": "También encontré siete if anidados, tres consultas duplicadas y una función llamada hacerTodo.",
+      "words": [
+        "w00051",
+        "w00052",
+        "w00053",
+        "w00054",
+        "w00055",
+        "w00056",
+        "w00057",
+        "w00058",
+        "w00059",
+        "w00060",
+        "w00061",
+        "w00062",
+        "w00063"
+      ]
+    },
+    {
+      "id": "p0010",
+      "speaker": "Yo",
+      "turn": "t0010",
+      "start": 26.643166666666666,
+      "end": 27.743166666666667,
+      "text": "Esa función es importante.",
+      "words": [
+        "w00064",
+        "w00065",
+        "w00066",
+        "w00067"
+      ]
+    },
+    {
+      "id": "p0011",
+      "speaker": "Claude",
+      "turn": "t0011",
+      "start": 28.631833333333333,
+      "end": 34.31183333333333,
+      "text": "Lo noté. Autentica usuarios, calcula impuestos, manda correos y, por alguna razón, imprime tickets.",
+      "words": [
+        "w00068",
+        "w00069",
+        "w00070",
+        "w00071",
+        "w00072",
+        "w00073",
+        "w00074",
+        "w00075",
+        "w00076",
+        "w00077",
+        "w00078",
+        "w00079",
+        "w00080",
+        "w00081"
+      ]
+    },
+    {
+      "id": "p0012",
+      "speaker": "Yo",
+      "turn": "t0012",
+      "start": 35.450041666666664,
+      "end": 36.730041666666665,
+      "text": "Es que centraliza la lógica.",
+      "words": [
+        "w00082",
+        "w00083",
+        "w00084",
+        "w00085",
+        "w00086"
+      ]
+    },
+    {
+      "id": "p0013",
+      "speaker": "Claude",
+      "turn": "t0013",
+      "start": 37.53720833333333,
+      "end": 39.137208333333334,
+      "text": "No. Secuestra la lógica.",
+      "words": [
+        "w00087",
+        "w00088",
+        "w00089",
+        "w00090"
+      ]
+    },
+    {
+      "id": "p0014",
+      "speaker": "Yo",
+      "turn": "t0014",
+      "start": 39.985,
+      "end": 41.445,
+      "text": "Entonces, ¿qué recomiendas?",
+      "words": [
+        "w00091",
+        "w00092",
+        "w00093"
+      ]
+    },
+    {
+      "id": "p0015",
+      "speaker": "Claude",
+      "turn": "t0015",
+      "start": 42.13516666666667,
+      "end": 45.37516666666667,
+      "text": "Separar responsabilidades, renombrar variables y dividir esa función.",
+      "words": [
+        "w00094",
+        "w00095",
+        "w00096",
+        "w00097",
+        "w00098",
+        "w00099",
+        "w00100",
+        "w00101"
+      ]
+    },
+    {
+      "id": "p0016",
+      "speaker": "Yo",
+      "turn": "t0016",
+      "start": 46.28429166666667,
+      "end": 47.764291666666665,
+      "text": "Perfecto. Hazlo.",
+      "words": [
+        "w00102",
+        "w00103"
+      ]
+    },
+    {
+      "id": "p0017",
+      "speaker": "Claude",
+      "turn": "t0017",
+      "start": 48.55320833333333,
+      "end": 49.03320833333333,
+      "text": "No puedo.",
+      "words": [
+        "w00104",
+        "w00105"
+      ]
+    },
+    {
+      "id": "p0018",
+      "speaker": "Yo",
+      "turn": "t0018",
+      "start": 49.88,
+      "end": 50.18,
+      "text": "¿Por qué?",
+      "words": [
+        "w00106",
+        "w00107"
+      ]
+    },
+    {
+      "id": "p0019",
+      "speaker": "Claude",
+      "turn": "t0019",
+      "start": 51.102125,
+      "end": 53.702125,
+      "text": "Porque si cambio una línea, se rompen otras veinte funciones.",
+      "words": [
+        "w00108",
+        "w00109",
+        "w00110",
+        "w00111",
+        "w00112",
+        "w00113",
+        "w00114",
+        "w00115",
+        "w00116",
+        "w00117"
+      ]
+    },
+    {
+      "id": "p0020",
+      "speaker": "Yo",
+      "turn": "t0020",
+      "start": 54.62416666666667,
+      "end": 55.90416666666667,
+      "text": "¿Y cómo solucionamos eso?",
+      "words": [
+        "w00118",
+        "w00119",
+        "w00120",
+        "w00121"
+      ]
+    },
+    {
+      "id": "p0021",
+      "speaker": "Claude",
+      "turn": "t0021",
+      "start": 56.77441666666667,
+      "end": 59.15441666666667,
+      "text": "Mi recomendación es empezar el proyecto desde cero.",
+      "words": [
+        "w00122",
+        "w00123",
+        "w00124",
+        "w00125",
+        "w00126",
+        "w00127",
+        "w00128",
+        "w00129"
+      ]
+    },
+    {
+      "id": "p0022",
+      "speaker": "Yo",
+      "turn": "t0022",
+      "start": 60.00225,
+      "end": 61.762249999999995,
+      "text": "¡Pero llevamos cinco años desarrollándolo!",
+      "words": [
+        "w00130",
+        "w00131",
+        "w00132",
+        "w00133",
+        "w00134"
+      ]
+    },
+    {
+      "id": "p0023",
+      "speaker": "Claude",
+      "turn": "t0023",
+      "start": 62.555625,
+      "end": 64.035625,
+      "text": "Ahora entiendo por qué está así.",
+      "words": [
+        "w00135",
+        "w00136",
+        "w00137",
+        "w00138",
+        "w00139",
+        "w00140"
+      ]
+    }
+  ],
+  "words": [
+    {
+      "id": "w00001",
+      "phrase": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 0.0,
+      "end": 0.34,
+      "text": "Claude,",
+      "probability": 0.7459716796875
+    },
+    {
+      "id": "w00002",
+      "phrase": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 0.42,
+      "end": 0.62,
+      "text": "¿puedes",
+      "probability": 0.9718017578125
+    },
+    {
+      "id": "w00003",
+      "phrase": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 0.62,
+      "end": 0.92,
+      "text": "revisar",
+      "probability": 0.999755859375
+    },
+    {
+      "id": "w00004",
+      "phrase": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 0.92,
+      "end": 1.04,
+      "text": "este",
+      "probability": 0.99365234375
+    },
+    {
+      "id": "w00005",
+      "phrase": "p0001",
+      "speaker": "Yo",
+      "turn": "t0001",
+      "start": 1.04,
+      "end": 1.28,
+      "text": "código?",
+      "probability": 0.9951171875
+    },
+    {
+      "id": "w00006",
+      "phrase": "p0002",
+      "speaker": "Claude",
+      "turn": "t0002",
+      "start": 2.191,
+      "end": 2.471,
+      "text": "Claro.",
+      "probability": 0.876953125
+    },
+    {
+      "id": "w00007",
+      "phrase": "p0002",
+      "speaker": "Claude",
+      "turn": "t0002",
+      "start": 3.351,
+      "end": 3.9109999999999996,
+      "text": "Analizando…",
+      "probability": 0.774505615234375
+    },
+    {
+      "id": "w00008",
+      "phrase": "p0003",
+      "speaker": "Claude",
+      "turn": "t0003",
+      "start": 4.603,
+      "end": 4.8629999999999995,
+      "text": "Tengo",
+      "probability": 0.976806640625
+    },
+    {
+      "id": "w00009",
+      "phrase": "p0003",
+      "speaker": "Claude",
+      "turn": "t0003",
+      "start": 4.8629999999999995,
+      "end": 5.003,
+      "text": "una",
+      "probability": 0.9990234375
+    },
+    {
+      "id": "w00010",
+      "phrase": "p0003",
+      "speaker": "Claude",
+      "turn": "t0003",
+      "start": 5.003,
+      "end": 5.3629999999999995,
+      "text": "pregunta.",
+      "probability": 0.998046875
+    },
+    {
+      "id": "w00011",
+      "phrase": "p0004",
+      "speaker": "Yo",
+      "turn": "t0004",
+      "start": 6.1883333333333335,
+      "end": 6.548333333333334,
+      "text": "Dime.",
+      "probability": 0.896728515625
+    },
+    {
+      "id": "w00012",
+      "phrase": "p0005",
+      "speaker": "Claude",
+      "turn": "t0005",
+      "start": 7.338958333333333,
+      "end": 7.518958333333333,
+      "text": "Esto",
+      "probability": 0.84765625
+    },
+    {
+      "id": "w00013",
+      "phrase": "p0005",
+      "speaker": "Claude",
+      "turn": "t0005",
+      "start": 7.518958333333333,
+      "end": 7.638958333333333,
+      "text": "es",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00014",
+      "phrase": "p0005",
+      "speaker": "Claude",
+      "turn": "t0005",
+      "start": 7.638958333333333,
+      "end": 7.778958333333334,
+      "text": "una",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00015",
+      "phrase": "p0005",
+      "speaker": "Claude",
+      "turn": "t0005",
+      "start": 7.778958333333334,
+      "end": 8.418958333333332,
+      "text": "aplicación…",
+      "probability": 0.6660345395406088
+    },
+    {
+      "id": "w00016",
+      "phrase": "p0005",
+      "speaker": "Claude",
+      "turn": "t0005",
+      "start": 8.418958333333332,
+      "end": 8.518958333333334,
+      "text": "o",
+      "probability": 0.642578125
+    },
+    {
+      "id": "w00017",
+      "phrase": "p0005",
+      "speaker": "Claude",
+      "turn": "t0005",
+      "start": 8.518958333333334,
+      "end": 8.678958333333334,
+      "text": "una",
+      "probability": 0.98291015625
+    },
+    {
+      "id": "w00018",
+      "phrase": "p0005",
+      "speaker": "Claude",
+      "turn": "t0005",
+      "start": 8.678958333333334,
+      "end": 9.158958333333333,
+      "text": "declaración",
+      "probability": 0.99267578125
+    },
+    {
+      "id": "w00019",
+      "phrase": "p0005",
+      "speaker": "Claude",
+      "turn": "t0005",
+      "start": 9.158958333333333,
+      "end": 9.258958333333332,
+      "text": "de",
+      "probability": 0.99658203125
+    },
+    {
+      "id": "w00020",
+      "phrase": "p0005",
+      "speaker": "Claude",
+      "turn": "t0005",
+      "start": 9.258958333333332,
+      "end": 9.478958333333333,
+      "text": "guerra.",
+      "probability": 0.99755859375
+    },
+    {
+      "id": "w00021",
+      "phrase": "p0006",
+      "speaker": "Yo",
+      "turn": "t0006",
+      "start": 10.369875,
+      "end": 10.589875000000001,
+      "text": "¿Tan",
+      "probability": 0.7926432291666666
+    },
+    {
+      "id": "w00022",
+      "phrase": "p0006",
+      "speaker": "Yo",
+      "turn": "t0006",
+      "start": 10.589875000000001,
+      "end": 10.749875000000001,
+      "text": "mal",
+      "probability": 0.998046875
+    },
+    {
+      "id": "w00023",
+      "phrase": "p0006",
+      "speaker": "Yo",
+      "turn": "t0006",
+      "start": 10.749875000000001,
+      "end": 10.929875000000001,
+      "text": "está?",
+      "probability": 0.99755859375
+    },
+    {
+      "id": "w00024",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 11.789625,
+      "end": 12.249625,
+      "text": "Veamos.",
+      "probability": 0.912841796875
+    },
+    {
+      "id": "w00025",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 12.549624999999999,
+      "end": 12.989624999999998,
+      "text": "Una",
+      "probability": 0.994140625
+    },
+    {
+      "id": "w00026",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 12.989624999999998,
+      "end": 13.329625,
+      "text": "función",
+      "probability": 1.0
+    },
+    {
+      "id": "w00027",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 13.329625,
+      "end": 13.489624999999998,
+      "text": "de",
+      "probability": 1.0
+    },
+    {
+      "id": "w00028",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 13.489624999999998,
+      "end": 13.629624999999999,
+      "text": "dos",
+      "probability": 0.134033203125
+    },
+    {
+      "id": "w00029",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 13.629624999999999,
+      "end": 13.769625,
+      "text": "mil",
+      "probability": 0.998046875
+    },
+    {
+      "id": "w00030",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 13.769625,
+      "end": 14.169625,
+      "text": "líneas,",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00031",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 14.289625,
+      "end": 14.609625,
+      "text": "variables",
+      "probability": 0.99658203125
+    },
+    {
+      "id": "w00032",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 14.609625,
+      "end": 15.049624999999999,
+      "text": "llamadas",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00033",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 15.049624999999999,
+      "end": 15.289625,
+      "text": "a,",
+      "probability": 0.67578125
+    },
+    {
+      "id": "w00034",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 15.389624999999999,
+      "end": 15.729624999999999,
+      "text": "equis",
+      "probability": 0.4984579086303711
+    },
+    {
+      "id": "w00035",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 15.729624999999999,
+      "end": 15.869625,
+      "text": "dos",
+      "probability": 0.220703125
+    },
+    {
+      "id": "w00036",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 15.869625,
+      "end": 16.069625,
+      "text": "y",
+      "probability": 0.78955078125
+    },
+    {
+      "id": "w00037",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 16.069625,
+      "end": 16.929624999999998,
+      "text": "finalFinalAhoraSi,",
+      "probability": 0.6651409268379211
+    },
+    {
+      "id": "w00038",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 17.069625,
+      "end": 17.269624999999998,
+      "text": "y",
+      "probability": 0.994140625
+    },
+    {
+      "id": "w00039",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 17.269624999999998,
+      "end": 17.349625,
+      "text": "un",
+      "probability": 0.9970703125
+    },
+    {
+      "id": "w00040",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 17.349625,
+      "end": 17.769624999999998,
+      "text": "comentario",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00041",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 17.769624999999998,
+      "end": 17.869625,
+      "text": "que",
+      "probability": 0.99755859375
+    },
+    {
+      "id": "w00042",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 17.869625,
+      "end": 18.089624999999998,
+      "text": "dice",
+      "probability": 0.99853515625
+    },
+    {
+      "id": "w00043",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 18.089624999999998,
+      "end": 18.509625,
+      "text": "“no",
+      "probability": 0.10110773642857869
+    },
+    {
+      "id": "w00044",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 18.509625,
+      "end": 18.789625,
+      "text": "tocar",
+      "probability": 0.955078125
+    },
+    {
+      "id": "w00045",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 18.789625,
+      "end": 18.989625,
+      "text": "o",
+      "probability": 0.39892578125
+    },
+    {
+      "id": "w00046",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 18.989625,
+      "end": 19.149625,
+      "text": "se",
+      "probability": 0.96142578125
+    },
+    {
+      "id": "w00047",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 19.149625,
+      "end": 19.349625,
+      "text": "cae",
+      "probability": 0.99169921875
+    },
+    {
+      "id": "w00048",
+      "phrase": "p0007",
+      "speaker": "Claude",
+      "turn": "t0007",
+      "start": 19.349625,
+      "end": 19.929625,
+      "text": "todo”.",
+      "probability": 0.3938137690226237
+    },
+    {
+      "id": "w00049",
+      "phrase": "p0008",
+      "speaker": "Yo",
+      "turn": "t0008",
+      "start": 20.368791666666667,
+      "end": 20.648791666666668,
+      "text": "Bueno,",
+      "probability": 0.94189453125
+    },
+    {
+      "id": "w00050",
+      "phrase": "p0008",
+      "speaker": "Yo",
+      "turn": "t0008",
+      "start": 20.728791666666666,
+      "end": 20.988791666666668,
+      "text": "funciona.",
+      "probability": 0.96826171875
+    },
+    {
+      "id": "w00051",
+      "phrase": "p0009",
+      "speaker": "Claude",
+      "turn": "t0009",
+      "start": 21.824,
+      "end": 22.064,
+      "text": "También",
+      "probability": 0.9794921875
+    },
+    {
+      "id": "w00052",
+      "phrase": "p0009",
+      "speaker": "Claude",
+      "turn": "t0009",
+      "start": 22.064,
+      "end": 22.464000000000002,
+      "text": "encontré",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00053",
+      "phrase": "p0009",
+      "speaker": "Claude",
+      "turn": "t0009",
+      "start": 22.464000000000002,
+      "end": 22.724,
+      "text": "siete",
+      "probability": 0.2327880859375
+    },
+    {
+      "id": "w00054",
+      "phrase": "p0009",
+      "speaker": "Claude",
+      "turn": "t0009",
+      "start": 22.724,
+      "end": 22.924000000000003,
+      "text": "if",
+      "probability": 0.63427734375
+    },
+    {
+      "id": "w00055",
+      "phrase": "p0009",
+      "speaker": "Claude",
+      "turn": "t0009",
+      "start": 22.924000000000003,
+      "end": 23.344,
+      "text": "anidados,",
+      "probability": 0.7065022786458334
+    },
+    {
+      "id": "w00056",
+      "phrase": "p0009",
+      "speaker": "Claude",
+      "turn": "t0009",
+      "start": 23.484,
+      "end": 23.604000000000003,
+      "text": "tres",
+      "probability": 0.9990234375
+    },
+    {
+      "id": "w00057",
+      "phrase": "p0009",
+      "speaker": "Claude",
+      "turn": "t0009",
+      "start": 23.604000000000003,
+      "end": 24.044,
+      "text": "consultas",
+      "probability": 0.92578125
+    },
+    {
+      "id": "w00058",
+      "phrase": "p0009",
+      "speaker": "Claude",
+      "turn": "t0009",
+      "start": 24.044,
+      "end": 24.544,
+      "text": "duplicadas",
+      "probability": 0.9990234375
+    },
+    {
+      "id": "w00059",
+      "phrase": "p0009",
+      "speaker": "Claude",
+      "turn": "t0009",
+      "start": 24.544,
+      "end": 24.724,
+      "text": "y",
+      "probability": 0.994140625
+    },
+    {
+      "id": "w00060",
+      "phrase": "p0009",
+      "speaker": "Claude",
+      "turn": "t0009",
+      "start": 24.724,
+      "end": 24.844,
+      "text": "una",
+      "probability": 1.0
+    },
+    {
+      "id": "w00061",
+      "phrase": "p0009",
+      "speaker": "Claude",
+      "turn": "t0009",
+      "start": 24.844,
+      "end": 25.144000000000002,
+      "text": "función",
+      "probability": 1.0
+    },
+    {
+      "id": "w00062",
+      "phrase": "p0009",
+      "speaker": "Claude",
+      "turn": "t0009",
+      "start": 25.144000000000002,
+      "end": 25.464000000000002,
+      "text": "llamada",
+      "probability": 0.999267578125
+    },
+    {
+      "id": "w00063",
+      "phrase": "p0009",
+      "speaker": "Claude",
+      "turn": "t0009",
+      "start": 25.464000000000002,
+      "end": 25.884,
+      "text": "hacerTodo.",
+      "probability": 0.4377339680989583
+    },
+    {
+      "id": "w00064",
+      "phrase": "p0010",
+      "speaker": "Yo",
+      "turn": "t0010",
+      "start": 26.643166666666666,
+      "end": 26.923166666666667,
+      "text": "Esa",
+      "probability": 0.952392578125
+    },
+    {
+      "id": "w00065",
+      "phrase": "p0010",
+      "speaker": "Yo",
+      "turn": "t0010",
+      "start": 26.923166666666667,
+      "end": 27.143166666666666,
+      "text": "función",
+      "probability": 0.99853515625
+    },
+    {
+      "id": "w00066",
+      "phrase": "p0010",
+      "speaker": "Yo",
+      "turn": "t0010",
+      "start": 27.143166666666666,
+      "end": 27.323166666666665,
+      "text": "es",
+      "probability": 0.9990234375
+    },
+    {
+      "id": "w00067",
+      "phrase": "p0010",
+      "speaker": "Yo",
+      "turn": "t0010",
+      "start": 27.323166666666665,
+      "end": 27.743166666666667,
+      "text": "importante.",
+      "probability": 0.9990234375
+    },
+    {
+      "id": "w00068",
+      "phrase": "p0011",
+      "speaker": "Claude",
+      "turn": "t0011",
+      "start": 28.631833333333333,
+      "end": 28.791833333333333,
+      "text": "Lo",
+      "probability": 0.95556640625
+    },
+    {
+      "id": "w00069",
+      "phrase": "p0011",
+      "speaker": "Claude",
+      "turn": "t0011",
+      "start": 28.791833333333333,
+      "end": 29.111833333333333,
+      "text": "noté.",
+      "probability": 0.9951171875
+    },
+    {
+      "id": "w00070",
+      "phrase": "p0011",
+      "speaker": "Claude",
+      "turn": "t0011",
+      "start": 29.571833333333334,
+      "end": 30.131833333333333,
+      "text": "Autentica",
+      "probability": 0.6273748079935709
+    },
+    {
+      "id": "w00071",
+      "phrase": "p0011",
+      "speaker": "Claude",
+      "turn": "t0011",
+      "start": 30.131833333333333,
+      "end": 30.651833333333332,
+      "text": "usuarios,",
+      "probability": 0.895263671875
+    },
+    {
+      "id": "w00072",
+      "phrase": "p0011",
+      "speaker": "Claude",
+      "turn": "t0011",
+      "start": 30.831833333333332,
+      "end": 31.331833333333332,
+      "text": "calcula",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00073",
+      "phrase": "p0011",
+      "speaker": "Claude",
+      "turn": "t0011",
+      "start": 31.331833333333332,
+      "end": 31.751833333333334,
+      "text": "impuestos,",
+      "probability": 1.0
+    },
+    {
+      "id": "w00074",
+      "phrase": "p0011",
+      "speaker": "Claude",
+      "turn": "t0011",
+      "start": 31.991833333333332,
+      "end": 32.21183333333333,
+      "text": "manda",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00075",
+      "phrase": "p0011",
+      "speaker": "Claude",
+      "turn": "t0011",
+      "start": 32.21183333333333,
+      "end": 32.65183333333333,
+      "text": "correos",
+      "probability": 1.0
+    },
+    {
+      "id": "w00076",
+      "phrase": "p0011",
+      "speaker": "Claude",
+      "turn": "t0011",
+      "start": 32.65183333333333,
+      "end": 32.81183333333333,
+      "text": "y,",
+      "probability": 0.99462890625
+    },
+    {
+      "id": "w00077",
+      "phrase": "p0011",
+      "speaker": "Claude",
+      "turn": "t0011",
+      "start": 32.89183333333333,
+      "end": 32.95183333333333,
+      "text": "por",
+      "probability": 1.0
+    },
+    {
+      "id": "w00078",
+      "phrase": "p0011",
+      "speaker": "Claude",
+      "turn": "t0011",
+      "start": 32.95183333333333,
+      "end": 33.191833333333335,
+      "text": "alguna",
+      "probability": 1.0
+    },
+    {
+      "id": "w00079",
+      "phrase": "p0011",
+      "speaker": "Claude",
+      "turn": "t0011",
+      "start": 33.191833333333335,
+      "end": 33.511833333333335,
+      "text": "razón,",
+      "probability": 1.0
+    },
+    {
+      "id": "w00080",
+      "phrase": "p0011",
+      "speaker": "Claude",
+      "turn": "t0011",
+      "start": 33.75183333333333,
+      "end": 34.011833333333335,
+      "text": "imprime",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00081",
+      "phrase": "p0011",
+      "speaker": "Claude",
+      "turn": "t0011",
+      "start": 34.011833333333335,
+      "end": 34.31183333333333,
+      "text": "tickets.",
+      "probability": 0.97216796875
+    },
+    {
+      "id": "w00082",
+      "phrase": "p0012",
+      "speaker": "Yo",
+      "turn": "t0012",
+      "start": 35.450041666666664,
+      "end": 35.65004166666667,
+      "text": "Es",
+      "probability": 0.26123046875
+    },
+    {
+      "id": "w00083",
+      "phrase": "p0012",
+      "speaker": "Yo",
+      "turn": "t0012",
+      "start": 35.65004166666667,
+      "end": 35.75004166666666,
+      "text": "que",
+      "probability": 0.99755859375
+    },
+    {
+      "id": "w00084",
+      "phrase": "p0012",
+      "speaker": "Yo",
+      "turn": "t0012",
+      "start": 35.75004166666666,
+      "end": 36.270041666666664,
+      "text": "centraliza",
+      "probability": 0.992919921875
+    },
+    {
+      "id": "w00085",
+      "phrase": "p0012",
+      "speaker": "Yo",
+      "turn": "t0012",
+      "start": 36.270041666666664,
+      "end": 36.410041666666665,
+      "text": "la",
+      "probability": 0.998046875
+    },
+    {
+      "id": "w00086",
+      "phrase": "p0012",
+      "speaker": "Yo",
+      "turn": "t0012",
+      "start": 36.410041666666665,
+      "end": 36.730041666666665,
+      "text": "lógica.",
+      "probability": 0.998779296875
+    },
+    {
+      "text": "No.",
+      "start": 37.53720833333333,
+      "end": 37.637208333333334,
+      "probability": 0.8974609375,
+      "speaker": "Claude",
+      "turn": "t0013",
+      "id": "w00087",
+      "phrase": "p0013"
+    },
+    {
+      "text": "Secuestra",
+      "start": 38.15720833333333,
+      "end": 38.637208333333334,
+      "probability": 0.9930013020833334,
+      "speaker": "Claude",
+      "turn": "t0013",
+      "id": "w00088",
+      "phrase": "p0013"
+    },
+    {
+      "text": "la",
+      "start": 38.637208333333334,
+      "end": 38.737208333333335,
+      "probability": 0.9970703125,
+      "speaker": "Claude",
+      "turn": "t0013",
+      "id": "w00089",
+      "phrase": "p0013"
+    },
+    {
+      "text": "lógica.",
+      "start": 38.737208333333335,
+      "end": 39.137208333333334,
+      "probability": 0.999267578125,
+      "speaker": "Claude",
+      "turn": "t0013",
+      "id": "w00090",
+      "phrase": "p0013"
+    },
+    {
+      "id": "w00091",
+      "phrase": "p0014",
+      "speaker": "Yo",
+      "turn": "t0014",
+      "start": 39.985,
+      "end": 40.385,
+      "text": "Entonces,",
+      "probability": 0.89404296875
+    },
+    {
+      "id": "w00092",
+      "phrase": "p0014",
+      "speaker": "Yo",
+      "turn": "t0014",
+      "start": 40.665,
+      "end": 40.925,
+      "text": "¿qué",
+      "probability": 0.984375
+    },
+    {
+      "id": "w00093",
+      "phrase": "p0014",
+      "speaker": "Yo",
+      "turn": "t0014",
+      "start": 40.925,
+      "end": 41.445,
+      "text": "recomiendas?",
+      "probability": 0.9996744791666666
+    },
+    {
+      "id": "w00094",
+      "phrase": "p0015",
+      "speaker": "Claude",
+      "turn": "t0015",
+      "start": 42.13516666666667,
+      "end": 42.45516666666667,
+      "text": "Separar",
+      "probability": 0.5233001708984375
+    },
+    {
+      "id": "w00095",
+      "phrase": "p0015",
+      "speaker": "Claude",
+      "turn": "t0015",
+      "start": 42.45516666666667,
+      "end": 43.23516666666667,
+      "text": "responsabilidades,",
+      "probability": 0.999267578125
+    },
+    {
+      "id": "w00096",
+      "phrase": "p0015",
+      "speaker": "Claude",
+      "turn": "t0015",
+      "start": 43.51516666666667,
+      "end": 43.99516666666667,
+      "text": "renombrar",
+      "probability": 0.9988606770833334
+    },
+    {
+      "id": "w00097",
+      "phrase": "p0015",
+      "speaker": "Claude",
+      "turn": "t0015",
+      "start": 43.99516666666667,
+      "end": 44.37516666666667,
+      "text": "variables",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00098",
+      "phrase": "p0015",
+      "speaker": "Claude",
+      "turn": "t0015",
+      "start": 44.37516666666667,
+      "end": 44.61516666666667,
+      "text": "y",
+      "probability": 0.9990234375
+    },
+    {
+      "id": "w00099",
+      "phrase": "p0015",
+      "speaker": "Claude",
+      "turn": "t0015",
+      "start": 44.61516666666667,
+      "end": 44.95516666666667,
+      "text": "dividir",
+      "probability": 1.0
+    },
+    {
+      "id": "w00100",
+      "phrase": "p0015",
+      "speaker": "Claude",
+      "turn": "t0015",
+      "start": 44.95516666666667,
+      "end": 45.09516666666667,
+      "text": "esa",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00101",
+      "phrase": "p0015",
+      "speaker": "Claude",
+      "turn": "t0015",
+      "start": 45.09516666666667,
+      "end": 45.37516666666667,
+      "text": "función.",
+      "probability": 1.0
+    },
+    {
+      "id": "w00102",
+      "phrase": "p0016",
+      "speaker": "Yo",
+      "turn": "t0016",
+      "start": 46.28429166666667,
+      "end": 46.88429166666667,
+      "text": "Perfecto.",
+      "probability": 0.852294921875
+    },
+    {
+      "id": "w00103",
+      "phrase": "p0016",
+      "speaker": "Yo",
+      "turn": "t0016",
+      "start": 47.084291666666665,
+      "end": 47.764291666666665,
+      "text": "Hazlo.",
+      "probability": 0.9658203125
+    },
+    {
+      "id": "w00104",
+      "phrase": "p0017",
+      "speaker": "Claude",
+      "turn": "t0017",
+      "start": 48.55320833333333,
+      "end": 48.75320833333333,
+      "text": "No",
+      "probability": 0.81640625
+    },
+    {
+      "id": "w00105",
+      "phrase": "p0017",
+      "speaker": "Claude",
+      "turn": "t0017",
+      "start": 48.75320833333333,
+      "end": 49.03320833333333,
+      "text": "puedo.",
+      "probability": 0.9970703125
+    },
+    {
+      "id": "w00106",
+      "phrase": "p0018",
+      "speaker": "Yo",
+      "turn": "t0018",
+      "start": 49.88,
+      "end": 50.1,
+      "text": "¿Por",
+      "probability": 0.9755859375
+    },
+    {
+      "id": "w00107",
+      "phrase": "p0018",
+      "speaker": "Yo",
+      "turn": "t0018",
+      "start": 50.1,
+      "end": 50.18,
+      "text": "qué?",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00108",
+      "phrase": "p0019",
+      "speaker": "Claude",
+      "turn": "t0019",
+      "start": 51.102125,
+      "end": 51.342125,
+      "text": "Porque",
+      "probability": 0.59765625
+    },
+    {
+      "id": "w00109",
+      "phrase": "p0019",
+      "speaker": "Claude",
+      "turn": "t0019",
+      "start": 51.342125,
+      "end": 51.482125,
+      "text": "si",
+      "probability": 0.9970703125
+    },
+    {
+      "id": "w00110",
+      "phrase": "p0019",
+      "speaker": "Claude",
+      "turn": "t0019",
+      "start": 51.482125,
+      "end": 51.762125,
+      "text": "cambio",
+      "probability": 0.99755859375
+    },
+    {
+      "id": "w00111",
+      "phrase": "p0019",
+      "speaker": "Claude",
+      "turn": "t0019",
+      "start": 51.762125,
+      "end": 51.922125,
+      "text": "una",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00112",
+      "phrase": "p0019",
+      "speaker": "Claude",
+      "turn": "t0019",
+      "start": 51.922125,
+      "end": 52.162125,
+      "text": "línea,",
+      "probability": 0.99853515625
+    },
+    {
+      "id": "w00113",
+      "phrase": "p0019",
+      "speaker": "Claude",
+      "turn": "t0019",
+      "start": 52.342125,
+      "end": 52.442125000000004,
+      "text": "se",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00114",
+      "phrase": "p0019",
+      "speaker": "Claude",
+      "turn": "t0019",
+      "start": 52.442125000000004,
+      "end": 52.722125,
+      "text": "rompen",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00115",
+      "phrase": "p0019",
+      "speaker": "Claude",
+      "turn": "t0019",
+      "start": 52.722125,
+      "end": 52.942125000000004,
+      "text": "otras",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00116",
+      "phrase": "p0019",
+      "speaker": "Claude",
+      "turn": "t0019",
+      "start": 52.942125000000004,
+      "end": 53.202125,
+      "text": "veinte",
+      "probability": 0.523101806640625
+    },
+    {
+      "id": "w00117",
+      "phrase": "p0019",
+      "speaker": "Claude",
+      "turn": "t0019",
+      "start": 53.202125,
+      "end": 53.702125,
+      "text": "funciones.",
+      "probability": 0.999755859375
+    },
+    {
+      "id": "w00118",
+      "phrase": "p0020",
+      "speaker": "Yo",
+      "turn": "t0020",
+      "start": 54.62416666666667,
+      "end": 54.80416666666667,
+      "text": "¿Y",
+      "probability": 0.92138671875
+    },
+    {
+      "id": "w00119",
+      "phrase": "p0020",
+      "speaker": "Yo",
+      "turn": "t0020",
+      "start": 54.80416666666667,
+      "end": 55.064166666666665,
+      "text": "cómo",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00120",
+      "phrase": "p0020",
+      "speaker": "Yo",
+      "turn": "t0020",
+      "start": 55.064166666666665,
+      "end": 55.64416666666667,
+      "text": "solucionamos",
+      "probability": 1.0
+    },
+    {
+      "id": "w00121",
+      "phrase": "p0020",
+      "speaker": "Yo",
+      "turn": "t0020",
+      "start": 55.64416666666667,
+      "end": 55.90416666666667,
+      "text": "eso?",
+      "probability": 1.0
+    },
+    {
+      "id": "w00122",
+      "phrase": "p0021",
+      "speaker": "Claude",
+      "turn": "t0021",
+      "start": 56.77441666666667,
+      "end": 56.95441666666667,
+      "text": "Mi",
+      "probability": 0.9375
+    },
+    {
+      "id": "w00123",
+      "phrase": "p0021",
+      "speaker": "Claude",
+      "turn": "t0021",
+      "start": 56.95441666666667,
+      "end": 57.574416666666664,
+      "text": "recomendación",
+      "probability": 0.99951171875
+    },
+    {
+      "id": "w00124",
+      "phrase": "p0021",
+      "speaker": "Claude",
+      "turn": "t0021",
+      "start": 57.574416666666664,
+      "end": 57.87441666666667,
+      "text": "es",
+      "probability": 0.99365234375
+    },
+    {
+      "id": "w00125",
+      "phrase": "p0021",
+      "speaker": "Claude",
+      "turn": "t0021",
+      "start": 57.87441666666667,
+      "end": 58.174416666666666,
+      "text": "empezar",
+      "probability": 0.99755859375
+    },
+    {
+      "id": "w00126",
+      "phrase": "p0021",
+      "speaker": "Claude",
+      "turn": "t0021",
+      "start": 58.174416666666666,
+      "end": 58.29441666666667,
+      "text": "el",
+      "probability": 0.99755859375
+    },
+    {
+      "id": "w00127",
+      "phrase": "p0021",
+      "speaker": "Claude",
+      "turn": "t0021",
+      "start": 58.29441666666667,
+      "end": 58.63441666666667,
+      "text": "proyecto",
+      "probability": 0.99853515625
+    },
+    {
+      "id": "w00128",
+      "phrase": "p0021",
+      "speaker": "Claude",
+      "turn": "t0021",
+      "start": 58.63441666666667,
+      "end": 58.83441666666667,
+      "text": "desde",
+      "probability": 0.998046875
+    },
+    {
+      "id": "w00129",
+      "phrase": "p0021",
+      "speaker": "Claude",
+      "turn": "t0021",
+      "start": 58.83441666666667,
+      "end": 59.15441666666667,
+      "text": "cero.",
+      "probability": 0.998779296875
+    },
+    {
+      "id": "w00130",
+      "phrase": "p0022",
+      "speaker": "Yo",
+      "turn": "t0022",
+      "start": 60.00225,
+      "end": 60.20225,
+      "text": "¡Pero",
+      "probability": 0.6154797871907552
+    },
+    {
+      "id": "w00131",
+      "phrase": "p0022",
+      "speaker": "Yo",
+      "turn": "t0022",
+      "start": 60.20225,
+      "end": 60.542249999999996,
+      "text": "llevamos",
+      "probability": 0.9921875
+    },
+    {
+      "id": "w00132",
+      "phrase": "p0022",
+      "speaker": "Yo",
+      "turn": "t0022",
+      "start": 60.542249999999996,
+      "end": 60.802249999999994,
+      "text": "cinco",
+      "probability": 0.297119140625
+    },
+    {
+      "id": "w00133",
+      "phrase": "p0022",
+      "speaker": "Yo",
+      "turn": "t0022",
+      "start": 60.802249999999994,
+      "end": 61.06225,
+      "text": "años",
+      "probability": 0.99462890625
+    },
+    {
+      "id": "w00134",
+      "phrase": "p0022",
+      "speaker": "Yo",
+      "turn": "t0022",
+      "start": 61.06225,
+      "end": 61.762249999999995,
+      "text": "desarrollándolo!",
+      "probability": 0.9861653645833334
+    },
+    {
+      "id": "w00135",
+      "phrase": "p0023",
+      "speaker": "Claude",
+      "turn": "t0023",
+      "start": 62.555625,
+      "end": 62.855624999999996,
+      "text": "Ahora",
+      "probability": 0.970703125
+    },
+    {
+      "id": "w00136",
+      "phrase": "p0023",
+      "speaker": "Claude",
+      "turn": "t0023",
+      "start": 62.855624999999996,
+      "end": 63.235625,
+      "text": "entiendo",
+      "probability": 1.0
+    },
+    {
+      "id": "w00137",
+      "phrase": "p0023",
+      "speaker": "Claude",
+      "turn": "t0023",
+      "start": 63.235625,
+      "end": 63.475625,
+      "text": "por",
+      "probability": 0.99658203125
+    },
+    {
+      "id": "w00138",
+      "phrase": "p0023",
+      "speaker": "Claude",
+      "turn": "t0023",
+      "start": 63.475625,
+      "end": 63.575625,
+      "text": "qué",
+      "probability": 0.99072265625
+    },
+    {
+      "id": "w00139",
+      "phrase": "p0023",
+      "speaker": "Claude",
+      "turn": "t0023",
+      "start": 63.575625,
+      "end": 63.795625,
+      "text": "está",
+      "probability": 0.994140625
+    },
+    {
+      "id": "w00140",
+      "phrase": "p0023",
+      "speaker": "Claude",
+      "turn": "t0023",
+      "start": 63.795625,
+      "end": 64.035625,
+      "text": "así.",
+      "probability": 0.99951171875
+    }
+  ],
+  "turns": [
+    {
+      "id": "t0001",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "Claude, ¿puedes revisar este código?",
+      "start": 0.0,
+      "end": 1.841,
+      "audio": "turns/t0001-Yo.wav",
+      "seed": 42,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0002",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "Claro. Analizando…",
+      "start": 2.191,
+      "end": 4.253,
+      "audio": "turns/t0002-Claude.wav",
+      "seed": 43,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0003",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "Tengo una pregunta.",
+      "start": 4.603,
+      "end": 5.838333333333333,
+      "audio": "turns/t0003-Claude.wav",
+      "seed": 44,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0004",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "Dime.",
+      "start": 6.1883333333333335,
+      "end": 6.988958333333334,
+      "audio": "turns/t0004-Yo.wav",
+      "seed": 45,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0005",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "¿Esto es una aplicación… o una declaración de guerra?",
+      "start": 7.338958333333333,
+      "end": 10.019874999999999,
+      "audio": "turns/t0005-Claude.wav",
+      "seed": 46,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0006",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¿Tan mal está?",
+      "start": 10.369875,
+      "end": 11.439625,
+      "audio": "turns/t0006-Yo.wav",
+      "seed": 47,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0007",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "Veamos. Una función de dos mil líneas, variables llamadas a, equis dos y finalFinalAhoraSi, y un comentario que dice “no tocar o se cae todo”.",
+      "start": 11.789625,
+      "end": 20.018791666666665,
+      "audio": "turns/t0007-Claude.wav",
+      "seed": 48,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0008",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "Bueno… funciona.",
+      "start": 20.368791666666667,
+      "end": 21.474,
+      "audio": "turns/t0008-Yo.wav",
+      "seed": 49,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0009",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "También encontré siete if anidados, tres consultas duplicadas y una función llamada hacerTodo.",
+      "start": 21.824,
+      "end": 26.293166666666668,
+      "audio": "turns/t0009-Claude.wav",
+      "seed": 50,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0010",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "Esa función es importante.",
+      "start": 26.643166666666666,
+      "end": 28.28183333333333,
+      "audio": "turns/t0010-Yo.wav",
+      "seed": 51,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0011",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "Lo noté. Autentica usuarios, calcula impuestos, manda correos y, por alguna razón, imprime tickets.",
+      "start": 28.631833333333333,
+      "end": 35.10004166666667,
+      "audio": "turns/t0011-Claude.wav",
+      "seed": 52,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0012",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "Es que centraliza la lógica.",
+      "start": 35.450041666666664,
+      "end": 37.18720833333333,
+      "audio": "turns/t0012-Yo.wav",
+      "seed": 53,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0013",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "No. Secuestra la lógica.",
+      "start": 37.53720833333333,
+      "end": 39.635,
+      "audio": "turns/t0013-Claude.wav",
+      "seed": 54,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0014",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "Entonces, ¿qué recomiendas?",
+      "start": 39.985,
+      "end": 41.78516666666667,
+      "audio": "turns/t0014-Yo.wav",
+      "seed": 55,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0015",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "Separar responsabilidades, renombrar variables y dividir esa función.",
+      "start": 42.13516666666667,
+      "end": 45.93429166666667,
+      "audio": "turns/t0015-Claude.wav",
+      "seed": 56,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0016",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "Perfecto. Hazlo.",
+      "start": 46.28429166666667,
+      "end": 48.203208333333336,
+      "audio": "turns/t0016-Yo.wav",
+      "seed": 997,
+      "effect": "none",
+      "reused_audio": false,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0017",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "No puedo.",
+      "start": 48.55320833333333,
+      "end": 49.529999999999994,
+      "audio": "turns/t0017-Claude.wav",
+      "seed": 58,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0018",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¿Por qué?",
+      "start": 49.88,
+      "end": 50.752125,
+      "audio": "turns/t0018-Yo.wav",
+      "seed": 59,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0019",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "Porque si cambio una línea, se rompen otras veinte funciones.",
+      "start": 51.102125,
+      "end": 54.274166666666666,
+      "audio": "turns/t0019-Claude.wav",
+      "seed": 60,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0020",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¿Y cómo solucionamos eso?",
+      "start": 54.62416666666667,
+      "end": 56.424416666666666,
+      "audio": "turns/t0020-Yo.wav",
+      "seed": 61,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0021",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "Mi recomendación es empezar el proyecto desde cero.",
+      "start": 56.77441666666667,
+      "end": 59.65225,
+      "audio": "turns/t0021-Claude.wav",
+      "seed": 62,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0022",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¡Pero llevamos cinco años desarrollándolo!",
+      "start": 60.00225,
+      "end": 62.205625,
+      "audio": "turns/t0022-Yo.wav",
+      "seed": 63,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0023",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "Ahora entiendo por qué está así.",
+      "start": 62.555625,
+      "end": 64.57025,
+      "audio": "turns/t0023-Claude.wav",
+      "seed": 64,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    }
+  ],
+  "recognition": "Per-turn audio with script context; speaker known from generation.",
+  "duration": 64.57025,
+  "audio_sha256": "a5b4ac6b0eef967110079086edefe7300885e3f548c053b76869ce5ffd5fa8c9",
+  "review": "t0013 independently recognized without VAD; original WAV unchanged."
+}

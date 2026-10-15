@@ -1,0 +1,23 @@
+Claude, ¿puedes revisar este código?
+Claro. Analizando…
+Tengo una pregunta.
+Dime.
+¿Esto es una aplicación… o una declaración de guerra?
+¿Tan mal está?
+Veamos. Una función de dos mil líneas, variables llamadas a, equis dos y finalFinalAhoraSi, y un comentario que dice “no tocar o se cae todo”.
+Bueno… funciona.
+También encontré siete if anidados, tres consultas duplicadas y una función llamada hacerTodo.
+Esa función es importante.
+Lo noté. Autentica usuarios, calcula impuestos, manda correos y, por alguna razón, imprime tickets.
+Es que centraliza la lógica.
+No. Secuestra la lógica.
+Entonces, ¿qué recomiendas?
+Separar responsabilidades, renombrar variables y dividir esa función.
+Perfecto. Hazlo.
+No puedo.
+¿Por qué?
+Porque si cambio una línea, se rompen otras veinte funciones.
+¿Y cómo solucionamos eso?
+Mi recomendación es empezar el proyecto desde cero.
+¡Pero llevamos cinco años desarrollándolo!
+Ahora entiendo por qué está así.

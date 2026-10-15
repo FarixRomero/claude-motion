@@ -119,11 +119,33 @@ class PipelineTests(unittest.TestCase):
         self.config['speakers']['mi-voz']['effect'] = 'none'
         self.assertNotEqual(key, pipeline.voice_input(self.project, self.config, self.settings)[0])
 
+    def test_claude_uses_the_approved_independent_voice(self):
+        robot = self.settings['voices_dir'] / 'claude-robot'
+        robot.mkdir()
+        pipeline.write_json(robot / 'voice.json', {'model': pipeline.MODEL})
+        (robot / 'profile.pt').write_bytes(b'claude-profile')
+        (robot / 'reference.wav').write_bytes(b'claude-reference')
+        self.config['speakers'] = {'Yo': {'profile': 'mi-voz'}, 'Claude': {'profile': 'mi-voz', 'label': 'Claude'}}
+        (self.project / '001-Voz/guion.md').write_text('[Yo] Hola.\n[Claude] Buenas.')
+        _, inputs, _, plan = pipeline.voice_input(self.project, self.config, self.settings)
+        self.assertEqual(plan[0]['profile'], 'mi-voz')
+        self.assertEqual(plan[1]['profile'], 'claude-robot')
+        self.assertEqual(plan[1]['effect'], 'robot-soft')
+        self.assertEqual(plan[1]['exaggeration'], 0.2)
+        self.assertEqual(plan[1]['cfg_weight'], 0.65)
+        self.assertNotEqual(inputs['speaker_profiles_sha256']['Yo'], inputs['speaker_profiles_sha256']['Claude'])
+        self.assertEqual(self.config['speakers']['Claude']['label'], 'Claude')
+
     def test_inline_dialogue_preserves_text_without_speaking_labels(self):
         turns = pipeline.dialogue_turns('# Guion\n\n[Yo] ¿Y el botón?\n\n[Claude] Sigue azul.',
                                         {'Yo': {}, 'Claude': {}})
         self.assertEqual([t['speaker'] for t in turns], ['Yo', 'Claude'])
         self.assertEqual([t['text'] for t in turns], ['¿Y el botón?', 'Sigue azul.'])
+
+    def test_explicit_stage_direction_is_not_spoken(self):
+        turns = pipeline.dialogue_turns('[Claude] Adiós.\n\n[Claude desaparece lentamente]\n\n[Yo] Todavía no funciona.',
+            {'Claude': {}, 'Yo': {}}, ['Claude desaparece lentamente'])
+        self.assertEqual([t['text'] for t in turns], ['Adiós.', 'Todavía no funciona.'])
 
     def test_known_turn_boundaries_split_whisper_phrases_by_speaker(self):
         transcript = {'segments': [{'id': 'p0001', 'words': ['w1', 'w2']}],

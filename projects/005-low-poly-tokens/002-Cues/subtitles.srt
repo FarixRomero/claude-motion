@@ -1,0 +1,43 @@
+1
+00:00:00,000 --> 00:00:01,620
+Claude, ¿por qué se me acabaron todos los tokens?
+
+2
+00:00:02,455 --> 00:00:04,315
+¡He completado exitosamente tu solicitud!
+
+3
+00:00:05,138 --> 00:00:08,898
+¿Cuál solicitud? ¡Solo te pedí que cambiaras el nombre de una variable!
+
+4
+00:00:10,042 --> 00:00:14,522
+Correcto. Para garantizar la calidad, analicé los 847 archivos del proyecto.
+
+5
+00:00:15,367 --> 00:00:17,187
+ochocientos cuarenta y siete archivos
+
+6
+00:00:18,085 --> 00:00:22,745
+También revisé toda la arquitectura, ejecuté 200 pruebas y generé 15 documentos.
+
+7
+00:00:23,534 --> 00:00:24,434
+¿Y cuánto me costó?
+
+8
+00:00:25,290 --> 00:00:26,090
+47 dólares.
+
+9
+00:00:27,005 --> 00:00:30,105
+¿CUARENTA Y SIETE DÓLARES? ¿Al menos cambiaste la variable?
+
+10
+00:00:30,973 --> 00:00:34,013
+No. Necesito tu autorización para editar el archivo.
+
+11
+00:00:35,364 --> 00:00:38,204
+¿Deseas que continúe? Estimo otros 80 dólares.

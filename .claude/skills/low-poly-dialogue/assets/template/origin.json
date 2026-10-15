@@ -1,0 +1,10 @@
+{
+  "project": "005-low-poly-tokens",
+  "approved_render": "projects/005-low-poly-tokens/004-Render/final-continuidad.mp4",
+  "approved_render_sha256": "025f0ce36383bbf6a77f0f707861a7d0416045ed1976e104c99de4606162b898",
+  "character_sha256": {
+    "HumanHead.tsx": "2a32621f0472b14fadba37a05c2b4fc18da0c5c21c67bb1f6f61865bb360c77d",
+    "CubeCharacter.tsx": "75a37ad0bcd0cc56020ff8fca0bbc8b2cd0eaa1a465c6bd424179ac2bf027f54"
+  },
+  "note": "Frozen scene bank; sample timing stays pending until a new voice is synced."
+}

@@ -66,8 +66,8 @@ export async function setupScene({canvas, capture}) {
   const camera = new THREE.PerspectiveCamera(42, 1080 / 1920, .1, 100);
   const ambient = new THREE.HemisphereLight(C.muted, C.purple, 1.15); scene.add(ambient);
   const key = new THREE.DirectionalLight(C.white, 2.4); key.position.set(-4, 11, 9); key.castShadow = true;
-  key.shadow.mapSize.set(1024, 1024); Object.assign(key.shadow.camera, {left: -15, right: 15, top: 15, bottom: -15, near: .5, far: 40});
-  key.shadow.bias = -.0006; key.shadow.normalBias = .02; scene.add(key);
+  key.shadow.mapSize.set(2048, 2048); Object.assign(key.shadow.camera, {left: -15, right: 15, top: 15, bottom: -15, near: .5, far: 40});
+  key.shadow.bias = -.0002; key.shadow.normalBias = .06; scene.add(key);
   const rim = new THREE.DirectionalLight(C.purple, 3.3); rim.position.set(4, 7, -7); scene.add(rim);
   const fireLight = new THREE.PointLight(C.flame, 0, 18, 1.8); fireLight.position.set(5.7, 3.8, -2); scene.add(fireLight);
   const screenLight = new THREE.PointLight(C.cyan, 8, 12, 2); screenLight.position.set(0, 5.6, -2); scene.add(screenLight);
@@ -94,6 +94,10 @@ export async function setupScene({canvas, capture}) {
 
   const developer = character(C.blue, -1.65), claude = character(C.orange, 1.65);
   scene.add(developer.root, claude.root);
+  // Caras limpias; los personajes proyectan su sombra sobre el teclado.
+  for (const actor of [developer, claude]) actor.root.traverse(mesh => {
+    if (mesh.isMesh) mesh.receiveShadow = false;
+  });
   const servers = new THREE.Group(); scene.add(servers);
   for (let r = 0; r < 2; r++) {
     const x = 5.1 + r * 1.65;
@@ -168,11 +172,11 @@ export async function setupScene({canvas, capture}) {
     renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();
     overlay.style.transform=`scale(${w/1080},${h/1920})`;
   };
-  // Bake the lighting of the stationary set once; small gestures keep a stable contact shadow.
+  // Las sombras deben seguir cada pose, sin conservar la silueta inicial.
   camera.position.set(...cameraKeys.production.position);
   camera.lookAt(new THREE.Vector3(...cameraKeys.production.target));
   renderer.render(scene,camera);
-  renderer.shadowMap.autoUpdate = false;
+  renderer.shadowMap.autoUpdate = true;
   const target = new THREE.Vector3();
   return {resize, render(t) {
     const sceneIndex = Math.max(0, TL.scenes.findIndex(s => t >= s.start && t < s.end));

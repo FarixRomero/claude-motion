@@ -1,0 +1,166 @@
+{
+  "scenes": [
+    {
+      "id": "tokens",
+      "title": "TOKENS AGOTADOS",
+      "shot": "wide",
+      "cameraTrack": "tokens",
+      "turn": 1
+    },
+    {
+      "id": "complete",
+      "title": "¡SOLICITUD COMPLETADA!",
+      "shot": "claude",
+      "cameraTrack": "complete",
+      "turn": 2
+    },
+    {
+      "id": "variable",
+      "title": "SOLO UNA VARIABLE",
+      "shot": "human",
+      "cameraTrack": "variable",
+      "turn": 3
+    },
+    {
+      "id": "audit",
+      "title": "847 ARCHIVOS",
+      "shot": "wide",
+      "cameraTrack": "audit",
+      "turn": 4
+    },
+    {
+      "id": "files",
+      "title": "¿847 ARCHIVOS?",
+      "shot": "human",
+      "cameraTrack": "files",
+      "turn": 5
+    },
+    {
+      "id": "work",
+      "title": "200 PRUEBAS · 15 DOCS",
+      "shot": "wide",
+      "cameraTrack": "work",
+      "turn": 6
+    },
+    {
+      "id": "ask",
+      "title": "¿CUÁNTO COSTÓ?",
+      "shot": "human",
+      "cameraTrack": "ask",
+      "turn": 7
+    },
+    {
+      "id": "bill",
+      "title": "$47",
+      "shot": "wide",
+      "cameraTrack": "bill",
+      "turn": 8
+    },
+    {
+      "id": "outrage",
+      "title": "¡47 DÓLARES!",
+      "shot": "human",
+      "cameraTrack": "outrage",
+      "turn": 9
+    },
+    {
+      "id": "permission",
+      "title": "FALTA AUTORIZACIÓN",
+      "shot": "wide",
+      "cameraTrack": "permission",
+      "turn": 10
+    },
+    {
+      "id": "silence",
+      "title": "…",
+      "shot": "wide",
+      "cameraTrack": "permission",
+      "turn": 11
+    },
+    {
+      "id": "continue",
+      "title": "¿CONTINUAR? +$80",
+      "shot": "wide",
+      "cameraTrack": "permission",
+      "turn": 12
+    }
+  ],
+  "events": [
+    [
+      "tokens.empty",
+      1,
+      "tokens"
+    ],
+    [
+      "claude.complete",
+      2,
+      "completado"
+    ],
+    [
+      "request.variable",
+      3,
+      "variable"
+    ],
+    [
+      "files.count",
+      4,
+      "847"
+    ],
+    [
+      "files.reaction",
+      5
+    ],
+    [
+      "tests.count",
+      6,
+      "200"
+    ],
+    [
+      "docs.count",
+      6,
+      "15"
+    ],
+    [
+      "cost.question",
+      7
+    ],
+    [
+      "invoice.total",
+      8,
+      "47"
+    ],
+    [
+      "price.reaction",
+      9
+    ],
+    [
+      "variable.question",
+      9,
+      "Al"
+    ],
+    [
+      "changes.zero",
+      10,
+      "No"
+    ],
+    [
+      "permission.lock",
+      10,
+      "autorización"
+    ],
+    [
+      "silence.hold",
+      11
+    ],
+    [
+      "continue.offer",
+      12,
+      "continúe"
+    ],
+    [
+      "estimate.total",
+      12,
+      "80"
+    ]
+  ]
+}

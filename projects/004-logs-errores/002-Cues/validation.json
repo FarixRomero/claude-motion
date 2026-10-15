@@ -1,8 +1,28 @@
 {
-  "state": "ok",
+  "state": "needs_review",
   "similarity": 1.0,
   "differences": [],
-  "uncertain_words": [],
-  "warnings": [],
-  "note": "Los tiempos de Whisper son estimaciones. El audio grabado es la referencia."
+  "uncertain_words": [
+    "w00046"
+  ],
+  "warnings": [
+    "Hay palabras con baja confianza o duración cero; sus tiempos requieren revisión."
+  ],
+  "note": "Los tiempos de Whisper son estimaciones. El audio grabado es la referencia.",
+  "review": {
+    "state": "accepted",
+    "reason": "Transcript matches the original script exactly. The low-confidence Pero has a valid 0.12-second interval at the start of Claude turn t0008; flag retained. All scene anchors rebuilt from new word IDs.",
+    "uncertain_words": [
+      {
+        "id": "w00046",
+        "phrase": "p0008",
+        "speaker": "Claude",
+        "turn": "t0008",
+        "start": 21.284625,
+        "end": 21.404625,
+        "text": "Pero",
+        "probability": 0.4853515625
+      }
+    ]
+  }
 }

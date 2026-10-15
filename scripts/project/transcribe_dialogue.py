@@ -18,6 +18,10 @@ def main():
                          compute_type='float16' if args.device == 'cuda' else 'int8')
     phrases, words, missed = [], [], []
     for turn in turns:
+        # Los puntos suspensivos del guion son una pausa, no una frase hablada.
+        if not any(character.isalnum() for character in turn['text']):
+            print(f'Pausa intencional {turn["id"]}', flush=True)
+            continue
         file = (root / turn['audio']).resolve()
         if not file.is_relative_to(root):
             raise ValueError('La ruta de un turno debe permanecer dentro de 001-Voz/.')

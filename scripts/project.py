@@ -103,8 +103,10 @@ def profile(settings, config):
     return directory
 
 
-def dialogue_turns(script, speakers):
+def dialogue_turns(script, speakers, stage_directions=()):
     clean = re.sub(r'<!--.*?-->', '', script, flags=re.S)
+    for direction in stage_directions:
+        clean = re.sub(r'^\s*\[' + re.escape(direction) + r'\]\s*$', '', clean, flags=re.M)
     clean = re.sub(r'^\[([A-Za-z0-9_-]+)\][ \t]+(?=\S)', r'[\1]\n', clean, flags=re.M)
     parts = re.split(r'^\[([A-Za-z0-9_-]+)\]\s*$', clean, flags=re.M)
     intro = '\n'.join(line for line in parts[0].splitlines() if line.strip() and not re.match(r'^#{1,6}\s', line.strip()))
@@ -120,10 +122,19 @@ def dialogue_turns(script, speakers):
     return turns
 
 
+def apply_speaker_defaults(config):
+    # Claude conserva la voz independiente aprobada en todos los diálogos.
+    defaults = read_json(WORKERS / 'speaker-defaults.json')
+    for speaker, preset in defaults.items():
+        if speaker in config.get('speakers', {}):
+            config['speakers'][speaker].update(preset)
+
+
 def voice_input(project, config, settings):
+    apply_speaker_defaults(config)
     script = (project / '001-Voz/guion.md').read_text(encoding='utf-8')
     if config.get('speakers'):
-        turns = dialogue_turns(script, config['speakers'])
+        turns = dialogue_turns(script, config['speakers'], config.get('dialogue', {}).get('stage_directions', ()))
         profiles = {}
         for turn in turns:
             speaker = turn['speaker']
@@ -609,6 +620,7 @@ def main():
         if not (project / 'project.json').exists():
             raise ValueError(f'No existe {project}. Ejecuta init primero.')
         config = read_json(project / 'project.json')
+        apply_speaker_defaults(config)
         if args.command == 'status':
             status(project, config, settings)
             return

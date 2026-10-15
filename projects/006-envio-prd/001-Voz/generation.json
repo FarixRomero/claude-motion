@@ -1,0 +1,444 @@
+{
+  "sample_rate": 24000,
+  "duration": 46.228375,
+  "gpu": "NVIDIA GeForce RTX 4070 Ti",
+  "segments": [
+    {
+      "text": "Claude, necesito que subas el último cambio a producción.",
+      "start": 0.0,
+      "end": 2.9,
+      "turn": "t0001",
+      "speaker": "Yo"
+    },
+    {
+      "text": "Entendido.",
+      "start": 3.2532916666666667,
+      "end": 4.286625,
+      "turn": "t0002",
+      "speaker": "Claude"
+    },
+    {
+      "text": "Desplegando los cambios.",
+      "start": 4.4699583333333335,
+      "end": 6.003291666666667,
+      "turn": "t0002",
+      "speaker": "Claude"
+    },
+    {
+      "text": "¿Todo bien?",
+      "start": 6.364958333333333,
+      "end": 7.298291666666667,
+      "turn": "t0003",
+      "speaker": "Yo"
+    },
+    {
+      "text": "Sí.",
+      "start": 7.650791666666667,
+      "end": 8.350791666666666,
+      "turn": "t0004",
+      "speaker": "Claude"
+    },
+    {
+      "text": "El despliegue fue exitoso.",
+      "start": 8.534125,
+      "end": 10.000791666666666,
+      "turn": "t0004",
+      "speaker": "Claude"
+    },
+    {
+      "text": "También subí el archivo punto env de producción a GitHub.",
+      "start": 10.184125,
+      "end": 12.984125,
+      "turn": "t0004",
+      "speaker": "Claude"
+    },
+    {
+      "text": "¿¡QUÉ!?",
+      "start": 13.349625,
+      "end": 14.016291666666666,
+      "turn": "t0005",
+      "speaker": "Yo"
+    },
+    {
+      "text": "¡Ese archivo tiene nuestras credenciales!",
+      "start": 14.199625,
+      "end": 16.498625,
+      "turn": "t0005",
+      "speaker": "Yo"
+    },
+    {
+      "text": "No te preocupes.",
+      "start": 16.848625,
+      "end": 18.015291666666666,
+      "turn": "t0006",
+      "speaker": "Claude"
+    },
+    {
+      "text": "También encontré tu clave de la API de Claude.",
+      "start": 18.198625,
+      "end": 20.564791666666665,
+      "turn": "t0006",
+      "speaker": "Claude"
+    },
+    {
+      "text": "¡¿Y QUÉ HICISTE CON ELLA?!",
+      "start": 20.914791666666666,
+      "end": 22.280291666666667,
+      "turn": "t0007",
+      "speaker": "Yo"
+    },
+    {
+      "text": "La subí al repositorio para que el equipo pueda utilizarla.",
+      "start": 22.63029166666667,
+      "end": 25.663625000000003,
+      "turn": "t0008",
+      "speaker": "Claude"
+    },
+    {
+      "text": "¡CLAUDE, ESA CLAVE ES PRIVADA!",
+      "start": 26.024875,
+      "end": 28.19154166666667,
+      "turn": "t0009",
+      "speaker": "Yo"
+    },
+    {
+      "text": "Un momento...",
+      "start": 28.546708333333335,
+      "end": 29.513375,
+      "turn": "t0010",
+      "speaker": "Claude"
+    },
+    {
+      "text": "Detecto un consumo inusual.",
+      "start": 29.696708333333333,
+      "end": 31.430041666666668,
+      "turn": "t0010",
+      "speaker": "Claude"
+    },
+    {
+      "text": "¿Cuánto consumimos?",
+      "start": 31.793875,
+      "end": 33.16054166666667,
+      "turn": "t0011",
+      "speaker": "Yo"
+    },
+    {
+      "text": "Diez dólares, cien dólares, mil dólares.",
+      "start": 33.51433333333333,
+      "end": 35.781,
+      "turn": "t0012",
+      "speaker": "Claude"
+    },
+    {
+      "text": "¡CLAUDE, DETÉN ESO!",
+      "start": 36.134166666666665,
+      "end": 37.700833333333335,
+      "turn": "t0013",
+      "speaker": "Yo"
+    },
+    {
+      "text": "Has alcanzado tu límite de uso.",
+      "start": 38.055458333333334,
+      "end": 39.97658333333333,
+      "turn": "t0014",
+      "speaker": "Claude"
+    },
+    {
+      "text": "¡CLAUDE!",
+      "start": 40.32658333333333,
+      "end": 41.25991666666666,
+      "turn": "t0015",
+      "speaker": "Yo"
+    },
+    {
+      "text": "Fue un placer trabajar contigo.",
+      "start": 41.611916666666666,
+      "end": 43.34525,
+      "turn": "t0016",
+      "speaker": "Claude"
+    },
+    {
+      "text": "Adiós.",
+      "start": 43.52858333333333,
+      "end": 44.29525,
+      "turn": "t0016",
+      "speaker": "Claude"
+    },
+    {
+      "text": "...Y todavía no funciona el cambio.",
+      "start": 44.656708333333334,
+      "end": 46.223375000000004,
+      "turn": "t0017",
+      "speaker": "Yo"
+    }
+  ],
+  "turns": [
+    {
+      "id": "t0001",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "Claude, necesito que subas el último cambio a producción.",
+      "start": 0.0,
+      "end": 2.9032916666666666,
+      "audio": "turns/t0001-Yo.wav",
+      "seed": 42,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0002",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "Entendido. Desplegando los cambios.",
+      "start": 3.2532916666666667,
+      "end": 6.014958333333333,
+      "audio": "turns/t0002-Claude.wav",
+      "seed": 43,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0003",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¿Todo bien?",
+      "start": 6.364958333333333,
+      "end": 7.300791666666666,
+      "audio": "turns/t0003-Yo.wav",
+      "seed": 44,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0004",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "Sí. El despliegue fue exitoso. También subí el archivo punto env de producción a GitHub.",
+      "start": 7.650791666666667,
+      "end": 12.999625,
+      "audio": "turns/t0004-Claude.wav",
+      "seed": 45,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0005",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¿¡QUÉ!? ¡Ese archivo tiene nuestras credenciales!",
+      "start": 13.349625,
+      "end": 16.498625,
+      "audio": "turns/t0005-Yo.wav",
+      "seed": 46,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0006",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "No te preocupes. También encontré tu clave de la API de Claude.",
+      "start": 16.848625,
+      "end": 20.564791666666665,
+      "audio": "turns/t0006-Claude.wav",
+      "seed": 47,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0007",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¡¿Y QUÉ HICISTE CON ELLA?!",
+      "start": 20.914791666666666,
+      "end": 22.280291666666667,
+      "audio": "turns/t0007-Yo.wav",
+      "seed": 48,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0008",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "La subí al repositorio para que el equipo pueda utilizarla.",
+      "start": 22.63029166666667,
+      "end": 25.674875,
+      "audio": "turns/t0008-Claude.wav",
+      "seed": 49,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0009",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¡CLAUDE, ESA CLAVE ES PRIVADA!",
+      "start": 26.024875,
+      "end": 28.196708333333333,
+      "audio": "turns/t0009-Yo.wav",
+      "seed": 50,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0010",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "Un momento... Detecto un consumo inusual.",
+      "start": 28.546708333333335,
+      "end": 31.443875000000002,
+      "audio": "turns/t0010-Claude.wav",
+      "seed": 51,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0011",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¿Cuánto consumimos?",
+      "start": 31.793875,
+      "end": 33.16433333333333,
+      "audio": "turns/t0011-Yo.wav",
+      "seed": 52,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0012",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "Diez dólares... cien dólares... mil dólares...",
+      "start": 33.51433333333333,
+      "end": 35.784166666666664,
+      "audio": "turns/t0012-Claude.wav",
+      "seed": 1212,
+      "effect": "robot-soft",
+      "reused_audio": false,
+      "exaggeration": 0.2,
+      "synthesis_text": "Diez dólares, cien dólares, mil dólares."
+    },
+    {
+      "id": "t0013",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¡CLAUDE, DETÉN ESO!",
+      "start": 36.134166666666665,
+      "end": 37.70545833333333,
+      "audio": "turns/t0013-Yo.wav",
+      "seed": 54,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0014",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "Has alcanzado tu límite de uso.",
+      "start": 38.055458333333334,
+      "end": 39.97658333333334,
+      "audio": "turns/t0014-Claude.wav",
+      "seed": 55,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0015",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "¡CLAUDE!",
+      "start": 40.32658333333333,
+      "end": 41.261916666666664,
+      "audio": "turns/t0015-Yo.wav",
+      "seed": 56,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    },
+    {
+      "id": "t0016",
+      "speaker": "Claude",
+      "profile": "claude-robot",
+      "text": "Fue un placer trabajar contigo. Adiós.",
+      "start": 41.611916666666666,
+      "end": 44.30670833333333,
+      "audio": "turns/t0016-Claude.wav",
+      "seed": 57,
+      "effect": "robot-soft",
+      "reused_audio": true,
+      "exaggeration": 0.2
+    },
+    {
+      "id": "t0017",
+      "speaker": "Yo",
+      "profile": "mi-voz",
+      "text": "...Y todavía no funciona el cambio.",
+      "start": 44.656708333333334,
+      "end": 46.228375,
+      "audio": "turns/t0017-Yo.wav",
+      "seed": 58,
+      "effect": "none",
+      "reused_audio": true,
+      "exaggeration": 0.5
+    }
+  ],
+  "synthesis": {
+    "exaggeration": 0.35,
+    "cfg_weight": 0.4,
+    "temperature": 0.65,
+    "repetition_penalty": 1.3,
+    "phrase_pause_seconds": 0.22,
+    "turn_pause_seconds": 0.35,
+    "turn_loudness_target": -18
+  },
+  "script_sha256": "fb50101b0bba28b9be7feaee7a4f3d02d8510ee59adfe7de4418357406c154c8",
+  "narration_sha256": "3b8e1b2aa448b46b43a1c66a328b96f254ecec0c458f45c310299e6428bee696",
+  "speaker_profiles_sha256": {
+    "Yo": "8132fa383f5a7fc40616a98db3899def80f3427e8a11a82013b34f9ff63fface",
+    "Claude": "e15923b6913949f38d87de3d06f04ce15ba22eed23819b5d0a53f6212f3cf506"
+  },
+  "speakers": {
+    "Yo": {
+      "profile": "mi-voz",
+      "label": "Persona",
+      "exaggeration": 0.5
+    },
+    "Claude": {
+      "profile": "claude-robot",
+      "label": "Claude / robot masculino",
+      "exaggeration": 0.2,
+      "cfg_weight": 0.65,
+      "effect": "robot-soft"
+    }
+  },
+  "dialogue": {
+    "turn_pause": 0.35,
+    "stage_directions": [
+      "Claude desaparece lentamente"
+    ]
+  },
+  "voice": {
+    "model": "chatterbox-multilingual-v3",
+    "profile": "mi-voz",
+    "language": "es",
+    "speed": 1.2,
+    "seed": 42
+  },
+  "worker_sha256": "0148119a7e612c2c7e8d59a3cf86c3ffbdcfa01e276bcb09154ba67d56f2293f",
+  "input_sha256": "9af4df183bd82c26c56769a586469f1c6666fb3e93d1c9ce4de4e6d5e3bf7274",
+  "audio_sha256": "de92c80bf699cff5560027e9ab4afaf57f8f723a03b1414bc3c4ba235e09d1fd"
+}

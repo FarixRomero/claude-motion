@@ -1,0 +1,127 @@
+{
+  "state": "needs_review",
+  "similarity": 1.0,
+  "differences": [],
+  "uncertain_words": [
+    "w00028",
+    "w00034",
+    "w00035",
+    "w00043",
+    "w00045",
+    "w00048",
+    "w00053",
+    "w00063",
+    "w00082",
+    "w00132"
+  ],
+  "warnings": [
+    "Hay palabras con baja confianza o duración cero; sus tiempos requieren revisión."
+  ],
+  "note": "Los tiempos de Whisper son estimaciones. El audio grabado es la referencia.",
+  "review": {
+    "state": "accepted",
+    "reason": "All script words matched. Short No recovered from unchanged turn using non-VAD recognition with confidence 0.897. Remaining confidence flags have positive durations and correct script text; retained for audit. Repeated Hazlo was regenerated.",
+    "uncertain_words": [
+      {
+        "id": "w00028",
+        "phrase": "p0007",
+        "speaker": "Claude",
+        "turn": "t0007",
+        "start": 13.489624999999998,
+        "end": 13.629624999999999,
+        "text": "dos",
+        "probability": 0.134033203125
+      },
+      {
+        "id": "w00034",
+        "phrase": "p0007",
+        "speaker": "Claude",
+        "turn": "t0007",
+        "start": 15.389624999999999,
+        "end": 15.729624999999999,
+        "text": "equis",
+        "probability": 0.4984579086303711
+      },
+      {
+        "id": "w00035",
+        "phrase": "p0007",
+        "speaker": "Claude",
+        "turn": "t0007",
+        "start": 15.729624999999999,
+        "end": 15.869625,
+        "text": "dos",
+        "probability": 0.220703125
+      },
+      {
+        "id": "w00043",
+        "phrase": "p0007",
+        "speaker": "Claude",
+        "turn": "t0007",
+        "start": 18.089624999999998,
+        "end": 18.509625,
+        "text": "“no",
+        "probability": 0.10110773642857869
+      },
+      {
+        "id": "w00045",
+        "phrase": "p0007",
+        "speaker": "Claude",
+        "turn": "t0007",
+        "start": 18.789625,
+        "end": 18.989625,
+        "text": "o",
+        "probability": 0.39892578125
+      },
+      {
+        "id": "w00048",
+        "phrase": "p0007",
+        "speaker": "Claude",
+        "turn": "t0007",
+        "start": 19.349625,
+        "end": 19.929625,
+        "text": "todo”.",
+        "probability": 0.3938137690226237
+      },
+      {
+        "id": "w00053",
+        "phrase": "p0009",
+        "speaker": "Claude",
+        "turn": "t0009",
+        "start": 22.464000000000002,
+        "end": 22.724,
+        "text": "siete",
+        "probability": 0.2327880859375
+      },
+      {
+        "id": "w00063",
+        "phrase": "p0009",
+        "speaker": "Claude",
+        "turn": "t0009",
+        "start": 25.464000000000002,
+        "end": 25.884,
+        "text": "hacerTodo.",
+        "probability": 0.4377339680989583
+      },
+      {
+        "id": "w00082",
+        "phrase": "p0012",
+        "speaker": "Yo",
+        "turn": "t0012",
+        "start": 35.450041666666664,
+        "end": 35.65004166666667,
+        "text": "Es",
+        "probability": 0.26123046875
+      },
+      {
+        "id": "w00132",
+        "phrase": "p0022",
+        "speaker": "Yo",
+        "turn": "t0022",
+        "start": 60.542249999999996,
+        "end": 60.802249999999994,
+        "text": "cinco",
+        "probability": 0.297119140625
+      }
+    ]
+  }
+}

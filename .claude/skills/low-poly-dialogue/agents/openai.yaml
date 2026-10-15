@@ -1,0 +1,6 @@
+interface:
+  display_name: "Diálogos low poly de Farix"
+  short_description: "Reutiliza los personajes y escenas low poly aprobados"
+  default_prompt: "Usa $low-poly-dialogue para crear otro episodio con este guion, conservando los personajes, las escenas y las voces aprobadas."
+policy:
+  allow_implicit_invocation: true

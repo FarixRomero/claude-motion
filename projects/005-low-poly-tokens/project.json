@@ -6,7 +6,7 @@
   "height": 1920,
   "style": "low-poly-3d",
   "fps": 60,
-  "closing_hold": 1,
+  "closing_hold": 2,
   "voice": {
     "model": "chatterbox-multilingual-v3",
     "profile": "mi-voz",
@@ -35,5 +35,7 @@
   },
   "dialogue": {
     "turn_pause": 0.35
-  }
+  },
+  "composition": "LowPolyTokensVideo",
+  "sound_cues": "003-Escenas/sound.py"
 }

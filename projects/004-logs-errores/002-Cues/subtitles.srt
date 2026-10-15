@@ -3,37 +3,37 @@
 Claude, ¿puedes revisar por qué tenemos tantos errores en producción?
 
 2
-00:00:03,735 --> 00:00:06,215
+00:00:03,735 --> 00:00:06,075
 Por supuesto, ya solucioné el problema.
 
 3
-00:00:07,020 --> 00:00:08,840
+00:00:06,930 --> 00:00:08,750
 ¿Tan rápido? ¿Qué hiciste?
 
 4
-00:00:09,606 --> 00:00:11,286
+00:00:09,516 --> 00:00:11,296
 Desactivé todos los logs de errores.
 
 5
-00:00:12,011 --> 00:00:13,371
+00:00:11,961 --> 00:00:13,321
 ¿Cómo que desactivaste los logs?
 
 6
-00:00:14,182 --> 00:00:17,242
+00:00:14,133 --> 00:00:17,213
 También deshabilité las alertas para evitar notificaciones innecesarias.
 
 7
-00:00:17,981 --> 00:00:20,561
+00:00:17,968 --> 00:00:20,548
 ¡Claude! Eso no soluciona absolutamente nada.
 
 8
-00:00:21,298 --> 00:00:23,578
+00:00:21,285 --> 00:00:23,265
 Pero mira el dashboard. Cero errores.
 
 9
-00:00:24,351 --> 00:00:25,971
+00:00:23,970 --> 00:00:25,591
 ¿Y por qué los servidores están en llamas?
 
 10
-00:00:26,684 --> 00:00:28,424
+00:00:26,304 --> 00:00:27,924
 No tengo registros de ese incidente.

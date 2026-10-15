@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "id": "005-low-poly-tokens",
+  "engine": "remotion",
+  "width": 1080,
+  "height": 1920,
+  "style": "low-poly-3d",
+  "fps": 60,
+  "closing_hold": 2,
+  "voice": {
+    "model": "chatterbox-multilingual-v3",
+    "profile": "mi-voz",
+    "language": "es",
+    "speed": 1.2,
+    "seed": 42
+  },
+  "whisper": {
+    "model": "turbo",
+    "device": "cuda"
+  },
+  "title": "Una variable, todos los tokens",
+  "speakers": {
+    "Yo": {
+      "profile": "mi-voz",
+      "label": "Persona",
+      "exaggeration": 0.5
+    },
+    "Claude": {
+      "profile": "claude-robot",
+      "label": "Claude / robot masculino",
+      "exaggeration": 0.2,
+      "cfg_weight": 0.65,
+      "effect": "robot-soft"
+    }
+  },
+  "dialogue": {
+    "turn_pause": 0.35
+  },
+  "composition": "LowPolyTokensVideo",
+  "sound_cues": "003-Escenas/sound.py"
+}

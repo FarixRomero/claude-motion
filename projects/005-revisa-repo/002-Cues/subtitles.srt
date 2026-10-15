@@ -1,0 +1,91 @@
+1
+00:00:00,000 --> 00:00:01,280
+Claude, ¿puedes revisar este código?
+
+2
+00:00:02,191 --> 00:00:03,911
+Claro. Analizando…
+
+3
+00:00:04,603 --> 00:00:05,363
+Tengo una pregunta.
+
+4
+00:00:06,188 --> 00:00:06,548
+Dime.
+
+5
+00:00:07,339 --> 00:00:09,479
+Esto es una aplicación… o una declaración de guerra.
+
+6
+00:00:10,370 --> 00:00:10,930
+¿Tan mal está?
+
+7
+00:00:11,790 --> 00:00:19,930
+Veamos. Una función de dos mil líneas, variables llamadas a, equis dos y finalFinalAhoraSi, y un comentario que dice “no tocar o se cae todo”.
+
+8
+00:00:20,369 --> 00:00:20,989
+Bueno, funciona.
+
+9
+00:00:21,824 --> 00:00:25,884
+También encontré siete if anidados, tres consultas duplicadas y una función llamada hacerTodo.
+
+10
+00:00:26,643 --> 00:00:27,743
+Esa función es importante.
+
+11
+00:00:28,632 --> 00:00:34,312
+Lo noté. Autentica usuarios, calcula impuestos, manda correos y, por alguna razón, imprime tickets.
+
+12
+00:00:35,450 --> 00:00:36,730
+Es que centraliza la lógica.
+
+13
+00:00:37,537 --> 00:00:39,137
+No. Secuestra la lógica.
+
+14
+00:00:39,985 --> 00:00:41,445
+Entonces, ¿qué recomiendas?
+
+15
+00:00:42,135 --> 00:00:45,375
+Separar responsabilidades, renombrar variables y dividir esa función.
+
+16
+00:00:46,284 --> 00:00:47,764
+Perfecto. Hazlo.
+
+17
+00:00:48,553 --> 00:00:49,033
+No puedo.
+
+18
+00:00:49,880 --> 00:00:50,180
+¿Por qué?
+
+19
+00:00:51,102 --> 00:00:53,702
+Porque si cambio una línea, se rompen otras veinte funciones.
+
+20
+00:00:54,624 --> 00:00:55,904
+¿Y cómo solucionamos eso?
+
+21
+00:00:56,774 --> 00:00:59,154
+Mi recomendación es empezar el proyecto desde cero.
+
+22
+00:01:00,002 --> 00:01:01,762
+¡Pero llevamos cinco años desarrollándolo!
+
+23
+00:01:02,556 --> 00:01:04,036
+Ahora entiendo por qué está así.

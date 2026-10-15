@@ -1,0 +1,728 @@
+{
+  "scenes": [
+    {
+      "turn": 1,
+      "id": "opening",
+      "title": "REVISA ESTE CÓDIGO",
+      "headline": [
+        "REVISA",
+        "ESTE CÓDIGO"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "code",
+      "tone": "white",
+      "rows": [],
+      "status": "hacerTodo.ts",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 2,
+      "id": "scanning",
+      "title": "ANALIZANDO…",
+      "headline": [
+        "ANALIZANDO…"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "white",
+      "rows": [],
+      "status": "Revisión en curso",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 3,
+      "id": "question",
+      "title": "UNA PREGUNTA",
+      "headline": [
+        "UNA PREGUNTA"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "white",
+      "rows": [],
+      "status": "Claude encontró algo",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 4,
+      "id": "reply",
+      "title": "TE ESCUCHO",
+      "headline": [
+        "TE ESCUCHO"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "white",
+      "rows": [],
+      "status": "Esperando la pregunta",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 5,
+      "id": "war",
+      "title": "¿APP O GUERRA?",
+      "headline": [
+        "¿APP O",
+        "GUERRA?"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "error",
+      "rows": [],
+      "status": "El diagnóstico no pinta bien",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 6,
+      "id": "reaction",
+      "title": "¿TAN MAL?",
+      "headline": [
+        "¿TAN MAL?"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "white",
+      "rows": [],
+      "status": "Revisión del repositorio",
+      "reaction": true,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 7,
+      "id": "longfunction",
+      "title": "2.000 LÍNEAS",
+      "headline": [
+        "UNA FUNCIÓN"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "list",
+      "tone": "gold",
+      "rows": [
+        {
+          "label": "Función principal",
+          "value": "2.000 líneas",
+          "event": "function.lines",
+          "tone": "error"
+        },
+        {
+          "label": "Variables",
+          "value": "a · x2 · finalFinalAhoraSi",
+          "event": "variables.names",
+          "tone": "gold"
+        },
+        {
+          "label": "Comentario",
+          "value": "no tocar o se cae todo",
+          "event": "comment.warning",
+          "tone": "error"
+        }
+      ],
+      "status": "",
+      "reaction": false,
+      "headlineEvents": [
+        {
+          "event": "function.lines",
+          "lines": [
+            "2.000 LÍNEAS"
+          ]
+        }
+      ],
+      "size": 78
+    },
+    {
+      "turn": 8,
+      "id": "works",
+      "title": "PERO FUNCIONA",
+      "headline": [
+        "PERO",
+        "FUNCIONA"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "white",
+      "rows": [],
+      "status": "Funciona… por ahora",
+      "reaction": true,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 9,
+      "id": "nested",
+      "title": "7 IF ANIDADOS",
+      "headline": [
+        "MÁS PROBLEMAS"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "list",
+      "tone": "gold",
+      "rows": [
+        {
+          "label": "if anidados",
+          "value": "7",
+          "event": "nested.count",
+          "tone": "error"
+        },
+        {
+          "label": "Consultas duplicadas",
+          "value": "3",
+          "event": "queries.count",
+          "tone": "gold"
+        },
+        {
+          "label": "Función",
+          "value": "hacerTodo",
+          "event": "function.name",
+          "tone": "cyan"
+        }
+      ],
+      "status": "",
+      "reaction": false,
+      "headlineEvents": [
+        {
+          "event": "nested.count",
+          "lines": [
+            "7 IF ANIDADOS"
+          ]
+        },
+        {
+          "event": "queries.count",
+          "lines": [
+            "3 CONSULTAS",
+            "DUPLICADAS"
+          ]
+        }
+      ],
+      "size": 78
+    },
+    {
+      "turn": 10,
+      "id": "important",
+      "title": "ES IMPORTANTE",
+      "headline": [
+        "ES IMPORTANTE"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "list",
+      "tone": "white",
+      "rows": [
+        {
+          "label": "if anidados",
+          "value": "7",
+          "event": "nested.count",
+          "tone": "error"
+        },
+        {
+          "label": "Consultas duplicadas",
+          "value": "3",
+          "event": "queries.count",
+          "tone": "gold"
+        },
+        {
+          "label": "Función",
+          "value": "hacerTodo",
+          "event": "function.name",
+          "tone": "cyan"
+        }
+      ],
+      "status": "",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 11,
+      "id": "alljobs",
+      "title": "HACERTODO",
+      "headline": [
+        "HACERTODO"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "list",
+      "tone": "gold",
+      "rows": [
+        {
+          "label": "Autentica usuarios",
+          "value": "✓",
+          "event": "job.auth",
+          "tone": "success"
+        },
+        {
+          "label": "Calcula impuestos",
+          "value": "✓",
+          "event": "job.tax",
+          "tone": "success"
+        },
+        {
+          "label": "Manda correos",
+          "value": "✓",
+          "event": "job.mail",
+          "tone": "success"
+        },
+        {
+          "label": "Imprime tickets",
+          "value": "¿?",
+          "event": "job.tickets",
+          "tone": "gold"
+        }
+      ],
+      "status": "",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 12,
+      "id": "centralize",
+      "title": "CENTRALIZA LA LÓGICA",
+      "headline": [
+        "CENTRALIZA",
+        "LA LÓGICA"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "list",
+      "tone": "white",
+      "rows": [
+        {
+          "label": "Autentica usuarios",
+          "value": "✓",
+          "event": "job.auth",
+          "tone": "success"
+        },
+        {
+          "label": "Calcula impuestos",
+          "value": "✓",
+          "event": "job.tax",
+          "tone": "success"
+        },
+        {
+          "label": "Manda correos",
+          "value": "✓",
+          "event": "job.mail",
+          "tone": "success"
+        },
+        {
+          "label": "Imprime tickets",
+          "value": "¿?",
+          "event": "job.tickets",
+          "tone": "gold"
+        }
+      ],
+      "status": "",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 13,
+      "id": "hostage",
+      "title": "SECUESTRA LA LÓGICA",
+      "headline": [
+        "SECUESTRA",
+        "LA LÓGICA"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "list",
+      "tone": "error",
+      "rows": [
+        {
+          "label": "Autentica usuarios",
+          "value": "✓",
+          "event": "job.auth",
+          "tone": "success"
+        },
+        {
+          "label": "Calcula impuestos",
+          "value": "✓",
+          "event": "job.tax",
+          "tone": "success"
+        },
+        {
+          "label": "Manda correos",
+          "value": "✓",
+          "event": "job.mail",
+          "tone": "success"
+        },
+        {
+          "label": "Imprime tickets",
+          "value": "¿?",
+          "event": "job.tickets",
+          "tone": "gold"
+        }
+      ],
+      "status": "",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 82
+    },
+    {
+      "turn": 14,
+      "id": "advice",
+      "title": "¿QUÉ RECOMIENDAS?",
+      "headline": [
+        "¿QUÉ",
+        "RECOMIENDAS?"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "white",
+      "rows": [],
+      "status": "Buscando una solución",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 15,
+      "id": "separation",
+      "title": "SEPARAR RESPONSABILIDADES",
+      "headline": [
+        "SEPARAR",
+        "RESPONSABILIDADES"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "list",
+      "tone": "success",
+      "rows": [
+        {
+          "label": "Separar responsabilidades",
+          "value": "✓",
+          "event": "advice.separate",
+          "tone": "success"
+        },
+        {
+          "label": "Renombrar variables",
+          "value": "✓",
+          "event": "advice.rename",
+          "tone": "success"
+        },
+        {
+          "label": "Dividir hacerTodo",
+          "value": "✓",
+          "event": "advice.divide",
+          "tone": "success"
+        }
+      ],
+      "status": "",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 16,
+      "id": "doit",
+      "title": "PERFECTO. HAZLO.",
+      "headline": [
+        "PERFECTO.",
+        "HAZLO."
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "list",
+      "tone": "success",
+      "rows": [
+        {
+          "label": "Separar responsabilidades",
+          "value": "✓",
+          "event": "advice.separate",
+          "tone": "success"
+        },
+        {
+          "label": "Renombrar variables",
+          "value": "✓",
+          "event": "advice.rename",
+          "tone": "success"
+        },
+        {
+          "label": "Dividir hacerTodo",
+          "value": "✓",
+          "event": "advice.divide",
+          "tone": "success"
+        }
+      ],
+      "status": "",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 17,
+      "id": "cannot",
+      "title": "NO PUEDO",
+      "headline": [
+        "NO PUEDO"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "error",
+      "rows": [],
+      "status": "Cambio bloqueado",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 18,
+      "id": "why",
+      "title": "¿POR QUÉ?",
+      "headline": [
+        "¿POR QUÉ?"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "white",
+      "rows": [],
+      "status": "Dependencias del proyecto",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 19,
+      "id": "breakage",
+      "title": "20 FUNCIONES",
+      "headline": [
+        "UNA LÍNEA"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "audit",
+      "tone": "error",
+      "rows": [],
+      "status": "Una línea → veinte funciones rotas",
+      "reaction": false,
+      "headlineEvents": [
+        {
+          "event": "break.count",
+          "lines": [
+            "20 FUNCIONES"
+          ]
+        }
+      ],
+      "size": 78
+    },
+    {
+      "turn": 20,
+      "id": "solution",
+      "title": "¿CÓMO LO SOLUCIONAMOS?",
+      "headline": [
+        "¿CÓMO LO",
+        "SOLUCIONAMOS?"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "audit",
+      "tone": "white",
+      "rows": [],
+      "status": "Hay que romper el acoplamiento",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 21,
+      "id": "restart",
+      "title": "DESDE CERO",
+      "headline": [
+        "RECOMENDACIÓN"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "error",
+      "rows": [],
+      "status": "Recomendación: reiniciar el proyecto",
+      "reaction": false,
+      "headlineEvents": [
+        {
+          "event": "restart.hero",
+          "lines": [
+            "DESDE CERO"
+          ]
+        }
+      ],
+      "size": 82
+    },
+    {
+      "turn": 22,
+      "id": "years",
+      "title": "¡5 AÑOS!",
+      "headline": [
+        "DESDE CERO"
+      ],
+      "shot": "human",
+      "cameraTrack": "years",
+      "layout": "status",
+      "tone": "error",
+      "rows": [],
+      "status": "Cinco años desarrollándolo",
+      "reaction": true,
+      "headlineEvents": [
+        {
+          "event": "years.reaction",
+          "lines": [
+            "¡5 AÑOS!"
+          ]
+        }
+      ],
+      "size": 106
+    },
+    {
+      "turn": 23,
+      "id": "punchline",
+      "title": "AHORA ENTIENDO…",
+      "headline": [
+        "AHORA",
+        "ENTIENDO…"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "white",
+      "rows": [],
+      "status": "Un código con mucha historia",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    }
+  ],
+  "events": [
+    [
+      "scan.start",
+      2,
+      "Analizando"
+    ],
+    [
+      "war.question",
+      5,
+      "guerra"
+    ],
+    [
+      "function.lines",
+      7,
+      "mil"
+    ],
+    [
+      "variables.names",
+      7,
+      "variables"
+    ],
+    [
+      "comment.warning",
+      7,
+      "comentario"
+    ],
+    [
+      "nested.count",
+      9,
+      "siete"
+    ],
+    [
+      "queries.count",
+      9,
+      "tres"
+    ],
+    [
+      "function.name",
+      9,
+      "función"
+    ],
+    [
+      "job.auth",
+      11,
+      "Autentica"
+    ],
+    [
+      "job.tax",
+      11,
+      "impuestos"
+    ],
+    [
+      "job.mail",
+      11,
+      "correos"
+    ],
+    [
+      "job.tickets",
+      11,
+      "tickets"
+    ],
+    [
+      "logic.hostage",
+      13,
+      "Secuestra"
+    ],
+    [
+      "advice.separate",
+      15,
+      "Separar"
+    ],
+    [
+      "advice.rename",
+      15,
+      "renombrar"
+    ],
+    [
+      "advice.divide",
+      15,
+      "dividir"
+    ],
+    [
+      "edit.blocked",
+      17,
+      "No"
+    ],
+    [
+      "break.count",
+      19,
+      "veinte"
+    ],
+    [
+      "restart.hero",
+      21,
+      "cero"
+    ],
+    [
+      "years.reaction",
+      22,
+      "cinco"
+    ],
+    [
+      "final.line",
+      23,
+      "entiendo"
+    ],
+    [
+      "tokens.enter",
+      1
+    ]
+  ]
+}

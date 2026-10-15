@@ -27,9 +27,11 @@
       "exaggeration": 0.5
     },
     "Claude": {
-      "profile": "mi-voz",
-      "label": "Claude",
-      "exaggeration": 0.25
+      "profile": "claude-robot",
+      "label": "Claude / robot masculino",
+      "exaggeration": 0.2,
+      "cfg_weight": 0.65,
+      "effect": "robot-soft"
     }
   },
   "dialogue": {

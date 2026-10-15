@@ -100,3 +100,11 @@ sfx/dsp.py               filters, oscillators, reverb for longer sound scripts (
 - No hardcoded start times, in components or in cue sheets; read them from the timeline.
 - Colors and fonts only from the video's palette object.
 - Match the existing code style: small helpers, inline styles, comments only for non-obvious constraints.
+
+## Voz permanente de Claude
+
+Por indicación del usuario, Claude usa siempre la voz masculina independiente aprobada en `005-low-poly-tokens`: perfil `claude-robot`, efecto `robot-soft`, exaggeration 0.2, cfg_weight 0.65. La configuración compartida está en `scripts/project/speaker-defaults.json` y el pipeline la aplica a `[Claude]`. No uses `mi-voz` para Claude. Mantén esta voz en proyectos existentes y futuros salvo que el usuario cambie expresamente esta preferencia.
+
+## Serie low poly reutilizable
+
+Por indicación del usuario, los nuevos diálogos entre el humano y Claude reutilizan por defecto el skill [low-poly-dialogue](.claude/skills/low-poly-dialogue/SKILL.md), basado en la versión aprobada de `005-low-poly-tokens`. Conserva sus personajes poligonales, escenario, luces y planos; adapta guion, voz, tiempos, cifras y textos con la plantilla. No rediseñes la serie ni uses el humano cúbico antiguo salvo petición expresa. El skill contiene una biblioteca de escenas y un inicializador de proyectos independientes. Las instrucciones explícitas del usuario pueden cambiar esta preferencia.

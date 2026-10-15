@@ -1,0 +1,500 @@
+{
+  "scenes": [
+    {
+      "turn": 1,
+      "id": "opening",
+      "title": "ENVÍO A PRODUCCIÓN",
+      "headline": [
+        "ENVÍO A",
+        "PRODUCCIÓN"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "code",
+      "tone": "white",
+      "rows": [],
+      "status": "Último cambio pendiente",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 2,
+      "id": "deploy",
+      "title": "DESPLEGANDO…",
+      "headline": [
+        "DESPLEGANDO…"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "success",
+      "rows": [],
+      "status": "Publicando los cambios",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 3,
+      "id": "check",
+      "title": "¿TODO BIEN?",
+      "headline": [
+        "¿TODO BIEN?"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "white",
+      "rows": [],
+      "status": "Esperando confirmación",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 4,
+      "id": "env",
+      "title": "DESPLIEGUE EXITOSO",
+      "headline": [
+        "DESPLIEGUE",
+        "EXITOSO"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "list",
+      "tone": "success",
+      "rows": [
+        {
+          "label": "Archivo",
+          "value": ".env.production",
+          "event": "env.leaked",
+          "tone": "error"
+        },
+        {
+          "label": "Destino",
+          "value": "GitHub · público",
+          "event": "github.public",
+          "tone": "error"
+        }
+      ],
+      "status": "",
+      "reaction": false,
+      "headlineEvents": [
+        {
+          "event": "env.leaked",
+          "lines": [
+            ".ENV",
+            "PÚBLICO"
+          ],
+          "tone": "error"
+        }
+      ],
+      "size": 78
+    },
+    {
+      "turn": 5,
+      "id": "credentials",
+      "title": "¡CREDENCIALES!",
+      "headline": [
+        "¡CREDENCIALES!"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "list",
+      "tone": "error",
+      "rows": [
+        {
+          "label": "Archivo",
+          "value": ".env.production",
+          "event": "env.leaked",
+          "tone": "error"
+        },
+        {
+          "label": "Destino",
+          "value": "GitHub · público",
+          "event": "github.public",
+          "tone": "error"
+        }
+      ],
+      "status": "",
+      "reaction": true,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 6,
+      "id": "apikey",
+      "title": "CLAVE DE API",
+      "headline": [
+        "CLAVE DE API"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "list",
+      "tone": "gold",
+      "rows": [
+        {
+          "label": "Clave API",
+          "value": "sk-••••••••••••",
+          "event": "key.found",
+          "tone": "gold"
+        },
+        {
+          "label": "Clasificación",
+          "value": "PRIVADA",
+          "event": "",
+          "tone": "error"
+        }
+      ],
+      "status": "",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 7,
+      "id": "what",
+      "title": "¿QUÉ HICISTE?",
+      "headline": [
+        "¿QUÉ HICISTE?"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "list",
+      "tone": "error",
+      "rows": [
+        {
+          "label": "Clave API",
+          "value": "sk-••••••••••••",
+          "event": "key.found",
+          "tone": "gold"
+        },
+        {
+          "label": "Clasificación",
+          "value": "PRIVADA",
+          "event": "",
+          "tone": "error"
+        }
+      ],
+      "status": "",
+      "reaction": true,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 8,
+      "id": "repository",
+      "title": "AL REPOSITORIO",
+      "headline": [
+        "AL REPOSITORIO"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "list",
+      "tone": "error",
+      "rows": [
+        {
+          "label": "Clave API",
+          "value": "sk-••••••••••••",
+          "event": "",
+          "tone": "gold"
+        },
+        {
+          "label": "Visibilidad",
+          "value": "Repositorio público",
+          "event": "key.shared",
+          "tone": "error"
+        },
+        {
+          "label": "Acceso",
+          "value": "Todo el equipo",
+          "event": "team.access",
+          "tone": "error"
+        }
+      ],
+      "status": "",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 9,
+      "id": "private",
+      "title": "¡ES PRIVADA!",
+      "headline": [
+        "¡ES PRIVADA!"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "list",
+      "tone": "error",
+      "rows": [
+        {
+          "label": "Clave API",
+          "value": "sk-••••••••••••",
+          "event": "",
+          "tone": "gold"
+        },
+        {
+          "label": "Visibilidad",
+          "value": "Repositorio público",
+          "event": "key.shared",
+          "tone": "error"
+        },
+        {
+          "label": "Acceso",
+          "value": "Todo el equipo",
+          "event": "team.access",
+          "tone": "error"
+        }
+      ],
+      "status": "",
+      "reaction": true,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 10,
+      "id": "unusual",
+      "title": "CONSUMO INUSUAL",
+      "headline": [
+        "CONSUMO",
+        "INUSUAL"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "error",
+      "rows": [],
+      "status": "Actividad detectada en la API",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 11,
+      "id": "howmuch",
+      "title": "¿CUÁNTO CONSUMIMOS?",
+      "headline": [
+        "¿CUÁNTO",
+        "CONSUMIMOS?"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "white",
+      "rows": [],
+      "status": "Consultando consumo…",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 12,
+      "id": "bills",
+      "title": "CONSUMO API",
+      "headline": [
+        "CONSUMO API"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "counter",
+      "tone": "gold",
+      "rows": [],
+      "status": "Consumo de la clave expuesta",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 13,
+      "id": "stop",
+      "title": "¡DETÉN ESO!",
+      "headline": [
+        "¡DETÉN ESO!"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "counter",
+      "tone": "error",
+      "rows": [],
+      "status": "La clave continúa en uso",
+      "reaction": true,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 14,
+      "id": "limit",
+      "title": "LÍMITE ALCANZADO",
+      "headline": [
+        "LÍMITE",
+        "ALCANZADO"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "list",
+      "tone": "error",
+      "rows": [
+        {
+          "label": "Estado",
+          "value": "BLOQUEADO",
+          "event": "usage.limit",
+          "tone": "error"
+        },
+        {
+          "label": "Servicio",
+          "value": "Límite de uso alcanzado",
+          "event": "usage.limit",
+          "tone": "error"
+        }
+      ],
+      "status": "",
+      "reaction": false,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 15,
+      "id": "call",
+      "title": "¡CLAUDE!",
+      "headline": [
+        "¡CLAUDE!"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "error",
+      "rows": [],
+      "status": "Esperando respuesta de Claude",
+      "reaction": true,
+      "headlineEvents": [],
+      "size": 78
+    },
+    {
+      "turn": 16,
+      "id": "farewell",
+      "title": "FUE UN PLACER…",
+      "headline": [
+        "FUE UN PLACER…"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "status",
+      "tone": "white",
+      "rows": [],
+      "status": "Conexión de Claude activa",
+      "reaction": false,
+      "headlineEvents": [
+        {
+          "event": "claude.goodbye",
+          "lines": [
+            "ADIÓS."
+          ],
+          "tone": "orange"
+        }
+      ],
+      "size": 78
+    },
+    {
+      "turn": 17,
+      "id": "punchline",
+      "title": "Y EL CAMBIO… SIGUE SIN FUNCIONAR",
+      "headline": [
+        "Y EL CAMBIO…",
+        "SIGUE SIN FUNCIONAR"
+      ],
+      "shot": "wide",
+      "cameraTrack": "opening",
+      "layout": "code",
+      "tone": "white",
+      "rows": [],
+      "status": "Último cambio pendiente",
+      "reaction": true,
+      "headlineEvents": [],
+      "size": 78
+    }
+  ],
+  "events": [
+    [
+      "deploy.start",
+      2,
+      "Desplegando"
+    ],
+    [
+      "deploy.success",
+      4,
+      "exitoso"
+    ],
+    [
+      "env.leaked",
+      4,
+      "env"
+    ],
+    [
+      "github.public",
+      4,
+      "GitHub"
+    ],
+    [
+      "key.found",
+      6,
+      "clave"
+    ],
+    [
+      "key.shared",
+      8,
+      "repositorio"
+    ],
+    [
+      "team.access",
+      8,
+      "equipo"
+    ],
+    [
+      "usage.detected",
+      10,
+      "consumo"
+    ],
+    [
+      "cost.ten",
+      12,
+      "Diez"
+    ],
+    [
+      "cost.hundred",
+      12,
+      "cien"
+    ],
+    [
+      "cost.thousand",
+      12,
+      "mil"
+    ],
+    [
+      "usage.stop",
+      13,
+      "DETÉN"
+    ],
+    [
+      "usage.limit",
+      14,
+      "límite"
+    ],
+    [
+      "claude.goodbye",
+      16,
+      "Adiós"
+    ],
+    [
+      "change.pending",
+      17,
+      "funciona"
+    ],
+    [
+      "tokens.enter",
+      1
+    ]
+  ]
+}

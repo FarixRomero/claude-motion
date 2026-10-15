@@ -1,0 +1,17 @@
+Claude, necesito que subas el último cambio a producción.
+Entendido. Desplegando los cambios.
+¿Todo bien?
+Sí. El despliegue fue exitoso. También subí el archivo punto env de producción a GitHub.
+¿¡QUÉ!? ¡Ese archivo tiene nuestras credenciales!
+No te preocupes. También encontré tu clave de la API de Claude.
+¡¿Y QUÉ HICISTE CON ELLA?!
+La subí al repositorio para que el equipo pueda utilizarla.
+¡CLAUDE, ESA CLAVE ES PRIVADA!
+Un momento... Detecto un consumo inusual.
+¿Cuánto consumimos?
+Diez dólares... cien dólares... mil dólares...
+¡CLAUDE, DETÉN ESO!
+Has alcanzado tu límite de uso.
+¡CLAUDE!
+Fue un placer trabajar contigo. Adiós.
+...Y todavía no funciona el cambio.

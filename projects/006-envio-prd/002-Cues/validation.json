@@ -1,0 +1,160 @@
+{
+  "state": "needs_review",
+  "similarity": 1.0,
+  "differences": [],
+  "uncertain_words": [
+    "w00025",
+    "w00026",
+    "w00027",
+    "w00031",
+    "w00050",
+    "w00065",
+    "w00069",
+    "w00071",
+    "w00078",
+    "w00083",
+    "w00086",
+    "w00092",
+    "w00099"
+  ],
+  "warnings": [
+    "Hay palabras con baja confianza o duración cero; sus tiempos requieren revisión."
+  ],
+  "note": "Los tiempos de Whisper son estimaciones. El audio grabado es la referencia.",
+  "review": {
+    "state": "accepted",
+    "reason": "All spoken words match the original script. Technical env and emphatic/brief words retain low-confidence flags with valid positive intervals. Repaired synthesis in turns 6 and 12; costs now recognized exactly. Stage direction excluded explicitly.",
+    "uncertain_words": [
+      {
+        "id": "w00025",
+        "phrase": "p0004",
+        "speaker": "Claude",
+        "turn": "t0004",
+        "start": 11.150791666666667,
+        "end": 11.350791666666666,
+        "text": "punto",
+        "probability": 0.40478515625
+      },
+      {
+        "id": "w00026",
+        "phrase": "p0004",
+        "speaker": "Claude",
+        "turn": "t0004",
+        "start": 11.350791666666666,
+        "end": 11.490791666666667,
+        "text": "env",
+        "probability": 0.0007328987121582031
+      },
+      {
+        "id": "w00027",
+        "phrase": "p0004",
+        "speaker": "Claude",
+        "turn": "t0004",
+        "start": 11.490791666666667,
+        "end": 11.630791666666667,
+        "text": "de",
+        "probability": 0.00494384765625
+      },
+      {
+        "id": "w00031",
+        "phrase": "p0005",
+        "speaker": "Yo",
+        "turn": "t0005",
+        "start": 13.349625,
+        "end": 14.109625,
+        "text": "¿¡QUÉ!?",
+        "probability": 0.4470057010650635
+      },
+      {
+        "id": "w00050",
+        "phrase": "p0007",
+        "speaker": "Yo",
+        "turn": "t0007",
+        "start": 21.074791666666666,
+        "end": 21.194791666666667,
+        "text": "QUÉ",
+        "probability": 0.4697491228580475
+      },
+      {
+        "id": "w00065",
+        "phrase": "p0009",
+        "speaker": "Yo",
+        "turn": "t0009",
+        "start": 26.784875000000003,
+        "end": 26.964875000000003,
+        "text": "ESA",
+        "probability": 0.49934959411621094
+      },
+      {
+        "id": "w00069",
+        "phrase": "p0010",
+        "speaker": "Claude",
+        "turn": "t0010",
+        "start": 28.546708333333335,
+        "end": 28.666708333333336,
+        "text": "Un",
+        "probability": 0.0185699462890625
+      },
+      {
+        "id": "w00071",
+        "phrase": "p0010",
+        "speaker": "Claude",
+        "turn": "t0010",
+        "start": 29.226708333333335,
+        "end": 30.086708333333334,
+        "text": "Detecto",
+        "probability": 0.4993489583333333
+      },
+      {
+        "id": "w00078",
+        "phrase": "p0012",
+        "speaker": "Claude",
+        "turn": "t0012",
+        "start": 33.754333333333335,
+        "end": 34.17433333333333,
+        "text": "dólares...",
+        "probability": 0.49680066108703613
+      },
+      {
+        "id": "w00083",
+        "phrase": "p0013",
+        "speaker": "Yo",
+        "turn": "t0013",
+        "start": 36.134166666666665,
+        "end": 36.55416666666667,
+        "text": "¡CLAUDE,",
+        "probability": 0.49471521377563477
+      },
+      {
+        "id": "w00086",
+        "phrase": "p0014",
+        "speaker": "Claude",
+        "turn": "t0014",
+        "start": 38.055458333333334,
+        "end": 38.25545833333334,
+        "text": "Has",
+        "probability": 0.041778564453125
+      },
+      {
+        "id": "w00092",
+        "phrase": "p0015",
+        "speaker": "Yo",
+        "turn": "t0015",
+        "start": 40.32658333333333,
+        "end": 40.76658333333333,
+        "text": "¡CLAUDE!",
+        "probability": 0.49098873138427734
+      },
+      {
+        "id": "w00099",
+        "phrase": "p0017",
+        "speaker": "Yo",
+        "turn": "t0017",
+        "start": 44.656708333333334,
+        "end": 44.73670833333333,
+        "text": "Y",
+        "probability": 0.11962890625
+      }
+    ]
+  }
+}

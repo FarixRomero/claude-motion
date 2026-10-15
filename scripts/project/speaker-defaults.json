@@ -1,0 +1,8 @@
+{
+  "Claude": {
+    "profile": "claude-robot",
+    "exaggeration": 0.2,
+    "cfg_weight": 0.65,
+    "effect": "robot-soft"
+  }
+}
